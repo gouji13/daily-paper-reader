@@ -6,170 +6,122 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-31 ~ 2026-06-29
-- 运行时间：2026-06-29 04:22:50 UTC
+- 最新运行日期：2026-06-29
+- 运行时间：2026-06-29 22:04:54 UTC
 - 运行状态：成功
-- 本次总论文数：50
-- 精读区：39
+- 本次总论文数：31
+- 精读区：20
 - 速读区：11
 
 ### 今日简报（AI）
-今日推荐强化学期中的工具使用与推理优化两篇满分论文；精读部分聚焦于如何避免智能体工具滥用及多样化策略提升LLM推理能力；建议关注基于强化学习的行为调控与异步训练方法。
-- 详情：[/20260531-20260629/README](/20260531-20260629/README)
+今日精读20篇，重点解析智能体强化学习的在策略技能蒸馏与自适应数据调度两大突破。
+
+最值得看的两项工作：OPID提出在策略技能蒸馏提升智能体RL性能，Learning at the Right Pace通过自适应数据调度优化LLM强化学习效率。
+
+下一步建议：关注这些方法如何平衡探索与利用，后续可尝试应用到多步推理或工具调用场景。
+今日精读20篇，重点解析智能体强化学习的在策略技能蒸馏与自适应数据调度两大突破。
+
+最值得看的两项工作：OPID提出在策略技能蒸馏提升智能体RL性能，Learning at the Right Pace通过自适应数据调度优化LLM强化学习效率。
+
+下一步建议：关注这些方法如何平衡探索与利用，后续可尝试应用到多步推理或工具调用场景。
+- 详情：[/202606/29/README](/202606/29/README)
 
 ### 精读区论文标签
-1. [Learning When Not to Act: Mitigating Tool Abuse in Agentic Reinforcement Learning](/20260531-20260629/2606.02132v1-learning-when-not-to-act-mitigating-tool-abuse-in-agentic-reinforcement-learning)  
+1. [OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning](/202606/29/2606.26790v1-opid-on-policy-skill-distillation-for-agentic-reinforcement-learning)  
    标签：评分：10.0/10、query:agentic-rl
-   evidence：直接提出用于LLM的代理强化学习框架以缓解工具滥用
-2. [Hint-Guided Diversified Policy Optimization for LLM Reasoning](/20260531-20260629/2606.03021v1-hint-guided-diversified-policy-optimization-for-llm-reasoning)  
-   标签：评分：10.0/10、query:agentic-rl
-   evidence：基于可验证奖励的强化学习用于LLM推理，提出HDPO
-3. [Tool-Aware Optimization with Entropy Guidance for Efficient Agentic Reinforcement Learning](/20260531-20260629/2606.03762v1-tool-aware-optimization-with-entropy-guidance-for-efficient-agentic-reinforcement-learning)  
-   标签：评分：10.0/10、query:agentic-rl
-   evidence：面向LLM的工具感知优化与熵引导的Agentic强化学习
-4. [Trust Region On-Policy Distillation](/20260531-20260629/2606.01249v1-trust-region-on-policy-distillation)  
+   evidence：提出OPID用于agentic RL中的在线策略技能蒸馏，直接匹配agentic RL和蒸馏
+2. [Learning at the Right Pace: Adaptive Data Scheduling Improves LLM Reinforcement Learning](/202606/29/2606.22305v1-learning-at-the-right-pace-adaptive-data-scheduling-improves-llm-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：信任区域方法用于LLM在线策略蒸馏的稳定训练
-5. [Cross-lingual Self-Consistency for Multilingual Reasoning with Language Models](/20260531-20260629/2606.01464v1-cross-lingual-self-consistency-for-multilingual-reasoning-with-language-models)  
+   evidence：自适应数据调度提升大模型强化学习效果
+3. [Curriculum Reinforcement Learning Can Incentivize Reasoning Capacity in LLMs Beyond the Base Model](/202606/29/2606.22317v1-curriculum-reinforcement-learning-can-incentivize-reasoning-capacity-in-llms-beyond-the-base-model)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：无监督强化学习方法增强LLM多语言推理一致性
-6. [ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL](/20260531-20260629/2606.01619v1-reskill-reconciling-skill-creation-with-policy-optimization-in-agentic-rl)  
+   evidence：课程强化学习提升大语言模型推理能力
+4. [What are Key Factors for Updates in RL for LLM Reasoning?](/202606/29/2606.22570v1-what-are-key-factors-for-updates-in-rl-for-llm-reasoning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：ReSkill：在agentic RL中调和技能创建与策略优化
-7. [ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL](/20260531-20260629/2606.01619v2-reskill-reconciling-skill-creation-with-policy-optimization-in-agentic-rl)  
+   evidence：对LLM推理中基于可验证奖励的强化学习更新进行理论分析，揭示关键因素
+5. [On the Position Bias of On-Policy Distillation](/202606/29/2606.22600v1-on-the-position-bias-of-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：面向大语言模型智能体强化学习的循环技能创建框架，协调技能演化与策略学习
-8. [HMPO: Hybrid Median-length Policy Optimization for Chain-of-Thought Compression](/20260531-20260629/2606.01934v1-hmpo-hybrid-median-length-policy-optimization-for-chain-of-thought-compression)  
+   evidence：在线策略蒸馏用于语言模型
+6. [On the Position Bias of On-Policy Distillation](/202606/29/2606.22600v2-on-the-position-bias-of-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：HMPO是一个通过策略优化压缩CoT的单阶段RL框架
-9. [Learning When Not to Act: Mitigating Tool Abuse in Agentic Reinforcement Learning](/20260531-20260629/2606.02132v2-learning-when-not-to-act-mitigating-tool-abuse-in-agentic-reinforcement-learning)  
+   evidence：在线策略蒸馏用于语言模型
+7. [On the Position Bias of On-Policy Distillation](/202606/29/2606.22600v3-on-the-position-bias-of-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：针对LLM的agentic强化学习，选择性使用工具
-10. [ASymPO: Asymmetric-Scale Policy Optimization for Asynchronous LLM Post-Training Without Behavior Information](/20260531-20260629/2606.03070v2-asympo-asymmetric-scale-policy-optimization-for-asynchronous-llm-post-training-without-behavior-information)  
+   evidence：分析在线策略蒸馏在强化学习中的位置偏差
+8. [Beyond Penalizing Mistakes: Stabilizing Efficiency Training in Large Reasoning Models via Adaptive Correct-Only Rewards](/202606/29/2606.22716v1-beyond-penalizing-mistakes-stabilizing-efficiency-training-in-large-reasoning-models-via-adaptive-correct-only-rewards)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出非对称尺度策略优化用于异步LLM后训练
-11. [Efficient Hyperparameter Optimization for LLM Reinforcement Learning](/20260531-20260629/2606.03073v1-efficient-hyperparameter-optimization-for-llm-reinforcement-learning)  
+   evidence：使用GRPO通过自适应正确奖励稳定大型推理模型的效率训练
+9. [Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently](/202606/29/2606.22938v1-provable-benefits-of-rlvr-over-sft-for-reasoning-models-learning-to-backtrack-efficiently)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：专门针对LLM强化学习微调的超参数优化
-12. [Libra: Efficient Resource Management for Agentic RL Post-Training](/20260531-20260629/2606.03077v1-libra-efficient-resource-management-for-agentic-rl-post-training)  
+   evidence：强化学习微调通过高效回溯提升大语言模型推理能力
+10. [Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning](/202606/29/2606.22995v1-group-graph-policy-optimization-for-long-horizon-agentic-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：Libra是一个专为LLM代理强化学习后训练设计的资源管理框架
-13. [Self-Distilled Policy Gradient](/20260531-20260629/2606.04036v1-self-distilled-policy-gradient)  
+   evidence：用于大语言模型的智能体强化学习，采用图结构策略优化解决长程奖励稀疏问题
+11. [ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation](/202606/29/2606.23104v1-renio-reweighting-negative-trajectory-importance-for-llm-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出SDPG，结合在线策略自蒸馏与强化学习的策略梯度框架
-14. [AgentJet: A Flexible Swarm Training Framework for Agentic Reinforcement Learning](/20260531-20260629/2606.04484v1-agentjet-a-flexible-swarm-training-framework-for-agentic-reinforcement-learning)  
+   evidence：大语言模型的在线策略蒸馏，重加权负轨迹重要性
+12. [Beyond Trajectory Imitation: Strategy-Guided Policy Optimization for LLM Reasoning](/202606/29/2606.24064v1-beyond-trajectory-imitation-strategy-guided-policy-optimization-for-llm-reasoning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：直接提出AgentJet，一个用于LLM代理强化学习的分布式群训练框架
-15. [Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning](/20260531-20260629/2606.06586v1-improving-cross-lingual-factual-recall-via-consistency-driven-reinforcement-learning)  
+   evidence：提出策略引导的策略优化（SGPO），通过蒸馏策略而非轨迹来提升LLM推理
+13. [AsyncOPD: How Stale Can On-Policy Distillation Be?](/202606/29/2606.24143v1-asyncopd-how-stale-can-on-policy-distillation-be)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：使用GRPO强化学习提升LLM事实召回
-16. [Self-evolving LLM agents with in-distribution Optimization](/20260531-20260629/2606.07367v1-self-evolving-llm-agents-with-in-distribution-optimization)  
+   evidence：对LLM异步在线策略蒸馏中陈旧性的系统研究
+14. [Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning](/202606/29/2606.24428v1-escaping-the-self-confirmation-trap-an-execute-distill-verify-paradigm-for-agentic-experience-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：自演化LLM代理，采用分布内RL优化长程决策
-17. [Back on Track: Aligning Rewards and States for Reasoning in Diffusion Large Language Models](/20260531-20260629/2606.08501v1-back-on-track-aligning-rewards-and-states-for-reasoning-in-diffusion-large-language-models)  
+   evidence：针对LLM智能体的经验学习框架，包含蒸馏验证
+15. [PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models](/202606/29/2606.25442v1-policyalign-direct-policy-based-safety-alignment-for-large-language-models)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出PAPO，通过策略优化对齐奖励和状态以改进扩散LLM的推理
-18. [PAEC: Position-Aware Entropy Calibration for LLM Reasoning in RLVR](/20260531-20260629/2606.08543v1-paec-position-aware-entropy-calibration-for-llm-reasoning-in-rlvr)  
+   evidence：基于策略的自蒸馏用于LLM安全对齐
+16. [Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It](/202606/29/2606.26027v1-why-multi-step-tool-use-reinforcement-learning-collapses-and-how-supervisory-signals-fix-it)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：用于RLVR推理改进的位置感知熵校准
-19. [A Regret Minimization Framework on Preference Learning in Large Language Models](/20260531-20260629/2606.09124v1-a-regret-minimization-framework-on-preference-learning-in-large-language-models)  
+   evidence：直接研究工具使用LLM的agentic RL崩溃及监督信号
+17. [Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents](/202606/29/2606.26080v1-neglected-free-lunch-from-post-training-progress-advantage-for-llm-agents)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：基于遗憾的偏好优化重新定义了LLM的RLHF方法
-20. [Breaking the Tokenizer Barrier: On-Policy Distillation across Model Families](/20260531-20260629/2606.09456v1-breaking-the-tokenizer-barrier-on-policy-distillation-across-model-families)  
+   evidence：通过后训练强化学习为大语言模型智能体提供进度优势
+18. [Joint Learning of Experiential Rules and Policies for Large Language Model Agents](/202606/29/2606.27136v1-joint-learning-of-experiential-rules-and-policies-for-large-language-model-agents)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：跨分词器的在线策略蒸馏
-21. [Reasoning or Memorization? Direction-Aware Diversity Exploration in LLM Reinforcement Learning](/20260531-20260629/2606.10346v1-reasoning-or-memorization-direction-aware-diversity-exploration-in-llm-reinforcement-learning)  
+   evidence：面向LLM智能体，通过强化学习联合学习经验规则与策略
+19. [ATOD: Annealed Turn-aware On-policy Distillation for Multi-turn Autonomous Agents](/202606/29/2606.27814v1-atod-annealed-turn-aware-on-policy-distillation-for-multi-turn-autonomous-agents)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出方向感知多样性探索用于LLM强化学习推理
-22. [TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning](/20260531-20260629/2606.11119v1-trace-a-unified-rollout-budget-allocation-framework-for-efficient-agentic-reinforcement-learning)  
+   evidence：面向多轮自主智能体的混合在线蒸馏算法，显式结合在线策略蒸馏和强化学习
+20. [Tandem Reinforcement Learning with Verifiable Rewards](/202606/29/2606.28166v1-tandem-reinforcement-learning-with-verifiable-rewards)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出面向高效代理强化学习的rollout预算分配框架
-23. [APPO: Agentic Procedural Policy Optimization](/20260531-20260629/2606.12384v1-appo-agentic-procedural-policy-optimization)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：用于LLM代理的agentic程序化策略优化
-24. [SENTINEL: Failure-Driven Reinforcement Learning for Training Tool-Using Language Model Agents](/20260531-20260629/2606.12908v1-sentinel-failure-driven-reinforcement-learning-for-training-tool-using-language-model-agents)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：失败驱动的强化学习框架用于训练工具使用LLM代理
-25. [ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning](/20260531-20260629/2606.13316v1-resum-synergizing-llm-reasoning-and-summarization-with-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：RLVR框架，使LLM自我总结推理轨迹
-26. [Towards Pareto-Optimal Tool-Integrated Agents with Pareto Ranking Policy Optimization](/20260531-20260629/2606.16111v1-towards-pareto-optimal-tool-integrated-agents-with-pareto-ranking-policy-optimization)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：用于对齐工具使用LLM代理的多目标RL框架，兼顾准确率和效率
-27. [A Gradient Perspective on RLVR Stability and Winner Advantage Policy Optimization](/20260531-20260629/2606.16154v1-a-gradient-perspective-on-rlvr-stability-and-winner-advantage-policy-optimization)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：WAPO策略优化通过RLVR提升LLM推理能力
-28. [Context-Aware RL for Agentic and Multimodal LLMs](/20260531-20260629/2606.17053v1-context-aware-rl-for-agentic-and-multimodal-llms)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：面向代理LLM的上下文感知RL方法，通过间接辅助目标改进细粒度基础
-29. [Learning to Refine Hidden States for Reliable LLM Reasoning](/20260531-20260629/2606.17524v1-learning-to-refine-hidden-states-for-reliable-llm-reasoning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：强化指导的潜在表示细化用于LLM推理，使用策略梯度
-30. [EnvRL: Learn from Environment Dynamics in Agentic Reinforcement Learning](/20260531-20260629/2606.17680v1-envrl-learn-from-environment-dynamics-in-agentic-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：EnvRL框架利用环境动态信号进行LLM代理的强化学习
-31. [From Trainee to Trainer: LLM-Designed Training Environment for RL with Multi-Agent Reasoning](/20260531-20260629/2606.17682v1-from-trainee-to-trainer-llm-designed-training-environment-for-rl-with-multi-agent-reasoning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：LLM自动设计多智能体推理的RL训练环境
-32. [Manifold Bandits: Bayesian Curriculum Learning over the Latent Geometry of Large Language Models](/20260531-20260629/2606.19750v1-manifold-bandits-bayesian-curriculum-learning-over-the-latent-geometry-of-large-language-models)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：基于流形bandits的RL课程学习用于LLM推理
-33. [Connect the Dots: Training LLMs for Long-Lifecycle Agents with Cross-Domain Generalization Via Reinforcement Learning](/20260531-20260629/2606.20002v1-connect-the-dots-training-llms-for-long-lifecycle-agents-with-cross-domain-generalization-via-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：用于训练大语言模型作为跨领域泛化长生命周期智能体的强化学习框架
-34. [VIMPO: Value-Implicit Policy Optimization for LLMs](/20260531-20260629/2606.20008v1-vimpo-value-implicit-policy-optimization-for-llms)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：VIMPO是一种无评论家的策略优化方法，使用可验证奖励，直接适用于RL微调
-35. [A Formula-Driven Survey and Research Agenda for On-Policy Distillation](/20260531-20260629/2606.22793v1-a-formula-driven-survey-and-research-agenda-for-on-policy-distillation)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：面向LLM的在线策略蒸馏方法综述与分类
-36. [SPIRAL: Learning to Search and Aggregate](/20260531-20260629/2606.23595v1-spiral-learning-to-search-and-aggregate)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：训练LLM使用顺序、并行和聚合推理原语的RL框架
-37. [ExTra: Exploratory Trajectory Optimization for Language Model Reinforcement Learning](/20260531-20260629/2606.24994v1-extra-exploratory-trajectory-optimization-for-language-model-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：提出面向语言模型RL推理的探索性轨迹优化
-38. [Semantic Consistency Policy Optimization for Reinforcement Learning of LLM Agents](/20260531-20260629/2606.25852v1-semantic-consistency-policy-optimization-for-reinforcement-learning-of-llm-agents)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：针对LLM推理的SCPO策略优化方法
-39. [GEOALIGN: Geometric Rollout Curation for Robust LLM Reinforcement Learning](/20260531-20260629/2606.26917v1-geoalign-geometric-rollout-curation-for-robust-llm-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：用于稳定LLM在线RL微调的几何展开策展方法
+   evidence：串联强化学习与可验证奖励提升大语言模型推理能力
 
 ### 速读区论文标签
-1. [Policy and World Modeling Co-Training for Language Agents](/20260531-20260629/2606.02388v1-policy-and-world-modeling-co-training-for-language-agents)  
+1. [TARPO: Token-Wise Latent-Explicit Reasoning via Action-Routing Policy Optimization](/202606/29/2606.05859v1-tarpo-token-wise-latent-explicit-reasoning-via-action-routing-policy-optimization)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：大语言模型agent的策略与世界模型协同训练
-2. [ASymPO: Asymmetric-Scale Policy Optimization for Asynchronous LLM Post-Training Without Behavior Information](/20260531-20260629/2606.03070v1-asympo-asymmetric-scale-policy-optimization-for-asynchronous-llm-post-training-without-behavior-information)  
+   evidence：通过动作路由策略优化实现token级别的隐式-显式推理切换
+2. [Progress-SQL: Improving Reinforcement Learning for Text-to-SQL via Progressive Rewards](/202606/29/2606.06825v1-progress-sql-improving-reinforcement-learning-for-text-to-sql-via-progressive-rewards)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：无需行为信息的异步大模型后训练非对称尺度策略优化，稳定分组相对RL
-3. [Experience-Driven Dynamic Exits for LLMs with Reinforcement Learning](/20260531-20260629/2606.03113v1-experience-driven-dynamic-exits-for-llms-with-reinforcement-learning)  
+   evidence：用于改进LLM微调的强化学习框架，在Text-to-SQL中采用渐进奖励
+3. [Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning](/202606/29/2606.06976v1-exploring-agentic-tool-calling-decisions-via-uncertainty-aligned-reinforcement-learning)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：使用离线强化学习动态选择退出层和推测长度以加速LLM推理
-4. [Step-by-Step Optimization-like Reasoning in LLMs over Expanding Search Spaces](/20260531-20260629/2606.05464v1-step-by-step-optimization-like-reasoning-in-llms-over-expanding-search-spaces)  
+   evidence：基于不确定性对齐的强化学习用于大语言模型智能体工具调用决策
+4. [SAW: Stage-Aware Dynamic Weighting for Multi-Objective Reinforcement Learning in Large Language Models](/202606/29/2606.07705v1-saw-stage-aware-dynamic-weighting-for-multi-objective-reinforcement-learning-in-large-language-models)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：使用求解器引导的在线策略优化和排名奖励塑造
-5. [Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling](/20260531-20260629/2606.03102v1-small-rl-controller-large-language-model-rl-guided-adaptive-sampling-for-test-time-scaling)  
+   evidence：SAW提出阶段感知动态加权方法用于LLM多目标强化学习，改进对齐
+5. [ConSteer-RL: Steering Reasoning Capabilities in Large Language Models via Confidence-Aware Reinforcement Learning](/202606/29/2606.08088v1-consteer-rl-steering-reasoning-capabilities-in-large-language-models-via-confidence-aware-reinforcement-learning)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：将置信度信号集成到RLVR中以提高LLM推理能力
+6. [Reinforcement learning to improve large language model-based automated code compliance systems](/202606/29/2606.22402v1-reinforcement-learning-to-improve-large-language-model-based-automated-code-compliance-systems)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：训练小型RL控制器指导LLM测试时扩展的自适应采样
-6. [Cost-Aware Optimization for Agentic Query Execution](/20260531-20260629/2606.03152v1-cost-aware-optimization-for-agentic-query-execution)  
+   evidence：使用GRPO（强化学习）微调LLM改进代码合规，直接相关于RL微调
+7. [Qwen-AgentWorld: Language World Models for General Agents](/202606/29/2606.24597v1-qwen-agentworld-language-world-models-for-general-agents)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：使用基于GRPO的强化学习优化LLM代理查询执行
-7. [Scaling Self-Evolving Agents via Parametric Memory](/20260531-20260629/2606.04536v1-scaling-self-evolving-agents-via-parametric-memory)  
+   evidence：提出语言世界模型用于智能体环境模拟，与LLM的智能体强化学习相关
+8. [MiniOpt: Reasoning to Model and Solve General Optimization Problems with Limited Resources](/202606/29/2606.25832v2-miniopt-reasoning-to-model-and-solve-general-optimization-problems-with-limited-resources)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：通过参数化记忆与快速权重更新实现自演化agent
-8. [Reinforcement Learning Elicits Contextual Learning of Unseen Language Translation](/20260531-20260629/2606.06428v1-reinforcement-learning-elicits-contextual-learning-of-unseen-language-translation)  
-   标签：评分：7.0/10、query:agentic-rl
-   evidence：使用chrF奖励的强化学习用于未见过语言翻译
-9. [Adaptive Latent Agentic Reasoning](/20260531-20260629/2606.02871v1-adaptive-latent-agentic-reasoning)  
+   evidence：提出基于强化学习的框架，让LLM通过推理建模求解优化问题，提升推理能力
+9. [Scheduling Thoughts: Learning the Order of Thought in Diffusion Language Models](/202606/29/2606.23567v1-scheduling-thoughts-learning-the-order-of-thought-in-diffusion-language-models)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：学习高效的agentic推理，结合潜在和显式思维链
-10. [BiasGRPO: Stabilizing Bias Mitigation in High-Variance Reward Landscapes via Group-Relative Policy Optimization](/20260531-20260629/2606.04807v1-biasgrpo-stabilizing-bias-mitigation-in-high-variance-reward-landscapes-via-group-relative-policy-optimization)  
+   evidence：使用GRPO学习扩散语言模型的顺序策略，与LLM推理的策略优化相关
+10. [Accelerating Disaggregated RL for Visual Generative LLMs with Diffusion-Based Parallelism and Trainer-Assisted Generation](/202606/29/2606.24369v1-accelerating-disaggregated-rl-for-visual-generative-llms-with-diffusion-based-parallelism-and-trainer-assisted-generation)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：分组相对策略优化用于大语言模型对齐和偏差缓解
-11. [Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization](/20260531-20260629/2606.07000v1-teaching-the-way-not-the-answer-privileged-tutoring-distillation-for-multimodal-policy-optimization)  
+   evidence：提出针对视觉生成LLM的强化学习系统，利用扩散并行性
+11. [ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling](/202606/29/2606.24437v1-rem-moa-reasoning-memory-sustains-mixture-of-agents-scaling)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：特权教师蒸馏用于多模态策略优化
+   evidence：LLM多智能体推理与记忆增强
 
 
 <div class="dpr-home-promo-card">
