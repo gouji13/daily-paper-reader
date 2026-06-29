@@ -25,3 +25,59 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: agentic-rl
+      description: 帮我查找大模型强化学习相关的文章，例如opd、agentic rl
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: reinforcement learning
+          keyword_cn: 强化学习
+          query: reinforcement learning for large language models
+        - keyword: large language model
+          keyword_cn: 大语言模型
+          query: reinforcement learning applied to large language models
+        - keyword: agentic reinforcement learning
+          keyword_cn: 智能体强化学习
+          query: agentic reinforcement learning for LLMs
+        - keyword: online policy distillation
+          keyword_cn: 在线策略蒸馏
+          query: online policy distillation for language models
+      intent_queries:
+        - query: Find papers on reinforcement learning methods for fine tuning large language models
+          query_cn: 查找关于强化学习方法微调大语言模型的论文
+          enabled: true
+          source: manual
+          note: ''
+        - query: Search for agentic reinforcement learning techniques applied to language model training
+          query_cn: 搜索应用于语言模型训练的智能体强化学习技术
+          enabled: true
+          source: manual
+          note: ''
+        - query: Look for online policy distillation approaches in the context of large models
+          query_cn: 查找大模型背景下的在线策略蒸馏方法
+          enabled: true
+          source: manual
+          note: ''
+        - query: Find studies on policy optimization algorithms for improving LLM reasoning
+          query_cn: 查找关于优化LLM推理的策略优化算法的研究
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-06-29T03:39:19.903Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
