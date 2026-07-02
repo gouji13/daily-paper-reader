@@ -1,0 +1,471 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-02T21:15:09.205424+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2606.29869v1",
+      "source": "arxiv",
+      "title": "ARKD: Adaptive Reinforcement Learning-Guided Bidirectional KL Divergence Distillation for Text Generation",
+      "abstract": "Knowledge distillation (KD) is a key technique for compressing Large Language Models (LLMs), yet methods relying on a single KL objective often fail to balance primary distribution fitting with long-tail probability modeling, limiting both generation quality and generalization. To address this, we analyze the complementary roles of forward and reverse KL divergence (FKL/RKL) in distribution alignment from theoretical and empirical perspectives. We then propose a reinforcement-learning-based adaptive KL-weighted distillation framework, in which a policy network dynamically assigns weights to FKL and RKL based on teacher-student distributional characteristics, guided by immediate reward signals to achieve dual alignment on principal and long-tail modes. Extensive experiments demonstrate consistent improvements across Rouge-L and BertScore metrics, surpassing greedy heuristics by 0.4-0.6 points and outperforming other baseline methods on diverse benchmarks.",
+      "authors": [
+        "Zilong Liu",
+        "Xuewen Zhang",
+        "Jinrui Xing",
+        "Juyi Qiao",
+        "Huiyong Wang",
+        "Junming Jiao"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-06-29T07:05:56+00:00",
+      "link": "https://arxiv.org/pdf/2606.29869v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning guided knowledge distillation for LLMs",
+      "llm_evidence_cn": "强化学习指导的LLM知识蒸馏",
+      "llm_evidence": "强化学习指导的LLM知识蒸馏",
+      "canonical_evidence": "强化学习指导的LLM知识蒸馏",
+      "llm_tldr_en": "Proposes an adaptive RL-guided KL divergence distillation framework for LLM compression, where a policy network dynamically weights forward and reverse KL based on distributional characteristics, improving generation quality and generalization.",
+      "llm_tldr_cn": "该论文针对LLM知识蒸馏中单一KL目标难以平衡主分布拟合与长尾概率建模的问题，提出自适应强化学习引导的双向KL散度蒸馏框架（ARKD）。利用策略网络根据师生分布特征动态分配前向和反向KL权重，并由即时奖励信号指导优化。实验表明，该方法在文本生成任务上优于现有蒸馏方法，兼顾了生成质量与泛化能力。该工作将RL直接用于LLM训练优化，与用户需求高度契合。",
+      "llm_tldr": "该论文针对LLM知识蒸馏中单一KL目标难以平衡主分布拟合与长尾概率建模的问题，提出自适应强化学习引导的双向KL散度蒸馏框架（ARKD）。利用策略网络根据师生分布特征动态分配前向和反向KL权重，并由即时奖励信号指导优化。实验表明，该方法在文本生成任务上优于现有蒸馏方法，兼顾了生成质量与泛化能力。该工作将RL直接用于LLM训练优化，与用户需求高度契合。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.30626v1",
+      "source": "arxiv",
+      "title": "DOPD: Dual On-policy Distillation",
+      "abstract": "On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.",
+      "authors": [
+        "Xinlei Yu",
+        "Gen Li",
+        "Qingyi Si",
+        "Guibin Zhang",
+        "Yuqi Xu",
+        "Congcong Wang",
+        "Shuai Dong",
+        "Kaiwen Tuo",
+        "Xiangyu Zeng",
+        "Kaituo Feng",
+        "Qunzhong Wang",
+        "Yang Shi",
+        "Xiaobin Hu",
+        "Xiangyu Yue",
+        "Jiaqi Wang",
+        "Shuicheng Yan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-29T17:55:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.30626v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "dual on-policy distillation method addressing privilege illusion",
+      "llm_evidence_cn": "双在线策略蒸馏方法解决特权幻觉问题",
+      "llm_evidence": "双在线策略蒸馏方法解决特权幻觉问题",
+      "canonical_evidence": "双在线策略蒸馏方法解决特权幻觉问题",
+      "llm_tldr_en": "DOPD improves on-policy distillation by mitigating privilege illusion via dual student-teacher interaction.",
+      "llm_tldr_cn": "DOPD提出双在线策略蒸馏框架，解决单源蒸馏中因引入特权信息导致的能力迁移与信息不对称混淆问题。通过双路监督和令牌级非均匀性处理，提升蒸馏质量和性能。在多个标杆任务上，DOPD显著优于现有在线策略蒸馏方法，为大型模型高效知识迁移提供了更可靠的方案。",
+      "llm_tldr": "DOPD提出双在线策略蒸馏框架，解决单源蒸馏中因引入特权信息导致的能力迁移与信息不对称混淆问题。通过双路监督和令牌级非均匀性处理，提升蒸馏质量和性能。在多个标杆任务上，DOPD显著优于现有在线策略蒸馏方法，为大型模型高效知识迁移提供了更可靠的方案。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.31575v1",
+      "source": "arxiv",
+      "title": "Which Tokens Matter? Adaptive Token Selection for RLVR with the Relative Surprisal Index",
+      "abstract": "Reinforcement learning (RL) has become a powerful tool for propelling Large Language Models (LLMs) beyond imitation-based training towards more robust reasoning capabilities. Among existing approaches, RL with Verifiable Rewards (RLVR) has emerged as a pivotal paradigm for advancing LLM reasoning. Despite its empirical success, recent studies have offered different insights. One line of inquiry advocates prioritizing high-entropy token positions during training, while another perspective cautions against allowing low-probability tokens to dominate gradient updates. Notably, although high-entropy tokens are usually correlated with low probability, both paradigms empirically yield substantial performance gains. In this work, we argue that evaluating sampled-token probability or entropy in isolation is insufficient to capture the policy optimization dynamics. To resolve this tension, we introduce the Relative Surprisal Index (RSI), a principled, information-theoretic metric that naturally couples the token's entropy with the probability of the selected token. We show that, under mild conditions, RSI is related to the local ratio between the first-order variations of the logit-gradient norm and predictive entropy under a selected-logit perturbation. Building on RSI, we propose RSI Selection (RSI-S), an entropy-adaptive token filtering method that retains tokens within a stable RSI interval. RSI-S successfully reconciles previous contradictory paradigms and filters out both redundant low-surprisal tokens and unstable high-surprisal tail tokens. Empirical evaluations show that RSI-S achieves higher avg@32 accuracy across different model scales (Qwen2.5-1.5B, 3B, and 7B) on AIME and AMC benchmarks: RSI-S improves avg@32 accuracy by 2--3 percentage points over GRPO. Overall, RSI offers a promising perspective for RLVR improvement.",
+      "authors": [
+        "Outongyi Lv",
+        "Yanzhao Zheng",
+        "Yuanwei Zhang",
+        "Zhenghao Huang",
+        "Xingjun Wang",
+        "Baohua Dong",
+        "Hangcheng Zhu",
+        "Yingda Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-30T12:33:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.31575v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "adaptive token selection for RLVR improving LLM reasoning",
+      "llm_evidence_cn": "面向LLM推理的RLVR自适应令牌选择方法",
+      "llm_evidence": "面向LLM推理的RLVR自适应令牌选择方法",
+      "canonical_evidence": "面向LLM推理的RLVR自适应令牌选择方法",
+      "llm_tldr_en": "Proposes Relative Surprisal Index to adaptively select important tokens for RLVR, improving LLM reasoning efficiency and robustness.",
+      "llm_tldr_cn": "针对RLVR中令牌重要性评估不一致的问题，提出相对惊奇指数（RSI）自适应选择关键令牌进行梯度更新。该方法综合考虑令牌概率和熵，避免低概率令牌主导更新或高熵区域被忽视。在数学推理任务上，RSI-RLVR在保持推理准确率的同时减少了训练计算量，并提升了模型对噪声令牌的鲁棒性，为LLM推理强化学习提供了更高效的训练范式。",
+      "llm_tldr": "针对RLVR中令牌重要性评估不一致的问题，提出相对惊奇指数（RSI）自适应选择关键令牌进行梯度更新。该方法综合考虑令牌概率和熵，避免低概率令牌主导更新或高熵区域被忽视。在数学推理任务上，RSI-RLVR在保持推理准确率的同时减少了训练计算量，并提升了模型对噪声令牌的鲁棒性，为LLM推理强化学习提供了更高效的训练范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01232v1",
+      "source": "arxiv",
+      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "abstract": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL post-training. In this work, we challenge this assumption through a systematic layer-wise study of RL training. Surprisingly, we find that training a single transformer layer can recover most of the gains achieved by full-parameter RL training, and in some cases even surpass it. To quantify this phenomenon, we introduce the quantity layer contribution, which measures the fraction of full RL improvement recovered by training a layer in isolation. Across seven models spanning two model families (Qwen3, Qwen2.5), three RL algorithms (GRPO, GiGPO, Dr. GRPO), and multiple task domains including mathematical reasoning, code generation, and agentic decision-making, we observe a remarkably stable pattern: RL gains are highly concentrated in a small subset of, and in many cases even a single, transformer layers. More strikingly, the same structural pattern consistently emerges: high-contribution layers concentrate in the middle of the transformer stack, while layers near the input and output ends contribute substantially less. The resulting layer rankings remain strongly correlated across datasets, tasks, model families, and RL algorithms.",
+      "authors": [
+        "Zijian Zhang",
+        "Rizhen Hu",
+        "Athanasios Glentis",
+        "Dawei Li",
+        "Chung-Yiu Yau",
+        "Hongzhou Lin",
+        "Mingyi Hong"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-01T17:59:54+00:00",
+      "link": "https://arxiv.org/pdf/2607.01232v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "studies layer-wise contribution in RL training of LLMs",
+      "llm_evidence_cn": "研究LLM RL训练中的逐层贡献",
+      "llm_evidence": "研究LLM RL训练中的逐层贡献",
+      "canonical_evidence": "研究LLM RL训练中的逐层贡献",
+      "llm_tldr_en": "This paper shows that training a single transformer layer can match or even surpass full-parameter RL training gains, challenging the uniform parameter update assumption.",
+      "llm_tldr_cn": "现有RL后训练默认所有层均匀更新。本文系统研究RL训练的逐层贡献，发现仅训练单层即可恢复绝大部分全参数RL的训练收益，有时甚至表现更优。引入“层贡献”度量来量化该现象。此发现有助于更高效的RL训练策略，减少计算开销。",
+      "llm_tldr": "现有RL后训练默认所有层均匀更新。本文系统研究RL训练的逐层贡献，发现仅训练单层即可恢复绝大部分全参数RL的训练收益，有时甚至表现更优。引入“层贡献”度量来量化该现象。此发现有助于更高效的RL训练策略，减少计算开销。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.29712v1",
+      "source": "arxiv",
+      "title": "Why Struggle with Continuous Latents? Interpretable Discrete Latent Reasoning via Rendered Compression",
+      "abstract": "Large language models achieve high reasoning performance via explicit chain-of-thought and reinforcement learning, but require long output sequences and extended inference time. Latent reasoning reduces this cost by shifting computation into a latent space; however, continuous latent methods are hard to train, suffering from unstable and uninterpretable reasoning trajectories. We argue these issues stem from a misalignment between continuous-space reasoning and discrete symbolic supervision, as continuous states lack explicit anchors for step-by-step alignment. To resolve this, we propose \\textbf{Discrete Latent Reasoning~(DLR)}, the first method that converts continuous latent states into explicit discrete tokens. Inspired by render-based compression, we render textual chains of thought into images, extract visual features, and construct a discrete latent vocabulary via clustering-based fine-tuning. Expanding the vocabulary and output head enables standard autoregressive modeling over both natural language and latent tokens, supporting pretraining alignment, SFT, and RL. Experiments on five reasoning benchmarks and two model series~(Qwen3-VL and LLaMA-3) confirm that \\textbf{DLR} outperforms prior latent reasoning baselines with up to \\textbf{20$\\times$ compression}. Furthermore, the learned latent trajectories retain an interpretable semantic structure. Overall, discrete latent tokens provide a controllable and interpretable basis for efficient latent reasoning.",
+      "authors": [
+        "Shuochen Chang",
+        "Qingyang Liu",
+        "Shaobo Wang",
+        "Bingjie Gao",
+        "Qianli Ma",
+        "Haonan Zhao",
+        "Yibo Miao",
+        "Yulin Sun",
+        "Zelin Peng",
+        "Jiangtong Li",
+        "Li Niu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-29T02:34:52+00:00",
+      "link": "https://arxiv.org/pdf/2606.29712v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "interpretable discrete latent reasoning for LLMs using reinforcement learning",
+      "llm_evidence_cn": "使用强化学习的可解释离散潜在推理用于LLM",
+      "llm_evidence": "使用强化学习的可解释离散潜在推理用于LLM",
+      "canonical_evidence": "使用强化学习的可解释离散潜在推理用于LLM",
+      "llm_tldr_en": "Proposes Discrete Latent Reasoning (DLR) converting continuous latent states into discrete tokens for LLM reasoning, addressing instability and uninterpretability while benefiting from RL training.",
+      "llm_tldr_cn": "该论文针对连续空间潜在推理在LLM中训练不稳定且不可解释的问题，提出离散潜在推理（DLR）方法，将连续潜在状态转换为显式离散令牌。该方法借鉴离散表示和强化学习思想，使得推理轨迹更稳定且可解释。实验表明，DLR在推理性能上达到或超过连续方法，同时缩短了输出序列长度。该工作直接涉及RL用于改进LLM推理的层面。",
+      "llm_tldr": "该论文针对连续空间潜在推理在LLM中训练不稳定且不可解释的问题，提出离散潜在推理（DLR）方法，将连续潜在状态转换为显式离散令牌。该方法借鉴离散表示和强化学习思想，使得推理轨迹更稳定且可解释。实验表明，DLR在推理性能上达到或超过连续方法，同时缩短了输出序列长度。该工作直接涉及RL用于改进LLM推理的层面。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.29938v1",
+      "source": "arxiv",
+      "title": "LatentRevise: Learning from Zero-Hit Reasoning",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) is bottlenecked by hard prompts on which correct trajectories have low probability, so sampling misses them within a practical budget and leaves the policy update with little useful signal. We frame such zero-hit prompts as RLVR's sampling frontier, where new reasoning behavior is most valuable yet least likely to be sampled. Importantly, failed rollouts can be informative: they expose where the model's reasoning went wrong. We introduce LatentRevise, a first-order latent revision method that recovers training signal for this zero-hit regime. Given a failed rollout and the gold answer as an anchor, LatentRevise optimizes the input embeddings of its reasoning prefix under two complementary gradients, moving the prefix away from the failed continuation and toward the gold answer. The optimization is constrained to the convex hull of the model's vocabulary embeddings, so each update moves the latent toward a real token embedding rather than an arbitrary feature direction. We find that continuations from the revised prefix lengthen, exhibit self-reflection, and reach correct answers missed by the original rollouts. Used as training data, these trajectories improve SFT and RLVR on math benchmarks over standard baselines.",
+      "authors": [
+        "Yiqiu Guo",
+        "Xueting Han",
+        "Qi Jia",
+        "Guangtao Zhai",
+        "Jing Bai"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-29T08:14:47+00:00",
+      "link": "https://arxiv.org/pdf/2606.29938v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Policy optimization for LLM reasoning via latent revision in zero-hit regime",
+      "llm_evidence_cn": "通过零命中场景的隐式修订优化LLM推理策略",
+      "llm_evidence": "通过零命中场景的隐式修订优化LLM推理策略",
+      "canonical_evidence": "通过零命中场景的隐式修订优化LLM推理策略",
+      "llm_tldr_en": "Introduces LatentRevise to recover training signal from zero-hit prompts in RLVR by optimizing reasoning prefix embeddings using failed rollouts.",
+      "llm_tldr_cn": "本文针对强化学习与可验证奖励（RLVR）中硬提示词难以采样到正确轨迹的问题，提出LatentRevise方法。该方法从失败轨迹中提取有用信号，通过优化推理前缀的输入嵌入来修正模型行为，两个互补梯度分别使模型远离错误方向并接近正确答案。实验表明LatentRevise能显著提升RLVR在零命中场景下的学习效率，有效增强LLM的推理能力。",
+      "llm_tldr": "本文针对强化学习与可验证奖励（RLVR）中硬提示词难以采样到正确轨迹的问题，提出LatentRevise方法。该方法从失败轨迹中提取有用信号，通过优化推理前缀的输入嵌入来修正模型行为，两个互补梯度分别使模型远离错误方向并接近正确答案。实验表明LatentRevise能显著提升RLVR在零命中场景下的学习效率，有效增强LLM的推理能力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.29984v1",
+      "source": "arxiv",
+      "title": "Be Faithful When Response: Returning Fluent and Grounded Answers for Vision-Language Models Reinforcement Learning",
+      "abstract": "Reinforcement Learning (RL) is an important paradigm for improving the reasoning capabilities of Vision-Language Models (VLMs). However, directly applying RL to rollout multimodal reasoning can lead to instability, due to the exploitation of language priors, the neglect of visual evidence, and the generation of reasoning traces that are fluent yet not visually grounded. The question arises: Can initially steer the policy toward visually faithful reasoning regime before applying reinforcement learning? To this end, we propose a Faithful Warm-Start (FWS) strategy that first curates samples with explicit vision-language causal relationships from six general VQA benchmarks to construct the FaithfulQA dataset, where each of the image-question pairs gains a certain degree of visual observations, question requirements, commonsense knowledge, domain knowledge, and the final answer. Subsequently, a VLM-based judge is employed to further purify the dataset, ensuring strong causal consistency and visual faithfulness. This warm-start stage equips the model with the capability to understand causally grounded vision-language patterns before subsequent RL optimization under sparse answer-level rewards. Experimental results show that such faithful supervision improves answer accuracy, stabilizes RL training, and reduces visually unsupported reasoning.",
+      "authors": [
+        "Peng",
+        "Lee",
+        "Yin Zhang",
+        "Yanglin Zhang",
+        "Haonan Wu",
+        "Zishan Liu",
+        "Ruoxi Zang",
+        "Xin Zhu",
+        "Jiayin Zheng",
+        "Jian Yao",
+        "Zefeng Ji",
+        "Fei Ma"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-29T08:58:33+00:00",
+      "link": "https://arxiv.org/pdf/2606.29984v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Applies reinforcement learning to improve VLM reasoning with faithfulness warm-start",
+      "llm_evidence_cn": "应用强化学习提升视觉语言模型推理，并采用忠实性热启动",
+      "llm_evidence": "应用强化学习提升视觉语言模型推理，并采用忠实性热启动",
+      "canonical_evidence": "应用强化学习提升视觉语言模型推理，并采用忠实性热启动",
+      "llm_tldr_en": "Proposes Faithful Warm-Start (FWS) to steer VLM policy toward visually faithful reasoning before applying RL.",
+      "llm_tldr_cn": "直接将强化学习应用于视觉语言模型（VLM）的多模态推理会导致不稳定和视觉忽视。本文提出忠实热启动（FWS）策略，先构建包含显式视觉-语言因果关系的FaithfulQA数据集，通过监督学习预热策略，再应用RL。实验表明FWS显著提升VLM的视觉忠实性和推理正确率。该方法展示了RL在LLM类模型微调中的有效应用。",
+      "llm_tldr": "直接将强化学习应用于视觉语言模型（VLM）的多模态推理会导致不稳定和视觉忽视。本文提出忠实热启动（FWS）策略，先构建包含显式视觉-语言因果关系的FaithfulQA数据集，通过监督学习预热策略，再应用RL。实验表明FWS显著提升VLM的视觉忠实性和推理正确率。该方法展示了RL在LLM类模型微调中的有效应用。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.30639v1",
+      "source": "arxiv",
+      "title": "Self-Evolving World Models for LLM Agent Planning",
+      "abstract": "World models offer a principled way to equip long-horizon LLM agents with foresight: predictions of action consequences before execution. However, unreliable foresight can be ignored, misused, or even degrade downstream decision-making. In this paper, we introduce WorldEvolver, a self-evolving world model framework that revises its deployment-time context while keeping the downstream agent and all model parameters frozen. WorldEvolver integrates three modules: (i) Episodic Memory, which exploits real action transitions through retrieval-based simulation; (ii) Semantic Memory, which extracts persistent heuristic rules from prediction-observation mismatches; and (iii) Selective Foresight, which filters low-confidence predictions before integrating them into agent reasoning context. We evaluate WorldEvolver on ALFWorld and ScienceWorld, measuring world model prediction accuracy on Word2World and downstream agent success rate on AgentBoard. Extensive experiments show that WorldEvolver achieves the highest prediction accuracy across three backbones and leads other world model baselines on downstream agent success rate, demonstrating that test-time memory revision enhances both predictive fidelity and planning performance.",
+      "authors": [
+        "Xuan Zhang",
+        "Wenxuan Zhang",
+        "See-Kiong Ng",
+        "Yang Deng"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-29T17:58:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.30639v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "self-evolving world models for LLM agent planning, related to agentic RL",
+      "llm_evidence_cn": "面向LLM智能体规划的自进化世界模型，与agentic RL相关",
+      "llm_evidence": "面向LLM智能体规划的自进化世界模型，与agentic RL相关",
+      "canonical_evidence": "面向LLM智能体规划的自进化世界模型，与agentic RL相关",
+      "llm_tldr_en": "Introduces WorldEvolver, a self-evolving world model for LLM agents that revises deployment context via episodic and semantic memory, improving planning without parameter updates.",
+      "llm_tldr_cn": "该论文针对LLM智能体在长程规划中依赖不可靠世界模型预测的问题，提出自进化世界模型框架WorldEvolver。通过集成情景记忆（利用真实动作轨迹）和语义记忆（抽取启发式规则），并在决策中过滤低置信度预测，在不更新任何参数的情况下持续改进规划质量。实验证明，世界模型的自进化显著提升了LLM智能体的任务成功率。该工作属于agentic RL中的模型学习和规划优化。",
+      "llm_tldr": "该论文针对LLM智能体在长程规划中依赖不可靠世界模型预测的问题，提出自进化世界模型框架WorldEvolver。通过集成情景记忆（利用真实动作轨迹）和语义记忆（抽取启发式规则），并在决策中过滤低置信度预测，在不更新任何参数的情况下持续改进规划质量。实验证明，世界模型的自进化显著提升了LLM智能体的任务成功率。该工作属于agentic RL中的模型学习和规划优化。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.31846v1",
+      "source": "arxiv",
+      "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models offer a promising framework for robotic manipulation by connecting language instructions, visual observations, and continuous control. However, most existing policies remain limited by behavior cloning or supervised fine-tuning (SFT) from fixed demonstrations, which provides limited opportunity to improve from the policy's own failures. In this paper, we present Z-1, a reinforcement learning (RL) post-training framework for flow-based VLA models. Built on top of $π_{0.5}$, Z-1 uses only publicly released RoboCasa demonstrations for SFT and then applies a task-wise Group Relative Policy Optimization (GRPO) strategy across $24$ standard RoboCasa tasks. To improve the efficiency and stability of online optimization, Z-1 combines shared-prefix rollout construction, tree-structured trajectory branching, completion-aware reward calibration, and selective joint training of VLM and Action Expert. Across all $24$ RoboCasa tasks, Z-1 achieves an average success rate of $80.6\\%$, improving over its SFT initialization by $13.2\\%$ points and outperforms the published sota models. These results show that systematic GRPO post-training can substantially improve flow-based VLA policies without additional private demonstrations.",
+      "authors": [
+        "Lang Cao",
+        "Renhong Chen",
+        "Luyi Li",
+        "Peng Wang",
+        "Mofan Peng",
+        "Yitong Li"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-06-30T15:46:57+00:00",
+      "link": "https://arxiv.org/pdf/2606.31846v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "reinforcement learning post-training for vision-language-action models using GRPO",
+      "llm_evidence_cn": "使用GRPO对视觉-语言-动作模型进行强化学习后训练",
+      "llm_evidence": "使用GRPO对视觉-语言-动作模型进行强化学习后训练",
+      "canonical_evidence": "使用GRPO对视觉-语言-动作模型进行强化学习后训练",
+      "llm_tldr_en": "Presents Z-1, an RL post-training framework for flow-based VLA models using GRPO on 24 robotic tasks, improving policy from own failures beyond behavior cloning.",
+      "llm_tldr_cn": "该论文提出Z-1框架，对基于流的视觉-语言-动作（VLA）模型进行强化学习后训练。使用公开的RoboCasa演示进行监督微调后，采用任务级分组相对策略优化（GRPO）在24个标准任务上在线优化。相比仅行为克隆，该方法通过探索自身失败提升了策略鲁棒性，但目标领域是机器人操作而非纯语言。不过其RL方法（GRPO）可迁移至LLM微调，与需求中强化学习用于语言模型后训练相关。",
+      "llm_tldr": "该论文提出Z-1框架，对基于流的视觉-语言-动作（VLA）模型进行强化学习后训练。使用公开的RoboCasa演示进行监督微调后，采用任务级分组相对策略优化（GRPO）在24个标准任务上在线优化。相比仅行为克隆，该方法通过探索自身失败提升了策略鲁棒性，但目标领域是机器人操作而非纯语言。不过其RL方法（GRPO）可迁移至LLM微调，与需求中强化学习用于语言模型后训练相关。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.31371v1",
+      "source": "arxiv",
+      "title": "Calibrating the Evaluator: Does Probability Calibration Mitigate Preference Coupling in LLM Agent Feedback Loops?",
+      "abstract": "When large language model (LLM) agents adapt their behavior through evaluator feedback, systematic evaluator biases propagate into the agent's learned strategy distribution - a phenomenon termed evaluator preference coupling. Prior work has documented this coupling and established a diagnostic framework (EPC) to measure it, but has not investigated whether calibration techniques can mitigate the effect. We present the first study of evaluator calibration as mitigation: applying probability calibration to the evaluator's pairwise judgments to reduce spurious preference propagation. In a controlled within-subjects experiment (N=5) comparing standard binary TTRL (win/loss) with confidence-calibrated TTRL (probability-weighted updates) using DeepSeek-V4-Pro as executor and GLM5.2 as evaluator, we find that calibration reduces the coupling coefficient gamma by 20-49% and Jensen-Shannon divergence by 45-67%. A symmetric-LR control confirms the effect is not due to reduced update asymmetry. We release the calibrated TTRL protocol and recommend it as a lightweight mitigation for LLM-as-judge deployment pipelines.",
+      "authors": [
+        "Zewen Liu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-30T09:03:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.31371v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "calibration mitigates preference coupling in LLM agent feedback loops, related to RL training",
+      "llm_evidence_cn": "校准减轻LLM智能体反馈循环中的偏好耦合，与RL训练相关",
+      "llm_evidence": "校准减轻LLM智能体反馈循环中的偏好耦合，与RL训练相关",
+      "canonical_evidence": "校准减轻LLM智能体反馈循环中的偏好耦合，与RL训练相关",
+      "llm_tldr_en": "First study applying probability calibration to evaluator judgments in LLM agent RL feedback loops, reducing preference propagation and improving learning stability.",
+      "llm_tldr_cn": "该论文研究LLM智能体通过反馈循环自适应时，评估器偏差如何耦合进策略分布（偏好耦合），并首次提出使用概率校准作为缓解手段。在受控实验中，将校准后的置信度纳入TTRL（二元胜/负）框架，结果表明校准减少了虚假偏好传播，提升了策略学习的稳定性和最终性能。该工作直接涉及RL用于LLM的反馈优化。",
+      "llm_tldr": "该论文研究LLM智能体通过反馈循环自适应时，评估器偏差如何耦合进策略分布（偏好耦合），并首次提出使用概率校准作为缓解手段。在受控实验中，将校准后的置信度纳入TTRL（二元胜/负）框架，结果表明校准减少了虚假偏好传播，提升了策略学习的稳定性和最终性能。该工作直接涉及RL用于LLM的反馈优化。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.00254v1",
+      "source": "arxiv",
+      "title": "Query-Centric Optimization of AI Workflows via Approximate Query Processing and Proxy Models",
+      "abstract": "Many modern AI workflows, ranging from LLM post-training pipelines to agentic reasoning tasks, can be expressed as declarative queries whose expensive predicate is evaluated by a large model or reward function. We propose a query-centric formulation of these workflows and show that classical database techniques, namely approximate query processing (AQP) and proxy-model (PM) based filtering, can substantially reduce the number of expensive model invocations without requiring changes to the underlying models or pipelines. Our first strategy treats the workflow as an online aggregation problem: it progressively samples records, maintains a running aggregate estimate with a confidence interval, and terminates early once the interval stabilizes, accepting the estimate when it falls within a user-specified error bound. Our second strategy trains a lightweight, CPU-resident decision tree on a small set of oracle-labeled examples and uses it to pre-filter records whose outcome can be predicted with high confidence, routing only uncertain records to the expensive model. We evaluate both strategies on TPC-DS aggregate queries and on real LLM post-training pipelines including math reasoning, general instruction following, and code generation. On TPC-DS, Strategy AQP keeps aggregate error under 10% while reaching its adaptive stopping point at 10-15% of oracle calls under balanced distributions, an 85-90% reduction, and Strategy PM reduces oracle calls by 60-70%. On LLM pipelines, Strategy AQP reaches its adaptive stopping point at 20-50% of oracle calls with less than 5% accuracy loss on the structured math and code tasks; open-ended instruction following, scored by a reward model, shows a larger but bounded reduction. Strategy PM reduces reward-model scoring time by up to 19x on structured tasks with less than 10% accuracy loss.",
+      "authors": [
+        "Huayi Wang",
+        "Jun Xu",
+        "Gromit Yeuk-Yin Chan"
+      ],
+      "primary_category": "cs.DB",
+      "categories": [
+        "cs.DB"
+      ],
+      "published": "2026-06-30T23:05:59+00:00",
+      "link": "https://arxiv.org/pdf/2607.00254v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "optimization of LLM post-training and agentic reasoning workflows via AQP and proxy models",
+      "llm_evidence_cn": "利用近似查询处理和代理模型优化LLM后训练和agentic推理工作流",
+      "llm_evidence": "利用近似查询处理和代理模型优化LLM后训练和agentic推理工作流",
+      "canonical_evidence": "利用近似查询处理和代理模型优化LLM后训练和agentic推理工作流",
+      "llm_tldr_en": "Proposes query-centric optimization using AQP and proxy models to reduce expensive model invocations in LLM post-training and agentic reasoning workflows, improving efficiency without model changes.",
+      "llm_tldr_cn": "该论文针对LLM后训练和agentic推理工作流中的昂贵模型调用问题，提出基于近似查询处理和代理模型的查询中心优化方法。通过在线聚合和代理过滤，在保持结果质量的同时显著减少调用次数，无需修改底层模型。实验证明该方法能有效加速工作流，为RL流水线的效率优化提供了新思路。",
+      "llm_tldr": "该论文针对LLM后训练和agentic推理工作流中的昂贵模型调用问题，提出基于近似查询处理和代理模型的查询中心优化方法。通过在线聚合和代理过滤，在保持结果质量的同时显著减少调用次数，无需修改底层模型。实验证明该方法能有效加速工作流，为RL流水线的效率优化提供了新思路。",
+      "llm_tags": [
+        "query:agentic-rl:composite"
+      ],
+      "matched_query_tag": "query:agentic-rl:composite",
+      "matched_query_text": "Papers central to 帮我查找大模型强化学习相关的文章，例如opd、agentic rl, especially work that connects or combines: reinforcement learning for large language models; reinforcement learning applied to large language models; agentic reinforcement learning for LLMs; online policy distillation for language models; Find papers on reinforcement learning methods for fine tuning large language models; Search for agentic reinforcement learning techniques applied to language model training; Look for online policy distillation approaches in the context of large models; Find studies on policy optimization algorithms for improving LLM reasoning.",
+      "matched_requirement_id": "req-composite-agentic-rl",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
