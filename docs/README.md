@@ -6,55 +6,49 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-02
-- 运行时间：2026-07-02 21:21:03 UTC
+- 最新运行日期：2026-07-03
+- 运行时间：2026-07-03 21:47:32 UTC
 - 运行状态：成功
-- 本次总论文数：11
+- 本次总论文数：9
 - 精读区：6
-- 速读区：5
+- 速读区：3
 
 ### 今日简报（AI）
-今天精选11篇论文，其中2篇知识蒸馏工作获得9.0高分。  
-重点推荐强化学习引导的双向KL散度蒸馏（ARKD）与双策略线上蒸馏（DOPD）方向，以及视觉语言模型可靠回答与评估校准研究。  
-建议关注知识蒸馏与强化学习的结合，提升文本生成的流畅性与控制力。
-- 详情：[/202607/02/README](/202607/02/README)
+今日成功筛选9篇论文，其中精读6篇、速读3篇。  
+值得重点关注的两项研究：单层Transformer训练可媲美全参数RL，程序性记忆蒸馏助力模型自我改进。  
+建议优先精读两篇9分论文，探索高效训练与自提升机制。
+- 详情：[/202607/03/README](/202607/03/README)
 
 ### 精读区论文标签
-1. [ARKD: Adaptive Reinforcement Learning-Guided Bidirectional KL Divergence Distillation for Text Generation](/202607/02/2606.29869v1-arkd-adaptive-reinforcement-learning-guided-bidirectional-kl-divergence-distillation-for-text-generation)  
+1. [Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training](/202607/03/2607.01232v2-is-one-layer-enough-training-a-single-transformer-layer-can-match-full-parameter-rl-training)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：强化学习指导的LLM知识蒸馏
-2. [DOPD: Dual On-policy Distillation](/202607/02/2606.30626v1-dopd-dual-on-policy-distillation)  
+   evidence：发现训练单层Transformer即可获得大模型强化学习后训练的大部分收益
+2. [Procedural Memory Distillation: Online Reflection for Self-Improving Language Models](/202607/03/2607.01480v1-procedural-memory-distillation-online-reflection-for-self-improving-language-models)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：双在线策略蒸馏方法解决特权幻觉问题
-3. [Which Tokens Matter? Adaptive Token Selection for RLVR with the Relative Surprisal Index](/202607/02/2606.31575v1-which-tokens-matter-adaptive-token-selection-for-rlvr-with-the-relative-surprisal-index)  
+   evidence：在可验证奖励强化学习中在线蒸馏跨回合信号用于自改进语言模型
+3. [Scaling with Confidence: Calibrating Confidence of LLMs for Adaptive Test Time Scaling](/202607/03/2607.01612v1-scaling-with-confidence-calibrating-confidence-of-llms-for-adaptive-test-time-scaling)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：面向LLM推理的RLVR自适应令牌选择方法
-4. [Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training](/202607/02/2607.01232v1-is-one-layer-enough-training-a-single-transformer-layer-can-match-full-parameter-rl-training)  
+   evidence：面向LLM置信度校准的新型强化学习算法C3RL
+4. [DemoPSD: Disagreement-Modulated Policy Self-Distillation](/202607/03/2607.02502v1-demopsd-disagreement-modulated-policy-self-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：研究LLM RL训练中的逐层贡献
-5. [Why Struggle with Continuous Latents? Interpretable Discrete Latent Reasoning via Rendered Compression](/202607/02/2606.29712v1-why-struggle-with-continuous-latents-interpretable-discrete-latent-reasoning-via-rendered-compression)  
+   evidence：大语言模型推理的在线策略自蒸馏
+5. [DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents](/202607/03/2607.01557v1-dips-dialogue-policy-selection-for-high-stakes-persuasion-agents)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：使用强化学习的可解释离散潜在推理用于LLM
-6. [LatentRevise: Learning from Zero-Hit Reasoning](/202607/02/2606.29938v1-latentrevise-learning-from-zero-hit-reasoning)  
+   evidence：使用Q学习为LLM选择对话策略的智能体强化学习方法
+6. [Distributionally Robust Listwise Preference Optimization](/202607/03/2607.01715v1-distributionally-robust-listwise-preference-optimization)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：通过零命中场景的隐式修订优化LLM推理策略
+   evidence：列表偏好优化用于语言模型对齐，属于RLHF范畴
 
 ### 速读区论文标签
-1. [Be Faithful When Response: Returning Fluent and Grounded Answers for Vision-Language Models Reinforcement Learning](/202607/02/2606.29984v1-be-faithful-when-response-returning-fluent-and-grounded-answers-for-vision-language-models-reinforcement-learning)  
+1. [Evidence-State Rewards for Long-Context Reasoning](/202607/03/2607.02073v1-evidence-state-rewards-for-long-context-reasoning)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：应用强化学习提升视觉语言模型推理，并采用忠实性热启动
-2. [Calibrating the Evaluator: Does Probability Calibration Mitigate Preference Coupling in LLM Agent Feedback Loops?](/202607/02/2606.31371v1-calibrating-the-evaluator-does-probability-calibration-mitigate-preference-coupling-in-llm-agent-feedback-loops)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：校准减轻LLM智能体反馈循环中的偏好耦合，与RL训练相关
-3. [Self-Evolving World Models for LLM Agent Planning](/202607/02/2606.30639v1-self-evolving-world-models-for-llm-agent-planning)  
+   evidence：利用GRPO进行大模型长上下文推理的强化学习方法
+2. [Multi-Objective Exploration and Preference Optimization via Mutual Information](/202607/03/2607.01392v1-multi-objective-exploration-and-preference-optimization-via-mutual-information)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：面向LLM智能体规划的自进化世界模型，与agentic RL相关
-4. [Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models](/202607/02/2606.31846v1-z-1-efficient-reinforcement-learning-for-vision-language-action-models)  
+   evidence：多目标强化学习对齐大语言模型
+3. [Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation](/202607/03/2607.02460v1-neuron-aware-data-selection-for-annotation-free-llm-self-distillation)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：使用GRPO对视觉-语言-动作模型进行强化学习后训练
-5. [Query-Centric Optimization of AI Workflows via Approximate Query Processing and Proxy Models](/202607/02/2607.00254v1-query-centric-optimization-of-ai-workflows-via-approximate-query-processing-and-proxy-models)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：利用近似查询处理和代理模型优化LLM后训练和agentic推理工作流
+   evidence：无标注自蒸馏方法，涉及在线强化学习概念
 
 
 <div class="dpr-home-promo-card">

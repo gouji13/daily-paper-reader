@@ -1,0 +1,373 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-03T21:40:01.500180+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 7,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.01232v2",
+      "source": "arxiv",
+      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "abstract": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL post-training. In this work, we challenge this assumption through a systematic layer-wise study of RL training. Surprisingly, we find that training a single transformer layer can recover most of the gains achieved by full-parameter RL training, and in some cases even surpass it. To quantify this phenomenon, we introduce the quantity layer contribution, which measures the fraction of full RL improvement recovered by training a layer in isolation. Across seven models spanning two model families (Qwen3, Qwen2.5), three RL algorithms (GRPO, GiGPO, Dr. GRPO), and multiple task domains including mathematical reasoning, code generation, and agentic decision-making, we observe a remarkably stable pattern: RL gains are highly concentrated in a small subset of, and in many cases even a single, transformer layers. More strikingly, the same structural pattern consistently emerges: high-contribution layers concentrate in the middle of the transformer stack, while layers near the input and output ends contribute substantially less. The resulting layer rankings remain strongly correlated across datasets, tasks, model families, and RL algorithms.",
+      "authors": [
+        "Zijian Zhang",
+        "Rizhen Hu",
+        "Athanasios Glentis",
+        "Dawei Li",
+        "Chung-Yiu Yau",
+        "Hongzhou Lin",
+        "Mingyi Hong"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-01T17:59:54+00:00",
+      "link": "https://arxiv.org/pdf/2607.01232v2",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "shows that training a single transformer layer can recover most RL post-training gains for LLMs",
+      "llm_evidence_cn": "发现训练单层Transformer即可获得大模型强化学习后训练的大部分收益",
+      "llm_evidence": "发现训练单层Transformer即可获得大模型强化学习后训练的大部分收益",
+      "canonical_evidence": "发现训练单层Transformer即可获得大模型强化学习后训练的大部分收益",
+      "llm_tldr_en": "Challenges the assumption that all layers contribute equally in RL post-training of LLMs, showing single layer training can match full-parameter RL.",
+      "llm_tldr_cn": "大模型强化学习后训练通常更新所有参数，但本文发现并非所有层同等重要。通过系统性逐层研究，提出层贡献度量，发现训练单层Transformer能恢复全参数RL训练的绝大部分收益，甚至在某些情况下超越。这一发现挑战了现有均匀更新的假设，为高效RL微调提供了新思路，可大幅降低计算成本。",
+      "llm_tldr": "大模型强化学习后训练通常更新所有参数，但本文发现并非所有层同等重要。通过系统性逐层研究，提出层贡献度量，发现训练单层Transformer能恢复全参数RL训练的绝大部分收益，甚至在某些情况下超越。这一发现挑战了现有均匀更新的假设，为高效RL微调提供了新思路，可大幅降低计算成本。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01480v1",
+      "source": "arxiv",
+      "title": "Procedural Memory Distillation: Online Reflection for Self-Improving Language Models",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR), along with recent selfdistillation variants such as SDPO, evaluates each rollout against a verifier and updates the policy from that episode-level signal. However, the richer procedural information in the rollout is rarely retained or reused. Across episodes and epochs, the model repeatedly encounters related problems under a changing policy, producing cross-episode signals that episode-local updates cannot capture: which strategies consistently pass verification, which failure modes persist, which patterns recur. We propose Procedural Memory Distillation (PMD), which converts these crossepisode signals into reusable procedural memory and distills it into the policy's weights during training. This memory functions as a training scaffold, absorbed into the policy itself, yielding a memory-free model at inference. PMD organizes the memory at three levels of abstraction: raw trajectories, self-reflected strategies and lessons, and higher-level behavioral patterns that recur across problems, all extracted online from the model's own trajectories. A memory-conditioned self-teacher draws on the accumulated experience to supervise the student on its own rollouts, enabling student to progressively internalize procedural knowledge within its parameters. The central design principle is co-evolution: the policy generates rollouts that update the memory, and memory shapes the supervision that updates the policy. Empirically, across Qwen3-8B and OLMo3-Instruct-7B, PMD improves over SDPO by 3.8-5.5% on SCIKNOWEVAL and 7.9-13.6% on LIVECODEBENCH. Co-evolution powers these gains: freezing either the memory or the policy trails PMD by more than 10% across SCIKNOWEVAL domains.",
+      "authors": [
+        "Ye Liu",
+        "Srijan Bansal",
+        "Bo Pang",
+        "Yang Li",
+        "Zeyu Leo Liu",
+        "Yifei Ming",
+        "Zixuan Ke",
+        "Shafiq Joty",
+        "Semih Yavuz"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-01T21:20:57+00:00",
+      "link": "https://arxiv.org/pdf/2607.01480v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "online distillation of cross-episode signals in RLVR for self-improving LMs",
+      "llm_evidence_cn": "在可验证奖励强化学习中在线蒸馏跨回合信号用于自改进语言模型",
+      "llm_evidence": "在可验证奖励强化学习中在线蒸馏跨回合信号用于自改进语言模型",
+      "canonical_evidence": "在可验证奖励强化学习中在线蒸馏跨回合信号用于自改进语言模型",
+      "llm_tldr_en": "Proposes Procedural Memory Distillation (PMD) that converts cross-episode signals from RLVR into reusable procedural memory and distills into policy weights.",
+      "llm_tldr_cn": "该论文针对强化学习中丰富的程序性信息被丢弃的问题，提出程序记忆蒸馏（PMD）方法。PMD将跨回合信号（如哪些策略持续通过验证）转化为可复用的程序记忆，并蒸馏到策略权重中。该方法从在线策略蒸馏角度改进了自改进语言模型，提升了样本效率和性能。",
+      "llm_tldr": "该论文针对强化学习中丰富的程序性信息被丢弃的问题，提出程序记忆蒸馏（PMD）方法。PMD将跨回合信号（如哪些策略持续通过验证）转化为可复用的程序记忆，并蒸馏到策略权重中。该方法从在线策略蒸馏角度改进了自改进语言模型，提升了样本效率和性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01612v1",
+      "source": "arxiv",
+      "title": "Scaling with Confidence: Calibrating Confidence of LLMs for Adaptive Test Time Scaling",
+      "abstract": "Training large language models (LLMs) with reinforcement learning (RL) has significantly advanced their performance on reasoning and question-answering tasks. However, prevailing RL reward designs typically prioritize response correctness, neglecting to incentivize models to express their confidence accurately. This leads to a critical problem: performance gains are often accompanied by poor calibration between confidence and accuracy, misleading models to overconfidently hallucinate when uncertain. To address this limitation, we propose $\\textbf{C}$orrectness and $\\textbf{C}$onfidence $\\textbf{C}$alibration $\\textbf{R}$einforcement $\\textbf{L}$earning ($\\textbf{C3RL}$), a novel RL algorithm integrating correctness, calibration and dataset-informed reference accuracy rewards together. Comprehensive evaluation across 8 text and multimodal datasets demonstrates that C3RL enhances calibration without sacrificing accuracy, outperforming the current state-of-the-art method in both performance and calibration metrics. Utilizing the well-calibrated verbalized confidence from C3RL, we further introduce $\\textbf{C}$onfidence-based $\\textbf{A}$daptive Test Time $\\textbf{S}$caling ($\\textbf{CAS}$), an adjustable inference-time strategy that allocates computational resources based on response confidence. Experiments show that CAS surpasses majority voting on both in-domain and out-of-domain datasets while reducing the inference budget by up to 12.33 times. We believe the synergy of C3RL and CAS paves the way for deploying more reliable and resource-efficient LLMs. The code, data and models will be released.",
+      "authors": [
+        "Xuqing Yang",
+        "Yi Yuan",
+        "Shanzhe Lei",
+        "Xuhong Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-02T02:29:33+00:00",
+      "link": "https://arxiv.org/pdf/2607.01612v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "novel RL algorithm C3RL for LLM confidence calibration",
+      "llm_evidence_cn": "面向LLM置信度校准的新型强化学习算法C3RL",
+      "llm_evidence": "面向LLM置信度校准的新型强化学习算法C3RL",
+      "canonical_evidence": "面向LLM置信度校准的新型强化学习算法C3RL",
+      "llm_tldr_en": "Proposes C3RL, an RL algorithm that jointly optimizes correctness and confidence calibration for LLMs, improving both accuracy and calibration.",
+      "llm_tldr_cn": "当前强化学习奖励设计忽视置信度校准，导致模型过度自信。C3RL通过同时优化正确性和置信度校准，提出一种新的强化学习算法，在多个推理任务上不仅提升了准确率，还显著改善了置信度校准，减少了幻觉。",
+      "llm_tldr": "当前强化学习奖励设计忽视置信度校准，导致模型过度自信。C3RL通过同时优化正确性和置信度校准，提出一种新的强化学习算法，在多个推理任务上不仅提升了准确率，还显著改善了置信度校准，减少了幻觉。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.02502v1",
+      "source": "arxiv",
+      "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+      "abstract": "On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can lead to overfitting to in-domain patterns, suppress exploration, and hurt cross-domain generalization, while also introducing a more fundamental issue: *privileged information leakage*, where the student encodes answer-dependent shortcuts that are unavailable at test time. We introduce **DemoPSD**, a novel framework that resolves such problems through the idea of *selective adoption of teacher guidance*. Instead of fitting the full teacher distribution, DemoPSD steers the student toward a *reverse-KL barycenter target*, a weighted geometric combination of the teacher and student distributions, that naturally balances learning from the teacher with preserving the student's own reasoning capacity. We measure the difference between their distributions and use such a discrepancy to adaptively control the blending at each token position. We provably show that DemoPSD achieves **(1)** *leakage attenuation*, i.e., effective mitigation of privileged information leakage; and **(2)** *exploration preservation*, i.e., preservation of exploration capacity under dense token-level distillation. Extensive experiments on SciKnowEval across four scientific fields show that DemoPSD outperforms both GRPO and SDPO while maintaining higher training entropy and robustly generalizing to out-of-distribution GPQA benchmarks.",
+      "authors": [
+        "Yunhe Li",
+        "Hao Shi",
+        "Wenhao Liu",
+        "Mengzhe Ruan",
+        "Hanxu Hou",
+        "Zhongxiang Dai",
+        "Shuang Qiu",
+        "Linqi Song"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-02T17:58:29+00:00",
+      "link": "https://arxiv.org/pdf/2607.02502v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "online policy self-distillation for large language models reasoning",
+      "llm_evidence_cn": "大语言模型推理的在线策略自蒸馏",
+      "llm_evidence": "大语言模型推理的在线策略自蒸馏",
+      "canonical_evidence": "大语言模型推理的在线策略自蒸馏",
+      "llm_tldr_en": "Proposes DemoPSD, a disagreement-modulated policy self-distillation framework for LLMs that selectively adopts teacher guidance to avoid privileged information leakage and improve generalization.",
+      "llm_tldr_cn": "大语言模型的在线策略自蒸馏（OPSD）方法存在教师特权信息泄露问题，导致过拟合和泛化下降。本文提出DemoPSD，通过分歧调制实现选择性采纳教师指导，避免学生模型编码答案依赖的捷径。实验表明DemoPSD有效提升了跨领域推理泛化能力，为基于蒸馏的LLM训练提供了更稳健的方案。",
+      "llm_tldr": "大语言模型的在线策略自蒸馏（OPSD）方法存在教师特权信息泄露问题，导致过拟合和泛化下降。本文提出DemoPSD，通过分歧调制实现选择性采纳教师指导，避免学生模型编码答案依赖的捷径。实验表明DemoPSD有效提升了跨领域推理泛化能力，为基于蒸馏的LLM训练提供了更稳健的方案。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01557v1",
+      "source": "arxiv",
+      "title": "DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents",
+      "abstract": "Large Language Models (LLMs) often struggle with persuasion in high-stakes scenarios. People's individual personalities and concerns require tailored strategies rather than a one-size-fits-all approach. To address this challenge, we focus on a fire-rescue scenario in which an operator must persuade a resident to evacuate as a high-stakes persuasion domain and propose Dialogue Policy Selection (DiPS), a Q-learning framework to dynamically select persuasion strategies adapted to the evolving conversational context. Specifically, we train a critic, trained to maximize the chance of evacuation success, to select a persuasion policy at each turn based on the resident's recent utterances.We then evaluate DiPS against multiple baselines in both simulated and real human interactions. We find that DiPS achieves higher evacuation success than a zero-shot LLM and generic RAG-augmented approach.",
+      "authors": [
+        "Tianyi Zhang",
+        "Mousumi Das",
+        "Abrar Anwar",
+        "Jesse Thomason",
+        "David Traum"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-02T00:24:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.01557v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "agentic RL for LLMs using Q-learning to select dialogue policies",
+      "llm_evidence_cn": "使用Q学习为LLM选择对话策略的智能体强化学习方法",
+      "llm_evidence": "使用Q学习为LLM选择对话策略的智能体强化学习方法",
+      "canonical_evidence": "使用Q学习为LLM选择对话策略的智能体强化学习方法",
+      "llm_tldr_en": "Proposes DiPS, a Q-learning framework for LLM-based persuasion agents to dynamically select strategies, improving evacuation success in high-stakes scenarios.",
+      "llm_tldr_cn": "大语言模型在高风险说服场景中难以采用定制化策略。本文提出对话策略选择（DiPS）框架，通过Q学习训练评论家网络，根据对话上下文动态选择说服策略，最大化疏散成功率。在模拟和真实火灾逃生场景中，DiPS显著优于基线方法，展示了智能体强化学习在LLM中的有效性。",
+      "llm_tldr": "大语言模型在高风险说服场景中难以采用定制化策略。本文提出对话策略选择（DiPS）框架，通过Q学习训练评论家网络，根据对话上下文动态选择说服策略，最大化疏散成功率。在模拟和真实火灾逃生场景中，DiPS显著优于基线方法，展示了智能体强化学习在LLM中的有效性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01715v1",
+      "source": "arxiv",
+      "title": "Distributionally Robust Listwise Preference Optimization",
+      "abstract": "Existing robust preference optimization for language-model alignment mainly studies pairwise supervision and places robustness at the dataset, prompt, or preference-pair level. We instead study listwise preference optimization under ranking-label uncertainty: given a prompt and a candidate list, the observed ranking over that list may be ambiguous due to annotator inconsistency, near-ties, lossy rankwise feedback, or reward-model noise. We propose a pointwise total-variation robust Plackett--Luce objective that directly robustifies the ranking label conditional on the candidate list. The robust loss admits an exact decomposition into the nominal PL loss plus a worst-case PL correction, and the worst-case ranking is obtained by sorting current implicit scores in ascending order, reducing the inner maximization from $K!$ enumeration to $O(K\\log K)$. This tractable structure yields strong offline and online optimization guarantees. In the offline fixed-list setting, the robust objective is convex and projected stochastic subgradient reaches global $ε$-suboptimality with $O(ε^{-2})$ sample complexity. In the online policy-induced setting, where candidate lists are generated by the current policy, we establish weak convexity and $\\widetilde O(ε^{-2})$ Moreau-envelope stationarity. Experiments in offline LLM alignment show that the proposed robust correction largely preserves performance under clean labels and improves robustness under noise. In online alignment, it makes reward-model-ranked candidate expansion more reliable and improves both reward-model and external GPT-4 judge metrics.",
+      "authors": [
+        "Xudong Wu",
+        "Jian Qian",
+        "Pangpang Liu",
+        "Vaneet Aggarwal",
+        "Jiayu Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-02T05:12:03+00:00",
+      "link": "https://arxiv.org/pdf/2607.01715v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "listwise preference optimization for LLM alignment, RLHF variant",
+      "llm_evidence_cn": "列表偏好优化用于语言模型对齐，属于RLHF范畴",
+      "llm_evidence": "列表偏好优化用于语言模型对齐，属于RLHF范畴",
+      "canonical_evidence": "列表偏好优化用于语言模型对齐，属于RLHF范畴",
+      "llm_tldr_en": "Proposes a distributionally robust listwise preference optimization method for LLM alignment under ranking-label uncertainty, extending RLHF to handle ambiguous rankings.",
+      "llm_tldr_cn": "针对语言模型对齐中排名标签不确定性问题，提出一种分布鲁棒的列表偏好优化方法，通过点态全变分鲁棒Plackett-Luce目标直接鲁棒化排名标签，将鲁棒损失分解为名义损失加最坏情况校正。该方法扩展了RLHF处理模糊排名的能力，有助于提升偏好优化的鲁棒性。",
+      "llm_tldr": "针对语言模型对齐中排名标签不确定性问题，提出一种分布鲁棒的列表偏好优化方法，通过点态全变分鲁棒Plackett-Luce目标直接鲁棒化排名标签，将鲁棒损失分解为名义损失加最坏情况校正。该方法扩展了RLHF处理模糊排名的能力，有助于提升偏好优化的鲁棒性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.02073v1",
+      "source": "arxiv",
+      "title": "Evidence-State Rewards for Long-Context Reasoning",
+      "abstract": "Long-context reasoning requires models to locate, revise, and synthesize evidence distributed across lengthy inputs. Existing long-context RL methods usually reward final answers or static evidence extraction, offering little feedback on how intermediate actions change the model's evidence state. We propose Maven, a reinforcement learning framework with an editable evidence memory. Maven defines an answer-conditioned evidence-state value and rewards action-level state transitions: add actions are credited by marginal gain and hindsight contribution, link actions by evidence synergy, and drop actions by improved answer support after removing misleading evidence. These rewards are assigned to the corresponding action spans in GRPO. Across Llama and Qwen models on LongBench v2, LongReason, and RULER, Maven outperforms outcome-only RL and evidence-identification baselines, producing more sufficient evidence sets and lower distractor retention. Our results show that long-context RL benefits from optimizing stateful evidence navigation rather than one-shot evidence extraction.",
+      "authors": [
+        "Ya Gao",
+        "Pekka Marttinen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-02T12:11:49+00:00",
+      "link": "https://arxiv.org/pdf/2607.02073v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "reinforcement learning for long-context reasoning in LLMs using GRPO",
+      "llm_evidence_cn": "利用GRPO进行大模型长上下文推理的强化学习方法",
+      "llm_evidence": "利用GRPO进行大模型长上下文推理的强化学习方法",
+      "canonical_evidence": "利用GRPO进行大模型长上下文推理的强化学习方法",
+      "llm_tldr_en": "Proposes Maven, an RL framework with editable evidence memory that rewards action-level state transitions for long-context reasoning, improving performance on LongBench.",
+      "llm_tldr_cn": "现有长上下文强化学习方法仅奖励最终答案或静态证据提取，无法对中间动作提供反馈。本文提出Maven框架，通过可编辑证据记忆和基于证据状态转移的动作级奖励，结合GRPO算法，在Llama和Qwen模型上显著提升长上下文推理性能。该方法为长上下文场景下的RL优化提供了新范式。",
+      "llm_tldr": "现有长上下文强化学习方法仅奖励最终答案或静态证据提取，无法对中间动作提供反馈。本文提出Maven框架，通过可编辑证据记忆和基于证据状态转移的动作级奖励，结合GRPO算法，在Llama和Qwen模型上显著提升长上下文推理性能。该方法为长上下文场景下的RL优化提供了新范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.01392v1",
+      "source": "arxiv",
+      "title": "Multi-Objective Exploration and Preference Optimization via Mutual Information",
+      "abstract": "Aligning large language models with diverse and heterogeneous human values requires multi-objective alignment methods to effectively trade off conflicting preference dimensions. Current methods achieve this trade-off by training policies conditioned on preference vectors and leveraging online direct preference optimization. However, exploration uncertainty can cause the reward distributions of responses generated under different preference vectors to overlap, and the generated responses may fail to effectively align with the corresponding preference vectors. In this paper, we propose Multi-Objective Exploration and Preference Optimization via Mutual Information (MI-EPO), an information-theoretic framework. It unifies multi-objective exploration and alignment by maximizing the joint conditional mutual information among generated responses, preference feedback, and preference vectors. By incorporating a probabilistic routing mechanism, MI-EPO naturally decomposes objective alignment and preference-aware exploration, encouraging the model to generate responses that are distinguishable and aligned with different preference conditions. Experiments on safe alignment and helpful assistant tasks show that MI-EPO significantly improves the alignment between generated responses and preference vectors, makes the outputs more controllable, and achieves stable trade-offs across multiple objectives.",
+      "authors": [
+        "Hongyan Xie",
+        "Yikun Ban",
+        "Ruiyu Fang",
+        "Zixuang Huang",
+        "Deqing Wang",
+        "Jianxin Li",
+        "Shuangyong Song"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-01T18:50:14+00:00",
+      "link": "https://arxiv.org/pdf/2607.01392v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "multi-objective RL alignment for LLMs",
+      "llm_evidence_cn": "多目标强化学习对齐大语言模型",
+      "llm_evidence": "多目标强化学习对齐大语言模型",
+      "canonical_evidence": "多目标强化学习对齐大语言模型",
+      "llm_tldr_en": "MI-EPO unifies multi-objective exploration and preference optimization via mutual information for aligning LLMs with heterogeneous human values.",
+      "llm_tldr_cn": "针对大语言模型多目标对齐中偏好维度冲突和探索不确定性问题，本文提出基于互信息的多目标探索与偏好优化框架MI-EPO。该框架统一了多目标探索过程，有效区分不同偏好向量的响应分布，提升对齐质量。实验表明其优于现有方法，为LLM的细粒度对齐提供了新思路。",
+      "llm_tldr": "针对大语言模型多目标对齐中偏好维度冲突和探索不确定性问题，本文提出基于互信息的多目标探索与偏好优化框架MI-EPO。该框架统一了多目标探索过程，有效区分不同偏好向量的响应分布，提升对齐质量。实验表明其优于现有方法，为LLM的细粒度对齐提供了新思路。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.02460v1",
+      "source": "arxiv",
+      "title": "Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation",
+      "abstract": "Post-training large language models (LLMs) without real-world interaction feedback or human-labeled supervision remains challenging, particularly in specialized domains where expert annotations are costly to obtain. Recent annotation-free self-evolution methods address this by using the model's own outputs as supervision signals, constructing a teacher via additional context and aggregating predictions across multiple rollouts through majority voting to produce pseudo-labels. However, these approaches are not without drawbacks: SFT- and GRPO-based variants suffer out-of-domain performance degradation, while reward-based on-policy RL inflates calibration error. In this paper, we propose Neuron On-Policy Self-Distillation (Neuron-OPSD), a data-centric framework for annotation-free self-distillation that leverages internal neuron activations to guide both training-data selection and teacher context construction. The model is then trained via on-policy distillation from the teacher distribution, requiring no ground-truth labels at any stage. Across specialized-domain benchmarks, Neuron-OPSD improves in-domain task performance while preserving cross-domain generalization and mitigating calibration collapse over prior annotation-free baselines. This framework is particularly relevant to settings where online interaction or external supervision is costly or infeasible, and is conceptually distinct from offline RL approaches that rely on logged, reward-labeled trajectories.",
+      "authors": [
+        "Zhuowei Chen",
+        "Xiang Lorraine Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-02T17:27:24+00:00",
+      "link": "https://arxiv.org/pdf/2607.02460v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "annotation-free self-distillation with on-policy RL concepts",
+      "llm_evidence_cn": "无标注自蒸馏方法，涉及在线强化学习概念",
+      "llm_evidence": "无标注自蒸馏方法，涉及在线强化学习概念",
+      "canonical_evidence": "无标注自蒸馏方法，涉及在线强化学习概念",
+      "llm_tldr_en": "Proposes Neuron-OPSD, a data-centric framework for annotation-free LLM self-distillation that addresses degradation in SFT/GRPO variants.",
+      "llm_tldr_cn": "该论文针对无标注自演化方法在领域外性能下降和校准误差膨胀的问题，提出神经元在线自蒸馏（Neuron-OPSD）框架。通过数据中心的策略选择，在避免人工标注的同时保持模型泛化能力。该方法结合了在线策略思想，为LLM的后训练提供了新方向。",
+      "llm_tldr": "该论文针对无标注自演化方法在领域外性能下降和校准误差膨胀的问题，提出神经元在线自蒸馏（Neuron-OPSD）框架。通过数据中心的策略选择，在避免人工标注的同时保持模型泛化能力。该方法结合了在线策略思想，为LLM的后训练提供了新方向。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
