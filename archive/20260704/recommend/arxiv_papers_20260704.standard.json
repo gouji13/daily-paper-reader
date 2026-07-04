@@ -1,0 +1,180 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-04T21:11:27.229944+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2606.29892v1",
+      "source": "arxiv",
+      "title": "Trust Your Instincts: Confidence-Driven Test-Time RL for Vision-Language-Action Models",
+      "abstract": "Reinforcement learning (RL) has become indispensable for pushing Vision-Language-Action Models (VLAs) beyond static imitation learning. However, existing RL methods typically require external environmental feedback, relying on predefined success signals to guide policy updates. In this work, we show that VLA models possess useful internal evaluative capabilities: in discrete-action VLAs, trajectories with higher generation confidence are significantly more likely to succeed. Based on this observation, we introduce T^2VLA (Test-time VLA), an architecture-agnostic test-time RL framework that enables VLA models to achieve self-bootstrapping policy improvement. Instead of relying on external rewards, T^2VLA leverages trajectory-level similarity to high-confidence expert demonstrations as an intrinsic reward signal. In addition, we propose a Confidence-Driven Dual Expert Bootstrapping mechanism, which dynamically balances a Local Pseudo-Expert for exploration and a Global Expert Pool for training stability. Extensive experiments on the LIBERO and RoboTwin benchmarks show that T^2VLA consistently outperforms supervised baselines and approaches oracle RL performance with ground-truth rewards, achieving effective improvement without external reward feedback. Furthermore, T^2VLA adapts to distinct VLA paradigms, including both OpenVLA-OFT and the pi series.",
+      "authors": [
+        "Siyao Chen",
+        "Jiakang Yuan",
+        "Jiaxin Wang",
+        "Tao Chen"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-06-29T07:31:41+00:00",
+      "link": "https://arxiv.org/pdf/2606.29892v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "test-time reinforcement learning for vision-language-action models using internal confidence as reward",
+      "llm_evidence_cn": "利用内部置信度作为奖励信号，实现视觉-语言-动作模型的测试时强化学习",
+      "llm_evidence": "利用内部置信度作为奖励信号，实现视觉-语言-动作模型的测试时强化学习",
+      "canonical_evidence": "利用内部置信度作为奖励信号，实现视觉-语言-动作模型的测试时强化学习",
+      "llm_tldr_en": "T2VLA uses trajectory-level similarity and generation confidence to perform test-time RL without external rewards, improving VLA policies.",
+      "llm_tldr_cn": "现有强化学习方法在视觉-语言-动作模型上通常依赖外部环境反馈。本文发现离散动作VLA中高置信度轨迹更易成功，据此提出T2VLA框架，利用轨迹级相似性和生成置信度作为自举信号，实现无需外部奖励的测试时策略改进。实验表明该方法能有效提升VLA任务成功率。",
+      "llm_tldr": "现有强化学习方法在视觉-语言-动作模型上通常依赖外部环境反馈。本文发现离散动作VLA中高置信度轨迹更易成功，据此提出T2VLA框架，利用轨迹级相似性和生成置信度作为自举信号，实现无需外部奖励的测试时策略改进。实验表明该方法能有效提升VLA任务成功率。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.01763v1",
+      "source": "arxiv",
+      "title": "Denser $\\neq$ Better: Limits of On-Policy Self-Distillation for Continual Post-Training",
+      "abstract": "Continual post-training enables foundation models to acquire new knowledge while preserving existing capabilities. Recent work suggests that on-policy learning can mitigate forgetting, with on-policy self-distillation emerging as a particularly attractive approach. In this work, we revisit this optimistic view through self-distillation policy optimization (SDPO). Our experiments show that SDPO can accelerate in-domain specialization when teacher signals are stable and well aligned, but it struggles to generalize to out-of-distribution scenarios. In continual post-training, SDPO exhibits stronger forgetting and can even collapse, whereas on-policy reinforcement learning methods such as GRPO adapt more conservatively and better preserve prior capabilities. Further analyses reveal that denser self-distillation induces larger drift in both parameter space and response space, and can amplify high-frequency formatting artifacts through a self-reinforcing teacher--student loop. These findings suggest that on-policy data alone is insufficient for continual learning. Dense self-distillation can accelerate specialization when teacher targets are stable and token-level supervision is reliable, but it should not be treated as a default stabilizer for continual post-training. Our code is available at https://github.com/Moenupa/SDPO-CL.",
+      "authors": [
+        "Meng Wang",
+        "Haohan Zhao",
+        "Wenzhuo Liu",
+        "Lu Yang",
+        "Geng Liu",
+        "Haiyang Guo",
+        "Guo-Sen Xie",
+        "Gaofeng Meng",
+        "Hongbin Liu",
+        "Fei Zhu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-02T06:24:30+00:00",
+      "link": "https://arxiv.org/pdf/2607.01763v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "studies limits of on-policy self-distillation and compares with on-policy RL methods like GRPO",
+      "llm_evidence_cn": "研究在线自蒸馏的局限性，并与GRPO等在线强化学习方法比较",
+      "llm_evidence": "研究在线自蒸馏的局限性，并与GRPO等在线强化学习方法比较",
+      "canonical_evidence": "研究在线自蒸馏的局限性，并与GRPO等在线强化学习方法比较",
+      "llm_tldr_en": "This paper revisits on-policy self-distillation for continual post-training, finding it can accelerate in-domain specialization but struggles with generalization and may collapse, while on-policy RL like GRPO is more robust.",
+      "llm_tldr_cn": "该论文重新审视了持续后训练中的在线自蒸馏方法，发现虽然在线自蒸馏能加速领域内特化，但在分布外场景下表现不佳甚至崩溃，而GRPO等在线强化学习方法则更稳健地保持了性能。作者通过SDPO实验揭示了在线自蒸馏的局限性，强调在持续学习场景下应谨慎使用。",
+      "llm_tldr": "该论文重新审视了持续后训练中的在线自蒸馏方法，发现虽然在线自蒸馏能加速领域内特化，但在分布外场景下表现不佳甚至崩溃，而GRPO等在线强化学习方法则更稳健地保持了性能。作者通过SDPO实验揭示了在线自蒸馏的局限性，强调在持续学习场景下应谨慎使用。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.29315v1",
+      "source": "arxiv",
+      "title": "Hierarchical Experimentalist Agents",
+      "abstract": "Large language models (LLMs) are increasingly used to take actions in the real world and support human decision-making, yet most agents rely on parametric knowledge, fixed post-training data, retrieval, or search. This paradigm breaks down in novel domains and for sophisticated queries that cannot be answered from prior knowledge alone. Knowing the laws of physics, for instance, does not by itself enable LLMs to answer queries or complete long-horizon tasks in a complex physical system. To address this, we introduce Hierarchical Experimentalist Agents (HExA), an in-context self-improvement framework to learn from active experimentation. HExA iteratively designs and refines query-relevant experiments, learns a reusable library of composable skills from experience, and integrates experimental evidence to answer queries or take actions. HExA is training-free, compatible with any black-box model, and does not require external supervision, oracles, or offline data. To evaluate active experimentation, we introduce Interphyre, a tool-calling benchmark built on the PHYRE 2D procedural physics environment, where agents propose interventions and test hypotheses through simulation APIs. Experiments show that current LLM agents struggle in these settings, especially on the hardest levels of Interphyre. Claude Sonnet 4.6 achieves only 2% success, while HExA improves the same model to up to 77% success. HExA also improves open-weight models and outperforms agentic baselines such as ReAct and Reflexion. Moreover, using only skills learned from easier levels and transferred without active experimentation, HExA achieves 44% success, demonstrating the reusability and generalization of its learned skills. Overall, HExA shows that learning through active experimentation can help agents discover useful knowledge, acquire reusable skills, and make efficient progress on novel long-horizon tasks.",
+      "authors": [
+        "Abhranil Chandra",
+        "Sankaran Vaidyanathan",
+        "Utsav Dhanuka",
+        "Varun Gandhi",
+        "Scott Niekum"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-06-28T10:21:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.29315v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "introduces Hierarchical Experimentalist Agents for agentic self-improvement via active experimentation",
+      "llm_evidence_cn": "提出分层实验智能体，通过主动实验进行智能体自改进",
+      "llm_evidence": "提出分层实验智能体，通过主动实验进行智能体自改进",
+      "canonical_evidence": "提出分层实验智能体，通过主动实验进行智能体自改进",
+      "llm_tldr_en": "HExA uses in-context learning and active experimentation to improve agentic capabilities, learning reusable skills without parametric updates.",
+      "llm_tldr_cn": "该论文提出了分层实验智能体（HExA）框架，通过主动实验设计、技能库构建和可组合执行，使大语言模型能够在缺乏先验知识的新领域中进行自改进。与依赖固定参数或检索的智能体不同，HExA通过迭代实验学习可复用技能，为解决复杂查询和长时间任务提供了新范式。",
+      "llm_tldr": "该论文提出了分层实验智能体（HExA）框架，通过主动实验设计、技能库构建和可组合执行，使大语言模型能够在缺乏先验知识的新领域中进行自改进。与依赖固定参数或检索的智能体不同，HExA通过迭代实验学习可复用技能，为解决复杂查询和长时间任务提供了新范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.02390v1",
+      "source": "arxiv",
+      "title": "DecompRL: Solving Harder Problems by Learning Modular Code Generation",
+      "abstract": "How can Large Language Models (LLMs) solve problems they currently cannot? Repeated sampling scales test-time compute but GPU cost grows linearly with attempts, while reinforcement learning (RL) with verifiable rewards improves single-attempt accuracy at the expense of sample diversity. Both strategies ultimately fail when the base policy has near-zero probability of producing a correct solution: no amount of sampling or gradient signal can overcome a search space that is simply too large. We take a different approach: rather than sampling harder, we make the task easier by decomposing problems into smaller, independently solvable sub-functions whose implementations can be recombined. Since off-the-shelf models are not trained for this modular generation, we introduce DecompRL, an RL algorithm that explicitly learns to decompose and implement hierarchical code structures. Recombining $k$ implementations of $n$ modules yields up to $k^{n}$ candidate solutions, shifting the bottleneck from GPU inference to cheap CPU evaluation and cutting GPU token cost by $\\sim$50$\\times$. On LiveCodeBench and CodeContests (Qwen~2.5~7B, Code World Model~32B), DecompRL outperforms standard and diversity-optimized RL baselines beyond $10^5$ tokens per problem, solving problems that standard generation cannot reach.",
+      "authors": [
+        "Juliette Decugis",
+        "Fabian Gloeckle",
+        "Francis Bach",
+        "Taco Cohen",
+        "Gabriel Synnaeve"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-02T16:25:10+00:00",
+      "link": "https://arxiv.org/pdf/2607.02390v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "uses reinforcement learning to improve LLM code generation through problem decomposition",
+      "llm_evidence_cn": "使用强化学习通过问题分解改进大语言模型代码生成",
+      "llm_evidence": "使用强化学习通过问题分解改进大语言模型代码生成",
+      "canonical_evidence": "使用强化学习通过问题分解改进大语言模型代码生成",
+      "llm_tldr_en": "DecompRL trains LLMs to generate modular code via RL with a reward for successful decomposition, enabling solving harder problems by reusing sub-functions.",
+      "llm_tldr_cn": "该论文提出DecompRL，通过强化学习训练大语言模型生成模块化代码，将难问题分解为可独立求解的子函数并复用实现。这种方法克服了单纯增加采样或单次推理精度的局限，在基策略几乎无法生成正确答案时通过降低任务难度提升性能，为强化学习应用于大语言模型复杂推理任务提供了新视角。",
+      "llm_tldr": "该论文提出DecompRL，通过强化学习训练大语言模型生成模块化代码，将难问题分解为可独立求解的子函数并复用实现。这种方法克服了单纯增加采样或单次推理精度的局限，在基策略几乎无法生成正确答案时通过降低任务难度提升性能，为强化学习应用于大语言模型复杂推理任务提供了新视角。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

@@ -6,49 +6,32 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-03
-- 运行时间：2026-07-03 21:47:32 UTC
+- 最新运行日期：2026-07-04
+- 运行时间：2026-07-04 21:17:42 UTC
 - 运行状态：成功
-- 本次总论文数：9
-- 精读区：6
+- 本次总论文数：4
+- 精读区：1
 - 速读区：3
 
 ### 今日简报（AI）
-今日成功筛选9篇论文，其中精读6篇、速读3篇。  
-值得重点关注的两项研究：单层Transformer训练可媲美全参数RL，程序性记忆蒸馏助力模型自我改进。  
-建议优先精读两篇9分论文，探索高效训练与自提升机制。
-- 详情：[/202607/03/README](/202607/03/README)
+今日聚焦置信度驱动的测试时强化学习，并探讨自蒸馏的密度陷阱。值得关注的方向：精读论文揭示了测试时RL如何增强视觉-语言-动作模型的表现，速读论文则提醒在线自蒸馏并非越密越好。建议普通读者优先精读这篇8分论文，理解“信任本能”对模型自适应能力的启发。
+- 详情：[/202607/04/README](/202607/04/README)
 
 ### 精读区论文标签
-1. [Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training](/202607/03/2607.01232v2-is-one-layer-enough-training-a-single-transformer-layer-can-match-full-parameter-rl-training)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：发现训练单层Transformer即可获得大模型强化学习后训练的大部分收益
-2. [Procedural Memory Distillation: Online Reflection for Self-Improving Language Models](/202607/03/2607.01480v1-procedural-memory-distillation-online-reflection-for-self-improving-language-models)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：在可验证奖励强化学习中在线蒸馏跨回合信号用于自改进语言模型
-3. [Scaling with Confidence: Calibrating Confidence of LLMs for Adaptive Test Time Scaling](/202607/03/2607.01612v1-scaling-with-confidence-calibrating-confidence-of-llms-for-adaptive-test-time-scaling)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：面向LLM置信度校准的新型强化学习算法C3RL
-4. [DemoPSD: Disagreement-Modulated Policy Self-Distillation](/202607/03/2607.02502v1-demopsd-disagreement-modulated-policy-self-distillation)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：大语言模型推理的在线策略自蒸馏
-5. [DiPS: Dialogue Policy Selection for High-Stakes Persuasion Agents](/202607/03/2607.01557v1-dips-dialogue-policy-selection-for-high-stakes-persuasion-agents)  
+1. [Trust Your Instincts: Confidence-Driven Test-Time RL for Vision-Language-Action Models](/202607/04/2606.29892v1-trust-your-instincts-confidence-driven-test-time-rl-for-vision-language-action-models)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：使用Q学习为LLM选择对话策略的智能体强化学习方法
-6. [Distributionally Robust Listwise Preference Optimization](/202607/03/2607.01715v1-distributionally-robust-listwise-preference-optimization)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：列表偏好优化用于语言模型对齐，属于RLHF范畴
+   evidence：利用内部置信度作为奖励信号，实现视觉-语言-动作模型的测试时强化学习
 
 ### 速读区论文标签
-1. [Evidence-State Rewards for Long-Context Reasoning](/202607/03/2607.02073v1-evidence-state-rewards-for-long-context-reasoning)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：利用GRPO进行大模型长上下文推理的强化学习方法
-2. [Multi-Objective Exploration and Preference Optimization via Mutual Information](/202607/03/2607.01392v1-multi-objective-exploration-and-preference-optimization-via-mutual-information)  
+1. [Denser $\neq$ Better: Limits of On-Policy Self-Distillation for Continual Post-Training](/202607/04/2607.01763v1-denser-neq-better-limits-of-on-policy-self-distillation-for-continual-post-training)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：多目标强化学习对齐大语言模型
-3. [Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation](/202607/03/2607.02460v1-neuron-aware-data-selection-for-annotation-free-llm-self-distillation)  
+   evidence：研究在线自蒸馏的局限性，并与GRPO等在线强化学习方法比较
+2. [Hierarchical Experimentalist Agents](/202607/04/2606.29315v1-hierarchical-experimentalist-agents)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：无标注自蒸馏方法，涉及在线强化学习概念
+   evidence：提出分层实验智能体，通过主动实验进行智能体自改进
+3. [DecompRL: Solving Harder Problems by Learning Modular Code Generation](/202607/04/2607.02390v1-decomprl-solving-harder-problems-by-learning-modular-code-generation)  
+   标签：评分：6.0/10、query:agentic-rl
+   evidence：使用强化学习通过问题分解改进大语言模型代码生成
 
 
 <div class="dpr-home-promo-card">
