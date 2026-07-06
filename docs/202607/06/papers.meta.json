@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-06",
+  "date": "2026-07-06",
+  "generated_at": "2026-07-06T21:25:32",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/06/2607.01830v1-many-voices-one-reward-multi-role-rubric-generation-for-llm-judging-and-reward-modeling",
+      "section": "quick",
+      "title_en": "Many Voices, One Reward: Multi-Role Rubric Generation for LLM Judging and Reward Modeling",
+      "authors": "Dazhi Fu, Jiuding Yang, Yiwen Guo, Jicong Fan",
+      "date": "2026-07-02",
+      "pdf": "https://arxiv.org/pdf/2607.01830v1",
+      "score": "7.0",
+      "evidence": "大模型奖励建模",
+      "tldr": "针对基于规则的评价者（rubric-based judges）在开放任务中存在维度盲点的问题，即单一通用评估者可能忽略人类偏好的重要维度，本文提出了一种无需训练和参考的多角色规则生成框架（MRRG）。该方法通过从多个互补角色中引出评估标准，并将其整合为可审计的基于规则的评分器，该评分器既可用于验证成对偏好，也可为GRPO风格的可验证奖励强化学习提供奖励信号。在偏好验证基准上，MRRG在多个骨干模型上持续优于单角色基线，并且RLVR实验表明MRRG能提供更强的奖励信号以改进开放生成。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Reliable reward and preference signals are critical for evaluating and optimizing large language models on open-ended tasks. Rubric-based judges offer a transparent way to decompose such judgments into explicit evaluation criteria, but existing annotation-free rubric generators typically rely on a single generic evaluator. As a result, they may overlook important dimensions of human preference, a failure mode we term dimensional blind spots. To address this limitation, we propose Multi-Role Rubric Generation (MRRG), a training-free and reference-free framework that elicits evaluation criteria from multiple complementary roles and consolidates them into an auditable rubric-based scorer. This scorer can be used both to validate pairwise preferences and to provide rewards for GRPO-style Reinforcement Learning with Verifiable Rewards (RLVR). Experiments on preference validation benchmarks show that MRRG consistently outperforms single-role rubric generation baselines across multiple backbone models. Further RLVR experiments demonstrate that MRRG yields a stronger reward signal for improving open-ended generation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/06/2606.30616v1-scaling-the-horizon-not-the-parameters-reaching-trillion-parameter-performance-with-a-35b-agent",
+      "section": "quick",
+      "title_en": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
+      "authors": "Lei Bai, Zongsheng Cao, Yang Chen, Zhiyao Cui, Shangheng Du, Yue Fan, Shiyang Feng, Zijie Guo, Haonan He, Liang He, Xiaohan He, Shuyue Hu, Yusong Hu, Songtao Huang, Yichen Jiang, Hao Li, Xin Li, Dahua Lin, Weihao Lin, Fenghua Ling, Dongrui Liu, Zhuo Liu, Runmin Ma, Chunjiang Mu, Haoyang Peng, Tianshuo Peng, Jinxin Shi, Luohe Shi, Boyuan Sun, Zelin Tan, Shengji Tang, Qianyi Wang, Yiming Wu, Yi Xie, Xiangchao Yan, Jingqi Ye, Peng Ye, Fangchen Yu, Jiakang Yuan, Bihao Zhan, Bo Zhang, Chen Zhang, Shufei Zhang, Shuaiyu Zhang, Wenlong Zhang, Yiqun Zhang, Junpeng Zhao, Zhijie Zhong, Bowen Zhou, Yuhao Zhou",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.30616v1",
+      "score": "6.0",
+      "evidence": "通过多阶段训练（含教师模型和长程轨迹）构建智能体模型",
+      "tldr": "大型语言模型通过扩展参数规模提升性能，但成本高昂。本文提出通过扩展智能体交互时域（agent horizon）而非参数来提升性能，构建了35B参数的Agents-A1模型。采用长时域轨迹（平均45K token）和多教师域路由蒸馏训练，在多个长时任务基准上达到或超越万亿参数模型（如Kimi-K2.6、DeepSeek-V4-pro）的水平。为低资源场景下实现高性能长时智能体提供了可行路径。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities. To support this goal, we build a long-horizon knowledge-action infrastructure that connects external knowledge, actions, observations, and verifier outcomes, producing agentic trajectories with an average length of 45K tokens. Based on this, we train Agents-A1 with a three-stage recipe. First, we perform full-domain supervised fine-tuning to align the base model with broad agentic behaviors. Second, we train domain-level teacher models to capture specialized expertise in each domain. Third, we propose a multi-teacher domain-routed on-policy distillation with salient vocabulary alignment to improve knowledge transfer efficiency across different domains, unifying six heterogeneous domains into one deployable student model. Agents-A1 achieves strong and broad performance for long-horizon agent benchmarks. Compared with 1T-parameter model such as Kimi-K2.6 and DeepSeek-V4-pro, Agents-A1 achieves leading results on SEAL-0 (56.4), IFBench (80.6), HiPhO (46.4), FrontierScience-Olympiad (79.0), and MolBench-Bind (56.8), and remains highly competitive on SciCode (44.3), HLE (47.6) and BrowseComp (75.5). We hope this work provides the community with a practical path for scaling the horizon using a 35B agent that can reach or match the performance of 1T models on long-horizon tasks.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/06/2607.00483v2-vlm-ar3l-vision-language-models-for-absolute-and-relative-rewards-in-reinforcement-learning",
+      "section": "quick",
+      "title_en": "VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning",
+      "authors": "Kuan-Chen Chen, Winston Chen, Wei-Fang Sun, Min-Chun Hu",
+      "date": "2026-07-01",
+      "pdf": "https://arxiv.org/pdf/2607.00483v2",
+      "score": "6.0",
+      "evidence": "利用视觉-语言模型设计奖励函数，可迁移至大模型强化学习",
+      "tldr": "强化学习中奖励函数设计在开放环境下尤为困难。VLM-AR3L利用视觉语言模型，通过偏好标签同时学习绝对奖励（单状态打分）和相对奖励（连续状态比较），两者集成提升稳定性和鲁棒性。在Minecraft等复杂任务上，该方法显著优于以往VLM奖励学习方法，为开放环境奖励自动化提供了有效路径。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Designing effective reward functions remains a major challenge in reinforcement learning (RL), particularly in open-ended environments where task goals are abstract and difficult to quantify. In this work, we present VLM-AR3L, a framework that leverages Vision-Language Models (VLMs) to provide both absolute and relative rewards for RL. VLM-AR3L interprets an agent's visual observations in the context of a natural language task goal, and learns both absolute and relative rewards from VLM-generated preference labels. The absolute reward model predicts scalar evaluations for individual states, while the relative reward model compares consecutive observations to infer progress or regression toward the task goal. Their integration combines the stability of state-based evaluation with the robustness of comparative supervision. We evaluate VLM-AR3L across benchmarks spanning classic control, manipulation, and open-world embodied tasks, with a particular focus on Minecraft given its visual complexity and long-horizon decision-making requirements. Experimental results show that VLM-AR3L consistently outperforms prior VLM-based reward learning methods.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/06/2607.01721v1-core-combined-rewards-with-vision-language-model-feedback-for-preference-aligned-reinforcement-learning",
+      "section": "quick",
+      "title_en": "CoRe: Combined Rewards with Vision-Language Model Feedback for Preference-Aligned Reinforcement Learning",
+      "authors": "Hexian Ni, Tao Lu, Yinghao Cai",
+      "date": "2026-07-02",
+      "pdf": "https://arxiv.org/pdf/2607.01721v1",
+      "score": "6.0",
+      "evidence": "结合视觉语言反馈的强化学习用于智能体训练",
+      "tldr": "强化学习奖励设计面临手工指定难、偏好学习效率低的问题。CoRe将奖励分解为形式奖励和残差奖励，利用视觉语言模型自动设计形式奖励并从视频级偏好中学习残差奖励，无需人类参与。在10个模拟和5个真实机器人操作任务中，CoRe在策略学习效果和效率上均优于现有方法。该方法通过融合任务知识和隐式偏好实现了高效可靠的奖励构建。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Reward design remains a central challenge in reinforcement learning (RL). Hand-crafted rewards are often difficult to specify and may lead to suboptimal policies, while learned rewards from preferences can suffer from inefficiency and unstable training. Inspired by the dual nature of human learning explored in cognitive science, we decompose rewards into two complementary components: Formal Rewards (FR), explicitly designed based on task knowledge, and Residual Rewards (RR), learned from observations to capture implicit and nuanced preferences. Based on this decomposition, we propose CoRe, a hybrid framework that integrates FR and RR with vision-language models (VLMs) feedback to achieve preference-aligned policies without human involvement. Our contributions are twofold: (1) We propose a Formal Reward Module (FRM) that leverages VLMs to iteratively design and optimize FR based on task knowledge and preference feedback, enabling the continual improvement of policy during training; (2) We introduce a Residual Reward Module (RRM) that learns RR from video-level preference by employing VLMs to generate preference labels and capturing nuanced rewards that complement FR, ensuring alignment with human intent. Through the synergy of FRM and RRM, CoRe enables the automatic construction of reliable rewards that are efficient and preference-aligned. Extensive experiments demonstrate that CoRe outperforms existing approaches in terms of policy learning effectiveness and efficiency on ten robotic manipulation tasks in simulation and five real-worlds. Videos can be found on our project website: https://core-2026.github.io/",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
