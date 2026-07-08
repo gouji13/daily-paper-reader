@@ -1,60 +1,12 @@
 {
-  "generated_at": "2026-07-07T21:39:08.242661+00:00",
-  "updated_date": "20260707",
+  "generated_at": "2026-07-08T20:57:26.258205+00:00",
+  "updated_date": "20260708",
   "carryover_days": 9,
   "tag_states": {
     "agentic-rl": {
-      "updated_date": "20260707",
+      "updated_date": "20260708",
       "carryover_days": 9,
-      "items": [
-        {
-          "id": "2607.04854v1",
-          "source": "arxiv",
-          "title": "CARL: Constraint-Aware Reinforcement Learning for Planning with LLMs",
-          "abstract": "Despite their strong reasoning capabilities and extensive world knowledge, Large Language Models (LLMs) frequently generate plans that violate task constraints, undermining their reliability in real-world applications. This deficiency arises from a lack of systematic mechanisms to incorporate constraint information during the generation process. While existing approaches attempt to mitigate this by relying on external tools or task decomposition, they fail to enhance the model's intrinsic constraint awareness. To address this, we propose Constraint-Aware Reinforcement Learning (CARL), a novel RL framework designed to strengthen LLMs' intrinsic focus on constraints. CARL introduces a constraint-aware reward by comparing the model's output distributions under constrained and unconstrained inputs, encouraging constraint focus and penalizing neglect. Compatible with various RL frameworks and requiring no external solvers or top models, CARL enables scalable, end-to-end constraint-aware planning. Extensive experiments on BlocksWorld, TravelPlanner, and T-Eval demonstrate that CARL significantly outperforms standard Reinforcement Fine-Tuning (RFT) baselines and state-of-the-art reasoning models, exhibiting a markedly increased focus on constraints.",
-          "authors": [
-            "Qiuyi Qi",
-            "Jinjian Zhang",
-            "Mutian Bao",
-            "Tian Liang",
-            "Guocong Li",
-            "Dongnan Liu",
-            "Wei Zhou",
-            "Jie Liu",
-            "Ming Kong",
-            "Linjian Mo",
-            "Feng Zhang",
-            "Qiang Zhu"
-          ],
-          "primary_category": "cs.AI",
-          "categories": [
-            "cs.AI"
-          ],
-          "published": "2026-07-06T09:29:57+00:00",
-          "link": "https://arxiv.org/pdf/2607.04854v1",
-          "tags": [
-            "keyword:agentic-rl",
-            "query:agentic-rl"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "RL framework for constraint-aware planning in LLMs",
-          "llm_evidence_cn": "面向LLM规划的约束感知强化学习框架",
-          "llm_evidence": "面向LLM规划的约束感知强化学习框架",
-          "canonical_evidence": "面向LLM规划的约束感知强化学习框架",
-          "llm_tldr_en": "CARL introduces constraint-aware rewards by comparing output distributions, strengthening LLMs' intrinsic constraint focus for reliable planning.",
-          "llm_tldr_cn": "该论文提出CARL，一种约束感知强化学习框架，旨在增强LLM对约束的内生关注。现有方法依赖外部工具或任务分解，未能提升模型本身的约束意识。CARL通过对比模型在有无约束条件下的输出分布构建约束感知奖励，在规划任务中显著降低约束违反率，提升可靠性。",
-          "llm_tldr": "该论文提出CARL，一种约束感知强化学习框架，旨在增强LLM对约束的内生关注。现有方法依赖外部工具或任务分解，未能提升模型本身的约束意识。CARL通过对比模型在有无约束条件下的输出分布构建约束感知奖励，在规划任务中显著降低约束违反率，提升可靠性。",
-          "llm_tags": [
-            "query:agentic-rl"
-          ],
-          "matched_query_tag": "query:agentic-rl",
-          "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
-          "matched_requirement_id": "req-8",
-          "selection_source": "carryover_cache",
-          "paper_id": "2607.04854v1",
-          "carry_days": 1
-        }
-      ]
+      "items": []
     }
   }
 }
