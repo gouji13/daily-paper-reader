@@ -1,0 +1,270 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-10T20:52:40.262473+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2607.02440v1",
+      "source": "arxiv",
+      "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+      "abstract": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting in which a harness-model agent repeatedly edits an executable policy system under a fixed interaction budget. We instantiate this setting in EvoPolicyGym, a benchmark built from compact interactive RL environments that evaluates how agents iteratively improve explored policies. On the EvoPolicyGym suite, GPT-5.5 achieves the strongest aggregate rank score and top-two performance on all 16 environments. Beyond leaderboard results, EvoPolicyGym also provides trajectory-level diagnostics that distinguish how agents allocate budget, convert feedback into parametric tuning. These analyses show that strong autonomous policy evolution depends not only on isolated task wins, but on discovering task-appropriate mechanisms and refining policies under bounded feedback.",
+      "authors": [
+        "Zhilin Wang",
+        "Han Song",
+        "Runzhe Zhan",
+        "Jusen Du",
+        "Jiacheng Chen",
+        "Tianle Li",
+        "Qingyu Yin",
+        "Yulun Wu",
+        "Zhennan Shen",
+        "Tong Zhu",
+        "Yanshu Li",
+        "Guanjie Chen",
+        "Derek F. Wong",
+        "Yafu Li",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-02T17:10:13+00:00",
+      "link": "https://arxiv.org/pdf/2607.02440v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "evaluates autonomous policy evolution using RL environments with LLM agents",
+      "llm_evidence_cn": "使用LLM代理在RL环境中评估自主策略进化",
+      "llm_evidence": "使用LLM代理在RL环境中评估自主策略进化",
+      "canonical_evidence": "使用LLM代理在RL环境中评估自主策略进化",
+      "llm_tldr_en": "EvoPolicyGym introduces a benchmark for evaluating how LLM agents autonomously improve executable policies through iterative feedback in interactive RL environments. It provides a controlled setting for autonomous policy evolution.",
+      "llm_tldr_cn": "本文提出了自主策略进化评估框架EvoPolicyGym，在紧凑交互式RL环境中衡量LLM代理通过固定交互预算反复编辑策略系统的能力。实验表明GPT-5.5在全部16个环境中获得最强聚合排名。该工作为评估和提升LLM代理的自主策略学习提供了标准化基准。",
+      "llm_tldr": "本文提出了自主策略进化评估框架EvoPolicyGym，在紧凑交互式RL环境中衡量LLM代理通过固定交互预算反复编辑策略系统的能力。实验表明GPT-5.5在全部16个环境中获得最强聚合排名。该工作为评估和提升LLM代理的自主策略学习提供了标准化基准。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.07976v1",
+      "source": "arxiv",
+      "title": "When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning",
+      "abstract": "Reinforcement learning (RL) has achieved remarkable success in enhancing the reasoning capabilities of large language models (LLMs). However, widely used critic-free RL methods rely on uniform credit assignment, broadcasting the same advantage to all tokens regardless of their differences. We identify a critical failure mode of this design, which we refer to as Positive-Credit Contamination: low-probability tail tokens that are contextually erroneous receive identical positive credit to plausible ones within the same trajectory, resulting in the indiscriminate reinforcement of flawed reasoning behavior. To mitigate this issue, we propose Tail-Aware Credit calibratiOn (TACO), a method that calibrates uniform credit assignment to suppress undesirable positive updates. TACO first computes a tail-risk score that incorporates the local generation context to assess each token's risk of falling into the unreliable tail, distinguishing unexpected rarity from uncertainty-driven exploration. TACO then uses this score to tune positive credit for risky tokens without removing their gradients entirely, so that recurring useful rare patterns can accumulate reinforcement while incidental noise is progressively dampened. Experimental results across three LLMs and eight benchmarks show that TACO consistently outperforms GRPO-style baselines. Notably, TACO improves training stability, supporting sustained performance gains in long-horizon RL. The source code is available at: https://github.com/xiuyilou/TACO.",
+      "authors": [
+        "Xiuyi Lou",
+        "Zicheng Xu",
+        "Yu-Neng Chuang",
+        "Hoang Anh Duy Le",
+        "Zhaozhuo Xu",
+        "Guanchu Wang",
+        "Vladimir Braverman"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-08T23:00:54+00:00",
+      "link": "https://arxiv.org/pdf/2607.07976v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "proposes tail-aware credit calibration to fix positive-credit contamination in LLM RL",
+      "llm_evidence_cn": "提出尾感知信用校准方法修复大语言模型强化学习中的正信用污染",
+      "llm_evidence": "提出尾感知信用校准方法修复大语言模型强化学习中的正信用污染",
+      "canonical_evidence": "提出尾感知信用校准方法修复大语言模型强化学习中的正信用污染",
+      "llm_tldr_en": "Identifies Positive-Credit Contamination in critic-free LLM RL and proposes TACO to calibrate credit assignment for tail tokens, improving reasoning.",
+      "llm_tldr_cn": "本文发现无评论家强化学习中的均匀信用分配会导致低概率尾词元错误获得正信用，污染推理行为。提出尾感知信用校准（TACO）方法，通过校准信用分配减轻此问题，从而提升推理质量。",
+      "llm_tldr": "本文发现无评论家强化学习中的均匀信用分配会导致低概率尾词元错误获得正信用，污染推理行为。提出尾感知信用校准（TACO）方法，通过校准信用分配减轻此问题，从而提升推理质量。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.04574v1",
+      "source": "arxiv",
+      "title": "A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training",
+      "abstract": "For LLM agents, supervised fine-tuning is not only about teacher labels' quality, but also about which interaction contexts those labels condition on. Pure behavioral cloning uses full teacher demonstrations, creating a mismatch between teacher-induced contexts seen in training and student-induced contexts encountered at test time. Recent work addresses this mismatch by querying a teacher at contexts reached by the student, often with increasingly elaborate filtering of the teacher's continuations. We instead frame on-policy data construction as a budget-allocation problem: under matched supervision resources, should teacher output be spent on more start-to-finish demos, longer continuations, outcome filtering, or broader coverage of learner-induced contexts? We formalize this design space through the rollout policy, switch-time distribution, continuation horizon, filtering rules, and two complementary costs: teacher inference generated before filtering and teacher supervision retained for SFT. Across HotpotQA, ALFWorld, and Terminal-Bench-Dev, bounded unfiltered teacher continuations at learner-induced contexts improve over pure behavioral cloning at matched budgets. On HotpotQA and ALFWorld, where we run the full comparison, few-step continuations match or exceed success-filtered and critical-context-filtered alternatives. Our findings suggest that a few teacher steps, placed at learner-induced contexts, can be a more cost-efficient supervision allocation than longer or more heavily curated teacher completions.",
+      "authors": [
+        "Junze Ye",
+        "Jiayi Cheng",
+        "Miao Lu",
+        "Michal Mankowski",
+        "Jose Blanchet",
+        "Mohsen Bayati"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-06T01:02:30+00:00",
+      "link": "https://arxiv.org/pdf/2607.04574v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "addresses on-policy data augmentation for LLM agent post-training with budget allocation",
+      "llm_evidence_cn": "通过预算分配优化大语言模型智能体后训练中的在线策略数据增强",
+      "llm_evidence": "通过预算分配优化大语言模型智能体后训练中的在线策略数据增强",
+      "canonical_evidence": "通过预算分配优化大语言模型智能体后训练中的在线策略数据增强",
+      "llm_tldr_en": "Frames on-policy data construction for LLM agents as a budget-allocation problem, optimizing how teacher output is spent across demos and continuations.",
+      "llm_tldr_cn": "针对智能体后训练中教师-学生上下文不匹配问题，本文将在线策略数据构建定义为预算分配问题，优化教师输出在完整演示、延续、过滤等选项上的分配。实验表明合理分配预算能有效提升性能。",
+      "llm_tldr": "针对智能体后训练中教师-学生上下文不匹配问题，本文将在线策略数据构建定义为预算分配问题，优化教师输出在完整演示、延续、过滤等选项上的分配。实验表明合理分配预算能有效提升性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.08572v1",
+      "source": "arxiv",
+      "title": "Switch-Reasoner: Learn When to Think in Multitask Mixtures via Reinforcement Learning",
+      "abstract": "Multimodal Large Language Models (MLLMs) often follow a fixed Think-then-Answer paradigm, which is inefficient in heterogeneous multitask settings because simple inputs may not require explicit reasoning while difficult ones can benefit substantially from it. Learning when to think is also unstable during post-training, where imbalanced rollouts can drive the model toward always-thinking or always-direct behavior. We propose Switch-Reasoner, a GRPO-based framework that learns to adaptively select reasoning modes for MLLMs. It treats thinking as a virtual tool invocation and allows the model to either answer directly or invoke explicit reasoning before answering. To stabilize this decision, we introduce a dual-level regulation mechanism that balances the overall use of Thinking Mode and Direct Mode while providing sample-level supervision based on the relative benefit of the two choices. Experiments on 11 multimodal tasks show that Switch-Reasoner reduces unnecessary reasoning while maintaining strong performance, achieving a better accuracy-efficiency trade-off.",
+      "authors": [
+        "Yiyang Fang",
+        "Pei Fu",
+        "Jinjie Li",
+        "Jian Liang",
+        "Wenke Huang",
+        "Ruijie Luo",
+        "Shaojie Zhang",
+        "Jian Luan",
+        "Yi R. Fung",
+        "Mang Ye"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-09T15:04:05+00:00",
+      "link": "https://arxiv.org/pdf/2607.08572v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "GRPO-based RL for learning reasoning mode selection in MLLMs",
+      "llm_evidence_cn": "基于GRPO的RL学习推理模式选择",
+      "llm_evidence": "基于GRPO的RL学习推理模式选择",
+      "canonical_evidence": "基于GRPO的RL学习推理模式选择",
+      "llm_tldr_en": "Switch-Reasoner uses GRPO to adaptively select between direct answering and explicit reasoning for multimodal LLMs, stabilizing the decision via dual-level regulation.",
+      "llm_tldr_cn": "多模态大语言模型（MLLM）固定思维链范式在异构任务中低效，本文提出Switch-Reasoner，将思考视为虚拟工具调用，通过GRPO框架自适应选择直接回答或显式推理。针对不平衡采样导致的行为崩溃，引入双层调控机制稳定决策。在混合任务集上，该方法在保持简单问题效率的同时显著提升复杂问题准确率，为LLM推理策略的强化学习优化提供了新思路。",
+      "llm_tldr": "多模态大语言模型（MLLM）固定思维链范式在异构任务中低效，本文提出Switch-Reasoner，将思考视为虚拟工具调用，通过GRPO框架自适应选择直接回答或显式推理。针对不平衡采样导致的行为崩溃，引入双层调控机制稳定决策。在混合任务集上，该方法在保持简单问题效率的同时显著提升复杂问题准确率，为LLM推理策略的强化学习优化提供了新思路。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.02686v1",
+      "source": "arxiv",
+      "title": "ASK in the Dark: Uncertainty-Gated LLM Assistance under Partial Observability",
+      "abstract": "Reinforcement learning agents operating under partial observability must act on incomplete information, making them natural candidates for guidance from small language models (SLMs) that carry broad reasoning priors. Yet integrating SLM guidance into this setting has proven difficult: across all test environments, vanilla uncertainty-gated approaches achieve an overwrite rate at or near zero, meaning the SLM almost never contributes an independent action. We trace this failure to the bare egocentric prompt, which provides insufficient context for genuine reasoning, and identify it as a context problem rather than a capacity problem. We propose ASK+, which supplies the SLM with trajectory-aware context (a partially revealed map, visited positions, and action history) and structured chain-of-thought reasoning, converting it from a passive redundancy check into a more informative consultant that occasionally corrects the policy. We further establish that the predictive entropy signal used for selective querying measures action uncertainty rather than state uncertainty and remains informative in POMDPs, making uncertainty-gated assistance viable beyond fully observable settings. The stateful prompt drives substantial gains: on DoorKey, where vanilla ASK matches PPO (both 89%), ASK+ reaches 93% success; on FourRooms, success climbs from 53% to 70%; on HigherLower, accuracy reaches 73.7%, matching the SLM-only upper bound. Across all environments, Qwen3.5-2B matches or exceeds Qwen3.5-4B, confirming that prompt design and selective gating dominate the impact of model scale, enabling guidance without large models.",
+      "authors": [
+        "Juarez Monteiro",
+        "Nathan Gavenski",
+        "Guilherme Lima",
+        "Francisco Galuppo",
+        "Odinaldo Rodrigues",
+        "Adriano Veloso"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-02T18:26:05+00:00",
+      "link": "https://arxiv.org/pdf/2607.02686v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "reinforcement learning agents with small language model assistance under partial observability",
+      "llm_evidence_cn": "部分可观测性下使用小语言模型辅助强化学习代理",
+      "llm_evidence": "部分可观测性下使用小语言模型辅助强化学习代理",
+      "canonical_evidence": "部分可观测性下使用小语言模型辅助强化学习代理",
+      "llm_tldr_en": "Proposes ASK+ to provide trajectory-aware context to SLMs for guiding RL agents under partial observability, overcoming the context problem in uncertainty-gated approaches.",
+      "llm_tldr_cn": "本文研究强化学习代理在部分可观测环境中的决策问题，发现现有不确定性门控方法因缺乏上下文而导致小语言模型几乎不介入。作者提出ASK+，通过向小语言模型提供轨迹感知上下文（部分地图、位置历史）以增强其推理能力，从而有效集成小语言模型的先验知识，提升强化学习决策性能。",
+      "llm_tldr": "本文研究强化学习代理在部分可观测环境中的决策问题，发现现有不确定性门控方法因缺乏上下文而导致小语言模型几乎不介入。作者提出ASK+，通过向小语言模型提供轨迹感知上下文（部分地图、位置历史）以增强其推理能力，从而有效集成小语言模型的先验知识，提升强化学习决策性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning applied to large language models",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.05752v1",
+      "source": "arxiv",
+      "title": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+      "abstract": "Search-augmented language models can use external evidence to compensate for limitations in parametric knowledge, but search is not uniformly beneficial: models may call search for questions they can already answer, or rely on noisy evidence when correction, clarification, or abstention would be more appropriate. We formulate this as an instance-level search-routing problem: deciding whether search is needed to improve task success relative to a no-search execution. To derive supervision, we compare no-search and forced-search outcomes for the same question and construct an oracle over NO SEARCH, SEARCH, and UNSOLVED based on task-specific success. Using this oracle as both an evaluation criterion and a learning signal, we train search-routing policies with supervised fine-tuning and preference optimization, improving routing macro-F1 on oracle-eligible examples from 0.7082 to 0.8235 for Gemma E2B and from 0.7053 to 0.8365 for Qwen3.5-4B. Further analysis shows that the learned policies reduce model-specific routing failures: Gemma primarily learns no-search restraint, while Qwen further reduces missed search; residual UNSOLVED cases reveal heterogeneous bottlenecks involving model capacity, retrieval budget, evidence use, and policy behavior.",
+      "authors": [
+        "Minho Kim"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-07T02:23:12+00:00",
+      "link": "https://arxiv.org/pdf/2607.05752v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "counterfactual supervision for training search-routing policies",
+      "llm_evidence_cn": "用于训练搜索路由策略的反事实监督",
+      "llm_evidence": "用于训练搜索路由策略的反事实监督",
+      "canonical_evidence": "用于训练搜索路由策略的反事实监督",
+      "llm_tldr_en": "This paper formulates a search-routing problem for LLMs, using counterfactual supervision to train policies that decide whether a search is needed, improving task success.",
+      "llm_tldr_cn": "本文提出LLM搜索路由问题，通过对比无搜索和强制搜索的结果构造反事实监督信号，训练策略决定是否需要搜索。该方法避免了不必要的搜索调用和噪声证据依赖。该工作为LLM的搜索增强提供了精细的策略学习方法。",
+      "llm_tldr": "本文提出LLM搜索路由问题，通过对比无搜索和强制搜索的结果构造反事实监督信号，训练策略决定是否需要搜索。该方法避免了不必要的搜索调用和噪声证据依赖。该工作为LLM的搜索增强提供了精细的策略学习方法。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

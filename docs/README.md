@@ -6,44 +6,38 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-09
-- 运行时间：2026-07-09 21:53:32 UTC
+- 最新运行日期：2026-07-10
+- 运行时间：2026-07-10 20:57:14 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：6
+- 本次总论文数：6
+- 精读区：4
 - 速读区：2
 
 ### 今日简报（AI）
-今日聚焦弱到强泛化蒸馏与可扩展智能体强化学习仿真环境构建。最值得看的两篇是《Weak-to-Strong Generalization via Direct On-Policy Distillation》和《Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning》，均获9.0高分。建议普通读者优先关注蒸馏技术与动态仿真环境设计，两者是提升强化学习泛化与可扩展性的关键方向。
-- 详情：[/202607/09/README](/202607/09/README)
+今日推荐6篇论文，精读4篇、速读2篇，聚焦AI策略演化与LLM强化学习。最值得关注《EvoPolicyGym》的自主策略演化环境评分9.0，以及《When Implausible Tokens Get Reinforced》的尾感知信用校准方法评分9.0。建议优先精读这两篇高分论文，深入了解自主策略演化和LLM奖励机制优化方向。
+- 详情：[/202607/10/README](/202607/10/README)
 
 ### 精读区论文标签
-1. [Weak-to-Strong Generalization via Direct On-Policy Distillation](/202607/09/2607.05394v2-weak-to-strong-generalization-via-direct-on-policy-distillation)  
+1. [EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments](/202607/10/2607.02440v1-evopolicygym-evaluating-autonomous-policy-evolution-in-interactive-environments)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：语言模型的直接在线策略蒸馏
-2. [Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning](/202607/09/2607.05773v1-beyond-static-evaluation-building-simulation-environments-for-scalable-agentic-reinforcement-learning)  
+   evidence：使用LLM代理在RL环境中评估自主策略进化
+2. [When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning](/202607/10/2607.07976v1-when-implausible-tokens-get-reinforced-tail-aware-credit-calibration-for-llm-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：为LLM构建可扩展的agentic RL模拟环境
-3. [UP: Unbounded Positive Asymmetric Optimization for Breaking the Exploration-Stability Dilemma](/202607/09/2607.06987v1-up-unbounded-positive-asymmetric-optimization-for-breaking-the-exploration-stability-dilemma)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：针对LLM推理的策略优化算法，解决RL中的探索-稳定困境
-4. [Entropy Pacing Policy Optimization for Multi-Task Agentic Reinforcement Learning](/202607/09/2607.07178v1-entropy-pacing-policy-optimization-for-multi-task-agentic-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：多任务智能体强化学习应用于LLM
-5. [Single-Rollout Asynchronous Optimization for Agentic Reinforcement Learning](/202607/09/2607.07508v1-single-rollout-asynchronous-optimization-for-agentic-reinforcement-learning)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：智能体强化学习、异步优化、大模型后训练
-6. [Behavior Leverage Imbalance in Multi-Teacher On-Policy Distillation](/202607/09/2607.07050v1-behavior-leverage-imbalance-in-multi-teacher-on-policy-distillation)  
+   evidence：提出尾感知信用校准方法修复大语言模型强化学习中的正信用污染
+3. [A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training](/202607/10/2607.04574v1-a-few-teacher-steps-go-a-long-way-cost-efficient-on-policy-data-augmentation-for-agent-post-training)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：面向代理型语言模型的多教师在线策略蒸馏
+   evidence：通过预算分配优化大语言模型智能体后训练中的在线策略数据增强
+4. [Switch-Reasoner: Learn When to Think in Multitask Mixtures via Reinforcement Learning](/202607/10/2607.08572v1-switch-reasoner-learn-when-to-think-in-multitask-mixtures-via-reinforcement-learning)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：基于GRPO的RL学习推理模式选择
 
 ### 速读区论文标签
-1. [VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning](/202607/09/2607.00483v1-vlm-ar3l-vision-language-models-for-absolute-and-relative-rewards-in-reinforcement-learning)  
+1. [ASK in the Dark: Uncertainty-Gated LLM Assistance under Partial Observability](/202607/10/2607.02686v1-ask-in-the-dark-uncertainty-gated-llm-assistance-under-partial-observability)  
+   标签：评分：7.0/10、query:agentic-rl
+   evidence：部分可观测性下使用小语言模型辅助强化学习代理
+2. [When Should LLMs Search? Counterfactual Supervision for Search Routing](/202607/10/2607.05752v1-when-should-llms-search-counterfactual-supervision-for-search-routing)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：使用视觉语言模型为强化学习提供奖励
-2. [Rank-Then-Act: Reward-Free Control from Frame-Order Progress](/202607/09/2607.01897v1-rank-then-act-reward-free-control-from-frame-order-progress)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：基于GRPO的策略优化用于视觉语言模型
+   evidence：用于训练搜索路由策略的反事实监督
 
 
 <div class="dpr-home-promo-card">
