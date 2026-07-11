@@ -1,0 +1,215 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-11T20:53:38.217237+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.04037v1",
+      "source": "arxiv",
+      "title": "Reward-Gated On-Policy Distillation",
+      "abstract": "On-policy distillation is a powerful way to transfer reasoning ability from a strong teacher to a smaller student: the student samples trajectories from its own policy, and the teacher provides dense token-level supervision on the states the student actually visits. However, this supervision is not always reliable: a teacher can assign high likelihood to plausible but incorrect solutions, or low likelihood to correct student solutions that follow different reasoning paths. Unconditionally distilling the teacher can therefore reinforce bad modes or erase useful student behavior. To address these limitations, we introduce RG-OPD: Reward-Gated On-Policy Distillation that uses verifier feedback to decide when teacher logits should be trusted. RG-OPD bridges sparse verifier rewards and dense teacher logits, preserving token-level supervision while filtering misleading teacher signals. Across reasoning and coding benchmarks, RG-OPD produces stronger distilled students, outperforming both vanilla reverse-KL distillation and the recent TSD-KD baseline. At 1K generation length, RG-OPD improves over reverse-KL by 2.9 points and over TSD-KD by 4.9 points; in the long-generation setting, it improves over the untuned student by 8.2 points. Our code is available at https://github.com/UoC-tail/RG-OPD.",
+      "authors": [
+        "Mohammad Sadegh Akhondzadeh",
+        "Vijay Lingam",
+        "Atula Tejaswi",
+        "Chanakya Ekbote",
+        "Sujay Sanghavi",
+        "Aleksandar Bojchevski"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-04T21:51:22+00:00",
+      "link": "https://arxiv.org/pdf/2607.04037v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "online policy distillation with reward gating",
+      "llm_evidence_cn": "基于奖励门控的在线策略蒸馏",
+      "llm_evidence": "基于奖励门控的在线策略蒸馏",
+      "canonical_evidence": "基于奖励门控的在线策略蒸馏",
+      "llm_tldr_en": "RG-OPD selectively distills teacher logits using verifier rewards to avoid copying incorrect reasoning modes, improving student policy reliability.",
+      "llm_tldr_cn": "针对在线策略蒸馏中教师监督不可靠的问题（教师可能给错误答案高概率或压抑正确学生行为），本文提出奖励门控在线策略蒸馏(RG-OPD)，利用验证器奖励决定何时信任教师logits，从而在保留学生有用行为的同时避免强化错误模式，提升学生推理能力。",
+      "llm_tldr": "针对在线策略蒸馏中教师监督不可靠的问题（教师可能给错误答案高概率或压抑正确学生行为），本文提出奖励门控在线策略蒸馏(RG-OPD)，利用验证器奖励决定何时信任教师logits，从而在保留学生有用行为的同时避免强化错误模式，提升学生推理能力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.05184v1",
+      "source": "arxiv",
+      "title": "Rethinking On-Policy Self-Distillation for Thinking Models",
+      "abstract": "Self-distillation is a promising recipe for self-improvement in language models. In this setting, a model can serve as its own teacher when given privileged information, such as a solution to a math problem. This seems especially appealing for thinking models, which can use test-time reasoning to absorb the privileged information. Surprisingly, we show that privileged self-distillation degrades thinking models on long reasoning traces: across five Qwen3 and OLMo thinking models evaluated on AIME24, AIME25, and HMMT25, privileged-context distillation causes a relative drop of up to 17% in avg@16 accuracy. The degradation scales with the amount of privileged context withheld from the student and is most pronounced at long rollout budgets, where thinking models otherwise obtain their largest gains. This failure mode is not specific to self-distillation: on-policy distillation (OPD) improves thinking models, but privileged OPD reverses these gains. Our diagnostics link this failure mode to how privileged teacher context reshapes learning at high-entropy forking positions, where multiple continuations remain plausible and may lead to different reasoning paths. Privileged context lowers fork rates in thinking-model rollouts but not in instruction-model rollouts. This leads to an interesting dichotomy, where privileged context can help instruction-tuned models but hurts stronger thinking models. The effect is visible when the student begins a self-correction branch, where privileged OPD penalizes sampled reconsideration tokens that vanilla OPD supports. Thinking models trained with a privileged teacher produce fewer verification, backtracking, and hedging markers, even after length normalization. These findings indicate that self-distillation for strong thinking models requires attention to token-level signal, especially around correction and reasoning steps.",
+      "authors": [
+        "Simran Kaur",
+        "Narutatsu Ri",
+        "Yinghui He",
+        "Liam Fowl",
+        "Sanjeev Arora"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-06T15:01:35+00:00",
+      "link": "https://arxiv.org/pdf/2607.05184v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "on-policy self-distillation for thinking models",
+      "llm_evidence_cn": "思考模型上的在线策略自蒸馏",
+      "llm_evidence": "思考模型上的在线策略自蒸馏",
+      "canonical_evidence": "思考模型上的在线策略自蒸馏",
+      "llm_tldr_en": "Shows that privileged self-distillation degrades thinking models on long reasoning traces, with up to 17% relative drop in accuracy, across multiple benchmarks.",
+      "llm_tldr_cn": "该论文重新审视了在线策略自蒸馏在思考模型中的应用，发现使用特权上下文进行自蒸馏反而会损害模型在长推理轨迹上的性能。在多个思考模型和基准测试上，精度最高下降17%。这一发现对在线策略蒸馏在语言模型中的使用提出了重要警示。",
+      "llm_tldr": "该论文重新审视了在线策略自蒸馏在思考模型中的应用，发现使用特权上下文进行自蒸馏反而会损害模型在长推理轨迹上的性能。在多个思考模型和基准测试上，精度最高下降17%。这一发现对在线策略蒸馏在语言模型中的使用提出了重要警示。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.06720v1",
+      "source": "arxiv",
+      "title": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+      "abstract": "Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution attempts. We provide a theoretical analysis of in-context search by modeling it as approximate inference over reasoning traces, where the base model defines a prior and self-reflection provides feedback for posterior updates, and study the resulting inference-time sampling complexity - the number of sequential attempts needed to achieve high success probability. We show that when reflections reliably localize early mistakes, in-context search can yield exponential improvements over the base model, solving problems with exponentially small zero-shot pass rates using only a polynomial number of sequential attempts, whereas when this property fails, conditioning on past attempts offers no asymptotic benefit over parallel sampling. We further show that these gains are robust and learnable: approximate posterior updates suffice, and cross-entropy training on search rollouts recovers the required behavior with polynomial sample complexity. Finally, we show that under a stagewise abstraction of reinforcement learning with verifiable rewards, the optimal policy extension implements the same posterior reweighting rule. We validate key qualitative predictions of the theory on real large reasoning models.",
+      "authors": [
+        "Yotam Wolf",
+        "Noam Wies",
+        "Amnon Shashua"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-07T18:36:04+00:00",
+      "link": "https://arxiv.org/pdf/2607.06720v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "theoretical analysis of reflection-driven reasoning for LLMs, relevant to policy optimization",
+      "llm_evidence_cn": "对LLM反思驱动推理的理论分析，与策略优化相关",
+      "llm_evidence": "对LLM反思驱动推理的理论分析，与策略优化相关",
+      "canonical_evidence": "对LLM反思驱动推理的理论分析，与策略优化相关",
+      "llm_tldr_en": "The paper theoretically analyzes in-context search for LLM reasoning, showing exponential improvements when reflections localize early mistakes, relevant to policy optimization for reasoning.",
+      "llm_tldr_cn": "本文从理论上分析了大语言模型中的上下文搜索（反思驱动推理），将其建模为推理踪迹上的近似推理。研究表明，当反思能可靠定位早期错误时，上下文搜索可相对于基础模型实现指数级改进，为策略优化提升LLM推理提供了理论支撑。",
+      "llm_tldr": "本文从理论上分析了大语言模型中的上下文搜索（反思驱动推理），将其建模为推理踪迹上的近似推理。研究表明，当反思能可靠定位早期错误时，上下文搜索可相对于基础模型实现指数级改进，为策略优化提升LLM推理提供了理论支撑。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.04409v1",
+      "source": "arxiv",
+      "title": "Learning Task-Sufficient World Models by Synergizing Agentic Exploration and Structured Modeling",
+      "abstract": "Learning and planning in imagination using world models provides an effective paradigm for training agents for decision-making. However, existing approaches often rely on high-dimensional latent spaces or generic visual embeddings that retain many factors irrelevant to control, limiting efficiency and generalization across tasks. To this end, we study how agents can learn world models with representations that are task-specific, minimal, and sufficient for decision-making. We achieve this via a closed-loop synergy between the agent and the world model, in which structured world-model learning distills task-sufficient representations from informative interaction data. On the agent side, agents actively probe the environment to collect informative trajectories that expose task-relevant latent factors, guided by an adaptive curriculum. On the world-model side, we learn structured representations over observations to distill compact, task-sufficient latent states from the collected interaction data. This synergy enables the empirical recovery of task-sufficient latent representations that capture all control-relevant factors. Leveraging these representations, the resulting policies achieve improved sample efficiency and generalization, including generalization across skills, object-skill compositions, and previously unseen tasks on standard continuous-control and robotic-manipulation benchmarks.",
+      "authors": [
+        "Fan Feng",
+        "Yujia Zheng",
+        "Minghao Fu",
+        "Yongqiang Chen",
+        "Guangyi Chen",
+        "Kevin Murphy",
+        "Biwei Huang",
+        "Kun Zhang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-05T17:02:40+00:00",
+      "link": "https://arxiv.org/pdf/2607.04409v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Agentic exploration and world model learning, applicable to agentic RL",
+      "llm_evidence_cn": "智能体探索与世界模型学习，可应用于智能体强化学习",
+      "llm_evidence": "智能体探索与世界模型学习，可应用于智能体强化学习",
+      "canonical_evidence": "智能体探索与世界模型学习，可应用于智能体强化学习",
+      "llm_tldr_en": "Proposes a closed-loop synergy between agentic exploration and structured world model learning to obtain task-sufficient representations, which can benefit agentic RL in LLM contexts.",
+      "llm_tldr_cn": "该论文针对世界模型学习常保留与决策无关的冗余表示的问题，提出智能体探索与结构化建模的闭环协同方法。通过让智能体主动探环境以获取信息性交互数据，世界模型从中蒸馏出任务充分的最小表示，提升决策效率和泛化能力。该方法为智能体RL提供了表示学习框架，可迁移至LLM场景。",
+      "llm_tldr": "该论文针对世界模型学习常保留与决策无关的冗余表示的问题，提出智能体探索与结构化建模的闭环协同方法。通过让智能体主动探环境以获取信息性交互数据，世界模型从中蒸馏出任务充分的最小表示，提升决策效率和泛化能力。该方法为智能体RL提供了表示学习框架，可迁移至LLM场景。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.08193v1",
+      "source": "arxiv",
+      "title": "Open-ended Multi-agent Autocurricula via Visual Inspection of Policies with Multi-modal LLMs",
+      "abstract": "Open-ended curricula in Reinforcement Learning (RL) aim to train generally-capable agents by identifying tasks that facilitate learning increasingly complex skills. A major challenge when designing such curricula is assessing task difficulty relative to the agent's current learning progress. While previous work has explored using scalar task scores or textual summaries of the agent's behavior, here we study a different approach: directly inspecting policy behavior via recorded episode videos. We introduce a simple yet effective instantiation of this approach which leverages a Video Language Model (VLM) to both process these videos and provide curriculum recommendations, which we call Visual Inspection of Policies (VIP). Since videos can naturally contain any number of controllable agents, we empirically study VIP on the StarCraft Multi-Agent Challenge (SMAC). We show that even with a lightweight and openly accessible VLM (VideoLLaMa2-7B), VIP can use policy videos to generate more effective curricula than both its text-only ablation and methods that rely on scalar task scores.",
+      "authors": [
+        "Lorenzo Pantè",
+        "Andrea Fanti",
+        "Roberto Capobianco"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-09T07:48:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.08193v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses RL and VLM for autocurricula to train agents, relevant to agentic RL",
+      "llm_evidence_cn": "使用强化学习和视频语言模型自动生成课程训练智能体，与智能体RL相关",
+      "llm_evidence": "使用强化学习和视频语言模型自动生成课程训练智能体，与智能体RL相关",
+      "canonical_evidence": "使用强化学习和视频语言模型自动生成课程训练智能体，与智能体RL相关",
+      "llm_tldr_en": "Proposes Visual Inspection of Policies (VIP) that leverages a Video Language Model to assess policy behavior and recommend curriculum tasks for open-ended multi-agent autocurricula.",
+      "llm_tldr_cn": "该论文针对开放多智能体课程学习中任务难度评估的挑战，提出基于视频语言模型（VLM）的策略视觉检查（VIP）方法。VIP通过分析记录的策略交互视频，自动推荐下一阶段任务，实现自适应的课程学习。实验验证了VIP在多种多智能体环境中生成有效课程的能力。该方法可视为一种智能体RL训练技术。",
+      "llm_tldr": "该论文针对开放多智能体课程学习中任务难度评估的挑战，提出基于视频语言模型（VLM）的策略视觉检查（VIP）方法。VIP通过分析记录的策略交互视频，自动推荐下一阶段任务，实现自适应的课程学习。实验验证了VIP在多种多智能体环境中生成有效课程的能力。该方法可视为一种智能体RL训练技术。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
