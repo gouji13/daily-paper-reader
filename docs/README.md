@@ -6,37 +6,30 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-11
-- 运行时间：2026-07-11 20:58:37 UTC
+- 最新运行日期：2026-07-12
+- 运行时间：2026-07-12 19:59:42 UTC
 - 运行状态：成功
-- 本次总论文数：5
-- 精读区：2
-- 速读区：3
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-1) 今日重点精读两篇9分论文，聚焦在线策略蒸馏与思考模型自蒸馏的创新方法。
-2) 最值得关注Reward-Gated On-Policy Distillation和Rethinking On-Policy Self-Distillation，二者均对提升模型推理效率提出新机制。
-3) 普通读者可优先精读这两篇论文，了解如何通过奖励门控或自蒸馏优化思考模型的训练与推理。
-- 详情：[/202607/11/README](/202607/11/README)
+今日日报聚焦：CritiqueDriveVLM（9.0分）提出验证器引导强化学习+潜思维蒸馏的自动驾驶新范式，DeepSearch-World（7.0分）探索可验证环境下的搜索代理自蒸馏。
+
+重点关注CritiqueDriveVLM，其通过思维蒸馏与RL结合提升自动驾驶决策质量；速读的DeepSearch-World也值得了解，展示了自蒸馏在搜索调度中的有效性。
+
+建议关注这两篇论文的具体技术细节，特别是CritiqueDriveVLM如何将隐式思维过程融入训练，可能启发更高效的端到端驾驶模型。
+- 详情：[/202607/12/README](/202607/12/README)
 
 ### 精读区论文标签
-1. [Reward-Gated On-Policy Distillation](/202607/11/2607.04037v1-reward-gated-on-policy-distillation)  
+1. [CritiqueDriveVLM: From Verifier-Guided Reinforcement Learning to Latent Thought Distillation for Autonomous Driving](/202607/12/2607.04179v1-critiquedrivevlm-from-verifier-guided-reinforcement-learning-to-latent-thought-distillation-for-autonomous-driving)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：基于奖励门控的在线策略蒸馏
-2. [Rethinking On-Policy Self-Distillation for Thinking Models](/202607/11/2607.05184v1-rethinking-on-policy-self-distillation-for-thinking-models)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：思考模型上的在线策略自蒸馏
+   evidence：使用强化学习微调视觉语言模型进行自动驾驶并包含策略蒸馏
 
 ### 速读区论文标签
-1. [When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning](/202607/11/2607.06720v1-when-does-in-context-search-help-a-sampling-complexity-theory-of-reflection-driven-reasoning)  
+1. [DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment](/202607/12/2607.07820v1-deepsearch-world-self-distillation-for-deep-search-agents-in-a-verifiable-environment)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：对LLM反思驱动推理的理论分析，与策略优化相关
-2. [Learning Task-Sufficient World Models by Synergizing Agentic Exploration and Structured Modeling](/202607/11/2607.04409v1-learning-task-sufficient-world-models-by-synergizing-agentic-exploration-and-structured-modeling)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：智能体探索与世界模型学习，可应用于智能体强化学习
-3. [Open-ended Multi-agent Autocurricula via Visual Inspection of Policies with Multi-modal LLMs](/202607/11/2607.08193v1-open-ended-multi-agent-autocurricula-via-visual-inspection-of-policies-with-multi-modal-llms)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：使用强化学习和视频语言模型自动生成课程训练智能体，与智能体RL相关
+   evidence：用于深度搜索智能体的自蒸馏
 
 
 <div class="dpr-home-promo-card">

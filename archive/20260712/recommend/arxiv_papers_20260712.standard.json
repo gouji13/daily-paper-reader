@@ -1,0 +1,100 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-12T19:57:25.365008+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.04179v1",
+      "source": "arxiv",
+      "title": "CritiqueDriveVLM: From Verifier-Guided Reinforcement Learning to Latent Thought Distillation for Autonomous Driving",
+      "abstract": "End-to-end Vision-Language Models (VLMs) show immense potential in autonomous driving. However, standard Supervised Fine-Tuning (SFT) often suffers from reasoning hallucinations and conservative biases. While traditional tool-augmented frameworks and Chain-of-Thought (CoT) approaches mitigate these issues, they incur exorbitant token consumption and unacceptable latency, rendering real-time deployment impractical. To resolve this reliability-efficiency trade-off, we propose CritiqueDriveVLM, a novel unified three-stage framework internalizing reasoning directly into the VLM. First, we introduce Critique-Driven Multi-Turn Reinforcement Learning (RL) guided by a multi-dimensional verifier. By providing granular scalar feedback and a multi-turn penalty, we force the policy to internalize logical deduction, cultivating a robust System-2 Teacher that achieves high accuracy without fragile external tools. Subsequently, we propose Latent Thought Distillation to overcome the latency bottleneck. By aligning the Student's latent representations with the Teacher's fully converged reasoning states, we compress deep logical capabilities into a fast, CoT-free System-1 Student. Extensive experiments on the widely-used DriveLMM-01 benchmark demonstrate remarkable improvements. Compared to the base model, our tool-free Teacher significantly boosts Multiple Choice Quality (MCQ) from 55.54% to a state-of-the-art 76.54%. Crucially, our distilled Student preserves competitive reasoning depth while drastically minimizing generation length to an average of merely 28 tokens. This slashes inference latency by 88% (from 3482 ms to 416 ms), paving a highly robust pathway for low-latency autonomous driving.Our source code is available at https://github.com/MICLAB-BUPT/CritiqueDriveVLM.",
+      "authors": [
+        "Zhaohong Liu",
+        "Hao Ye",
+        "Xianlin Zhang",
+        "Mengshi Qi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-05T08:51:47+00:00",
+      "link": "https://arxiv.org/pdf/2607.04179v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Uses RL to fine-tune VLM for driving with policy distillation",
+      "llm_evidence_cn": "使用强化学习微调视觉语言模型进行自动驾驶并包含策略蒸馏",
+      "llm_evidence": "使用强化学习微调视觉语言模型进行自动驾驶并包含策略蒸馏",
+      "canonical_evidence": "使用强化学习微调视觉语言模型进行自动驾驶并包含策略蒸馏",
+      "llm_tldr_en": "Proposes CritiqueDriveVLM, a three-stage framework using critique-driven multi-turn RL guided by a multi-dimensional verifier to internalize reasoning into VLM for reliable autonomous driving, then distills latent thoughts for efficiency.",
+      "llm_tldr_cn": "端到端视觉语言模型在自动驾驶中面临推理幻觉和偏见，直接监督微调效果不佳。本文提出CritiqueDriveVLM三阶段框架：首先通过验证器引导的多轮批判性强化学习优化推理，然后将推理内化到模型中，最后通过潜在思维蒸馏提升效率。实验证明该方法在保证可靠性的同时降低了推理成本，为将RL应用于VLM训练提供了有效范例。",
+      "llm_tldr": "端到端视觉语言模型在自动驾驶中面临推理幻觉和偏见，直接监督微调效果不佳。本文提出CritiqueDriveVLM三阶段框架：首先通过验证器引导的多轮批判性强化学习优化推理，然后将推理内化到模型中，最后通过潜在思维蒸馏提升效率。实验证明该方法在保证可靠性的同时降低了推理成本，为将RL应用于VLM训练提供了有效范例。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.07820v1",
+      "source": "arxiv",
+      "title": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+      "abstract": "Training tool-use agents to improve from their own experience remains challenging, as supervised fine-tuning relies on fixed teacher-distilled trajectories, while sparse-reward reinforcement learning provides weak supervision for long-horizon interactions. We present DeepSearch-Evolve, a self-distillation framework for web agents built on DeepSearch-World, a deterministic and verifiable environment with reproducible search and page-reading tools. DeepSearch-World contains 420K multi-hop QA tasks constructed from entity-level random walks and supports key agentic cognitive behaviors useful for self-evolving, including progress verification, grounded reflection, and failure recovery. DeepSearch-Evolve iteratively performs trajectory generation, filtering, data mixing, and fine-tuning to train stronger agents. Without distillation from more capable models, DeepSearch-World-9B achieves competitive performance compared with open-source agents, reaching 31.2% on BrowseComp, 61.5% on GAIA, and 93.4% on HotpotQA, showing that verifiable environments enable scalable self-evolution for long-horizon web agents. We will release the environment, 420K training pool, validation set, model, and code to facilitate future research on self-improving deep search agents.",
+      "authors": [
+        "Xinyu Geng",
+        "Xuanhua He",
+        "Sixiang Chen",
+        "Yanjing Xiao",
+        "Fan Zhang",
+        "Shijue Huang",
+        "Haitao Mi",
+        "Zhenwen Liang",
+        "Tianqing Fang",
+        "Yi R. Fung"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-08T18:03:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.07820v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "self-distillation for deep search agents",
+      "llm_evidence_cn": "用于深度搜索智能体的自蒸馏",
+      "llm_evidence": "用于深度搜索智能体的自蒸馏",
+      "canonical_evidence": "用于深度搜索智能体的自蒸馏",
+      "llm_tldr_en": "DeepSearch-Evolve is a self-distillation framework for web agents that iteratively generates and refines trajectories in a verifiable environment, using behavior cloning and reinforcement learning to improve via own experience.",
+      "llm_tldr_cn": "训练工具使用智能体从自身经验学习存在困难：监督微调依赖固定教师轨迹，稀疏奖励强化学习对长时程交互监督弱。本文提出DeepSearch-Evolve，一个基于可验证环境DeepSearch-World的自蒸馏框架，包含42万条多跳问答任务。该框架迭代生成轨迹，利用行为克隆和强化学习从自身成功与失败中学习，支持进度验证、基于反思的纠错等认知行为。在多个基准上展示了持续改进能力。",
+      "llm_tldr": "训练工具使用智能体从自身经验学习存在困难：监督微调依赖固定教师轨迹，稀疏奖励强化学习对长时程交互监督弱。本文提出DeepSearch-Evolve，一个基于可验证环境DeepSearch-World的自蒸馏框架，包含42万条多跳问答任务。该框架迭代生成轨迹，利用行为克隆和强化学习从自身成功与失败中学习，支持进度验证、基于反思的纠错等认知行为。在多个基准上展示了持续改进能力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

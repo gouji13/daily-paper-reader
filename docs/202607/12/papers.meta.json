@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-12",
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T19:59:53",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/12/2607.04179v1-critiquedrivevlm-from-verifier-guided-reinforcement-learning-to-latent-thought-distillation-for-autonomous-driving",
+      "section": "deep",
+      "title_en": "CritiqueDriveVLM: From Verifier-Guided Reinforcement Learning to Latent Thought Distillation for Autonomous Driving",
+      "authors": "Zhaohong Liu, Hao Ye, Xianlin Zhang, Mengshi Qi",
+      "date": "2026-07-05",
+      "pdf": "https://arxiv.org/pdf/2607.04179v1",
+      "score": "9.0",
+      "evidence": "使用强化学习微调视觉语言模型进行自动驾驶并包含策略蒸馏",
+      "tldr": "端到端VLM在自动驾驶中面临推理幻觉和保守偏差，传统CoT等方法延迟过高。CritiqueDriveVLM提出三阶段框架：首先用多维验证器引导多轮强化学习培养稳健的System-2教师；再通过潜在思维蒸馏将推理压缩为快速无CoT的System-1学生。在DriveLMM-01基准上，教师MCQ从55.54%提升至76.54%，学生仅用28token推理，延迟从3482ms降至416ms（降88%）。该方法在保证推理深度的同时实现极低延迟，为实时自动驾驶建立可靠高效的新范式。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "End-to-end Vision-Language Models (VLMs) show immense potential in autonomous driving. However, standard Supervised Fine-Tuning (SFT) often suffers from reasoning hallucinations and conservative biases. While traditional tool-augmented frameworks and Chain-of-Thought (CoT) approaches mitigate these issues, they incur exorbitant token consumption and unacceptable latency, rendering real-time deployment impractical. To resolve this reliability-efficiency trade-off, we propose CritiqueDriveVLM, a novel unified three-stage framework internalizing reasoning directly into the VLM. First, we introduce Critique-Driven Multi-Turn Reinforcement Learning (RL) guided by a multi-dimensional verifier. By providing granular scalar feedback and a multi-turn penalty, we force the policy to internalize logical deduction, cultivating a robust System-2 Teacher that achieves high accuracy without fragile external tools. Subsequently, we propose Latent Thought Distillation to overcome the latency bottleneck. By aligning the Student's latent representations with the Teacher's fully converged reasoning states, we compress deep logical capabilities into a fast, CoT-free System-1 Student. Extensive experiments on the widely-used DriveLMM-01 benchmark demonstrate remarkable improvements. Compared to the base model, our tool-free Teacher significantly boosts Multiple Choice Quality (MCQ) from 55.54% to a state-of-the-art 76.54%. Crucially, our distilled Student preserves competitive reasoning depth while drastically minimizing generation length to an average of merely 28 tokens. This slashes inference latency by 88% (from 3482 ms to 416 ms), paving a highly robust pathway for low-latency autonomous driving.Our source code is available at https://github.com/MICLAB-BUPT/CritiqueDriveVLM.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/12/2607.07820v1-deepsearch-world-self-distillation-for-deep-search-agents-in-a-verifiable-environment",
+      "section": "quick",
+      "title_en": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+      "authors": "Xinyu Geng, Xuanhua He, Sixiang Chen, Yanjing Xiao, Fan Zhang, Shijue Huang, Haitao Mi, Zhenwen Liang, Tianqing Fang, Yi R. Fung",
+      "date": "2026-07-08",
+      "pdf": "https://arxiv.org/pdf/2607.07820v1",
+      "score": "7.0",
+      "evidence": "用于深度搜索智能体的自蒸馏",
+      "tldr": "训练工具使用代理从自身经验改进面临监督微调依赖固定轨迹和稀疏奖励强化学习监督弱的挑战。本文提出DeepSearch-Evolve自蒸馏框架，基于可验证的DeepSearch-World环境（含420K多跳QA任务），通过迭代轨迹生成、过滤、数据混合与微调，无需更强模型蒸馏，使9B模型在BrowseComp、GAIA和HotpotQA上达到31.2%、61.5%和93.4%。这表明可验证环境能够实现长程web代理的可扩展自进化。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Training tool-use agents to improve from their own experience remains challenging, as supervised fine-tuning relies on fixed teacher-distilled trajectories, while sparse-reward reinforcement learning provides weak supervision for long-horizon interactions. We present DeepSearch-Evolve, a self-distillation framework for web agents built on DeepSearch-World, a deterministic and verifiable environment with reproducible search and page-reading tools. DeepSearch-World contains 420K multi-hop QA tasks constructed from entity-level random walks and supports key agentic cognitive behaviors useful for self-evolving, including progress verification, grounded reflection, and failure recovery. DeepSearch-Evolve iteratively performs trajectory generation, filtering, data mixing, and fine-tuning to train stronger agents. Without distillation from more capable models, DeepSearch-World-9B achieves competitive performance compared with open-source agents, reaching 31.2% on BrowseComp, 61.5% on GAIA, and 93.4% on HotpotQA, showing that verifiable environments enable scalable self-evolution for long-horizon web agents. We will release the environment, 420K training pool, validation set, model, and code to facilitate future research on self-improving deep search agents.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
