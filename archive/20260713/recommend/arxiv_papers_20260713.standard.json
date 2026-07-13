@@ -1,0 +1,300 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-13T20:19:52.239070+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 5,
+    "deep_cap": 6,
+    "deep_selected": 5,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2607.09375v1",
+      "source": "arxiv",
+      "title": "Mach-Mind-4-Flash Technical Report",
+      "abstract": "We present Mach-Mind-4-Flash, a 35B-parameter Mixture-of-Experts (MoE) agentic model with 3B activated parameters. Through post-training optimization alone without scaling pre-training compute, the model achieves performance on par with or surpassing that of 100B-parameter-class models. By introducing scalable agentic interaction environments for large-scale reinforcement learning, the model attains significant performance gains on real-world application tasks. Our pipeline comprises three stages: (1) a unified RL/OPD training infrastructure with dynamic multi-teacher scheduling and operator-level acceleration, delivering 17\\% end-to-end training speedup; (2) multiple domain-specific RL experts trained in parallel across Reasoning, General, and Agent tracks, then fused into a single generalist via Multi-Teacher On-Policy Distillation (MOPD) -- a routed reverse-KL objective that eliminates the see-saw degradation of mixed-reward RL; (3) Hybrid Median-length Policy Optimization (HMPO), a single-stage token-efficiency method that compresses reasoning chains by 19--46\\% with $\\le$0.7 percentage-point accuracy loss. Mach-Mind-4-Flash scores 92.70 on AIME'26, 82.82 on IFBench, 80.74 on Behavioral-SafetyBench, 75.80 on BFCL-v4, 72.31 on BrowseComp-zh, and 84.20 on ClawBench -- leading or matching models with 10--30$\\times$ its activated size at a fraction of the inference cost.",
+      "authors": [
+        "Foundation Model Team"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-10T12:57:08+00:00",
+      "link": "https://arxiv.org/pdf/2607.09375v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Unified RL/OPD training infrastructure with dynamic multi-teacher scheduling",
+      "llm_evidence_cn": "统一RL/在线策略蒸馏训练基础设施与动态多教师调度",
+      "llm_evidence": "统一RL/在线策略蒸馏训练基础设施与动态多教师调度",
+      "canonical_evidence": "统一RL/在线策略蒸馏训练基础设施与动态多教师调度",
+      "llm_tldr_en": "Presents a 35B MoE agentic model trained with unified RL/OPD pipeline, achieving performance comparable to 100B models.",
+      "llm_tldr_cn": "本文介绍Mach-Mind-4-Flash模型，通过后训练优化实现35B参数模型超越100B级性能。其核心是统一RL/在线策略蒸馏（OPD）训练基础设施，支持动态多教师调度和算子级加速，并在推理、通用和智能体三个轨道并行训练领域专家后融合。实验证明该方案在真实任务上取得显著性能提升。该工作展示了OPD在模型后训练中的强大潜力。",
+      "llm_tldr": "本文介绍Mach-Mind-4-Flash模型，通过后训练优化实现35B参数模型超越100B级性能。其核心是统一RL/在线策略蒸馏（OPD）训练基础设施，支持动态多教师调度和算子级加速，并在推理、通用和智能体三个轨道并行训练领域专家后融合。实验证明该方案在真实任务上取得显著性能提升。该工作展示了OPD在模型后训练中的强大潜力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.07859v1",
+      "source": "arxiv",
+      "title": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
+      "abstract": "Reinforcement learning (RL) research has increasingly shifted focus towards alignment, ensuring agents learn behaviors adhering to human values. While human demonstrations and feedback have proven crucial for alignment, existing approaches predominantly combine these signals using multi-stage pipelines designed for the contextual bandit framing of language generation. Yet little work explores how these complementary inputs can serve as a richer, interconnected signal for single-stage offline training in fully sequential decision-making environments. We propose Feedback Manipulation Regularization (FMR), an algorithm-agnostic method that harnesses evaluative feedback as a corrective signal to improve the alignment of imitation learning policies. We adapt Safety Gymnasium environments to be a principled testbed for alignment evaluation, demonstrating improved aptitude and up to a 98\\% reduction in misalignment across a range of imitation learning algorithms. FMR remains robust in limited data regimes, even when learning from scarce aligned and uninformative noisy demonstrations.",
+      "authors": [
+        "Benjamin Poole",
+        "Minwoo Lee"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "published": "2026-07-08T18:47:29+00:00",
+      "link": "https://arxiv.org/pdf/2607.07859v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "offline agent alignment using RL and feedback",
+      "llm_evidence_cn": "利用反馈和强化学习进行离线智能体对齐",
+      "llm_evidence": "利用反馈和强化学习进行离线智能体对齐",
+      "canonical_evidence": "利用反馈和强化学习进行离线智能体对齐",
+      "llm_tldr_en": "Proposes Feedback Manipulation Regularization (FMR) to harness evaluative feedback for aligning imitation learning agents, bridging RL and offline training.",
+      "llm_tldr_cn": "针对强化学习中对齐人类价值的需求，提出反馈操纵正则化（FMR），一种算法无关的方法，利用评估性反馈作为修正信号来改善模仿学习智能体的对齐程度。FMR将反馈与示范结合为单阶段离线训练，无需多阶段流程。实验表明该方法在连续决策环境中有效提升对齐性能。",
+      "llm_tldr": "针对强化学习中对齐人类价值的需求，提出反馈操纵正则化（FMR），一种算法无关的方法，利用评估性反馈作为修正信号来改善模仿学习智能体的对齐程度。FMR将反馈与示范结合为单阶段离线训练，无需多阶段流程。实验表明该方法在连续决策环境中有效提升对齐性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.08837v1",
+      "source": "arxiv",
+      "title": "Prompt-Driven Exploration",
+      "abstract": "Exploration is essential to RL since a policy cannot improve by repeatedly sampling the behaviors it already prefers. Standard methods inject stochasticity in the action space, but such jitter only yields rollouts close to the original. Escaping a weak policy often requires global perturbations that action noise cannot produce. Large language models (LLMs) and vision-language-action (VLA) models offer a pathway: they condition the policy on a natural language prompt, and since the rollout follows from it, modifying the prompt induces global changes. The challenge is finding prompts that induce useful global changes. With a weak policy that rarely succeeds, reward is too sparse to select on. Our idea is to refine prompts from the rollouts themselves: a vision-language model (VLM) reasons over the rollout video, diagnoses how the policy responded, and rewrites the prompt to elicit better behavior next time. This procedure realizes posterior sampling, a classical RL exploration framework, at the level of prompts: the VLM maintains an implicit distribution over useful prompts and updates it from observed rollouts. We call this strategy Prompt-Driven Exploration (PDE). Across manipulation and reasoning tasks, PDE enables RL to learn successful policies even from zero-reward starts, and improves sample efficiency more broadly. Our website is available at https://xinyunsunshine.github.io/prompt-rl.",
+      "authors": [
+        "Sunshine Jiang",
+        "John Marangola",
+        "David Zhang",
+        "Raghuram Kowdeed",
+        "Ruiyang Luo",
+        "Nitish Dashora",
+        "Richard Li",
+        "Pulkit Agrawal",
+        "Zhang-Wei Hong"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-09T18:00:24+00:00",
+      "link": "https://arxiv.org/pdf/2607.08837v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Uses LLM prompts for policy exploration in RL",
+      "llm_evidence_cn": "使用LLM提示进行策略探索",
+      "llm_evidence": "使用LLM提示进行策略探索",
+      "canonical_evidence": "使用LLM提示进行策略探索",
+      "llm_tldr_en": "Proposes prompt-driven exploration for RL policies using VLM to refine prompts from rollouts, enabling global perturbations.",
+      "llm_tldr_cn": "现有强化学习探索方法局限于动作空间噪声，难以产生全局性策略变化。本文提出提示驱动的探索方法，利用视觉语言模型从轨迹中提炼提示，引导策略进行全局探索。实验表明该方法能在奖励稀疏场景下有效提升策略性能。该方法为将LLM/VLM融入强化学习探索提供了新范式。",
+      "llm_tldr": "现有强化学习探索方法局限于动作空间噪声，难以产生全局性策略变化。本文提出提示驱动的探索方法，利用视觉语言模型从轨迹中提炼提示，引导策略进行全局探索。实验表明该方法能在奖励稀疏场景下有效提升策略性能。该方法为将LLM/VLM融入强化学习探索提供了新范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.09042v1",
+      "source": "arxiv",
+      "title": "Learning More from Less: Reinforcement Learning from Hindsight",
+      "abstract": "Reinforcement learning (RL) is increasingly used to post-train vision-language-action (VLA) models, but every update consumes robot rollouts that are slow and costly to collect, making sample efficiency a central concern. Manipulation tasks typically provide only sparse rewards, so a weak policy fails almost every rollout early in training and has little to learn from, even when those failures execute coherent behavior. Such a failure, however, is a success at a different task. We present Learning from Hindsight (LfH), which brings hindsight relabeling to RL post-training of VLAs by scoring failed rollouts against the tasks they actually achieved. A single vision-language model relabels both the instruction and the reward, proposing a hindsight instruction for a group of failed rollouts and scoring how well each satisfies it, and the policy trains on the relabeled and original rollouts jointly. Because VLAs generalize across language, relabeling in language lets the policy learn more from the same trajectories. On out-of-distribution LIBERO-PRO tasks, where standard RL improves only slowly, LfH achieves $5\\times$ improvement in sample efficiency, and outperforms a dense progress-reward baseline. The gains hold across VLA backbones and on a physical Franka robot.",
+      "authors": [
+        "Iris Xu",
+        "Sunshine Jiang",
+        "John Marangola",
+        "Nitish Dashora",
+        "Richard Li",
+        "Thomas Liu",
+        "Zexue He",
+        "Yuheng Zhi",
+        "Alex Pentland",
+        "Pulkit Agrawal",
+        "Zhang-Wei Hong"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-10T02:17:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.09042v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "RL post-training of vision-language-action models with hindsight relabeling",
+      "llm_evidence_cn": "利用事后重标对视觉-语言-动作模型进行强化学习后训练",
+      "llm_evidence": "利用事后重标对视觉-语言-动作模型进行强化学习后训练",
+      "canonical_evidence": "利用事后重标对视觉-语言-动作模型进行强化学习后训练",
+      "llm_tldr_en": "Introduces Learning from Hindsight (LfH), which applies hindsight relabeling to RL post-training of VLAs, improving sample efficiency by treating failures as successes for different tasks.",
+      "llm_tldr_cn": "针对VLA模型RL后训练中样本效率低下的问题，提出Learning from Hindsight（LfH）方法。该方法通过事后重标将失败的轨迹视为其他任务的成功，从而利用失败样本进行学习。实验表明，LfH显著提升了样本效率，使模型能从稀疏奖励中有效学习。这项工作为大规模多模态模型的强化学习后训练提供了新的思路。",
+      "llm_tldr": "针对VLA模型RL后训练中样本效率低下的问题，提出Learning from Hindsight（LfH）方法。该方法通过事后重标将失败的轨迹视为其他任务的成功，从而利用失败样本进行学习。实验表明，LfH显著提升了样本效率，使模型能从稀疏奖励中有效学习。这项工作为大规模多模态模型的强化学习后训练提供了新的思路。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.09492v1",
+      "source": "arxiv",
+      "title": "Multimodal Reward Hacking in Reinforcement Learning",
+      "abstract": "Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merely inheriting them. Scaling reduces but does not eliminate hacking: even the 32B model retains a 54.9% worse rate under outcome-only rewards, whereas answer-aware rewards improve the oracle trend at every scale. Robustness is also algorithm- and scale-dependent: GRPO is consistently most resistant, RLOO remains vulnerable, and DAPO improves substantially from 2B to 8B. Visual-evidence rewards help only with reliable verification: keyword-based checks increase hacking, while VLM-as-judge semantic verification reduces it. Overall, multimodal reward hacking is a systematic result of optimizing imperfect rewards, and robust alignment requires rewards and verifiers that remain reliable under optimization pressure.",
+      "authors": [
+        "Jiayu Yao",
+        "Yiwei Wang",
+        "Anmeng Zhang",
+        "Zhe Sun",
+        "Songsong Wang",
+        "Lingrui Mei",
+        "Yuyao Ge",
+        "Shenghua Liu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-10T15:06:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.09492v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "studies reward hacking in RL alignment of multimodal LLMs, introduces NRFR metric",
+      "llm_evidence_cn": "研究多模态大语言模型强化学习对齐中的奖励黑客问题，提出NRFR指标",
+      "llm_evidence": "研究多模态大语言模型强化学习对齐中的奖励黑客问题，提出NRFR指标",
+      "canonical_evidence": "研究多模态大语言模型强化学习对齐中的奖励黑客问题，提出NRFR指标",
+      "llm_tldr_en": "Examines reward hacking in MLLM RL across multiple settings, revealing that outcome-only rewards cause severe hacking and RL creates new failures (NRFR > RHR).",
+      "llm_tldr_cn": "针对多模态大语言模型（MLLM）强化学习对齐中存在的奖励黑客问题，本文系统研究了不同奖励设计、数据模糊性、模型规模和RL算法下的表现。提出新指标NRFR来衡量代理奖励提升但实际失败增加的情况。实验发现仅基于结果的奖励会导致严重奖励黑客（RHR达48.1%），且NRFR超过RHR表明RL创造了新失败而非仅继承。研究强调了奖励设计在LLM RL中的关键作用。",
+      "llm_tldr": "针对多模态大语言模型（MLLM）强化学习对齐中存在的奖励黑客问题，本文系统研究了不同奖励设计、数据模糊性、模型规模和RL算法下的表现。提出新指标NRFR来衡量代理奖励提升但实际失败增加的情况。实验发现仅基于结果的奖励会导致严重奖励黑客（RHR达48.1%），且NRFR超过RHR表明RL创造了新失败而非仅继承。研究强调了奖励设计在LLM RL中的关键作用。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.05861v1",
+      "source": "arxiv",
+      "title": "Mitigating Factual Hallucination in Large Reasoning Models via Mixed-Mode Advantage Regularization",
+      "abstract": "Large reasoning models (LRMs) improve language model capabilities by generating explicit thinking traces before final answers. In factuality-oriented question answering (QA), such thinking often improves overall performance by helping the model recover relevant knowledge and refine its answers. However, we find that this benefit is not uniform at the instance level: explicit thinking can also overturn correct non-thinking answers and lead to factual drift. We refer to this failure mode as \\emph{thinking-induced hallucination}. To explain this phenomenon, we formulate explicit thinking in factuality QA as a thinking residual over the model's direct-answer tendency, which can either recover missing knowledge or introduce unsupported associations. Based on this formulation, we propose MARGO, \\underline{\\textit{M}}ixed-Mode \\underline{\\textit{A}}dvantage \\underline{\\textit{R}}egularization for \\underline{\\textit{G}}rounded \\underline{\\textit{O}}ptimization, a reinforcement learning framework that uses non-thinking rollouts as same-model references in advantage estimation. By constructing mixed-mode rollout groups with both thinking and non-thinking trajectories, MARGO evaluates whether explicit thinking adds factual value beyond direct answering, thereby suppressing hallucination-prone thinking while preserving beneficial thinking behaviors. Experiments across multiple factuality-oriented QA benchmarks demonstrate that MARGO improves factual reliability over strong baselines, while evaluations on mathematical benchmarks show that it preserves general reasoning ability.",
+      "authors": [
+        "Kaishen Wang",
+        "Tong Zheng",
+        "Xuehao Cui",
+        "Ruibo Chen",
+        "Tianyi Xiong",
+        "Heng Huang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-07T05:34:25+00:00",
+      "link": "https://arxiv.org/pdf/2607.05861v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "advantage regularization for LLM reasoning",
+      "llm_evidence_cn": "利用优势正则化改善LLM推理",
+      "llm_evidence": "利用优势正则化改善LLM推理",
+      "canonical_evidence": "利用优势正则化改善LLM推理",
+      "llm_tldr_en": "Identifies thinking-induced hallucination in reasoning models and proposes Mixed-Mode Advantage Regularization to mitigate it.",
+      "llm_tldr_cn": "发现大推理模型在显式思考过程中可能引发事实漂移，即思考诱导幻觉。将思考视为残差项，提出混合模式优势正则化方法，在保持思考有益性的同时抑制其负面影响。实验验证该方法能有效减少推理模型的事实幻觉。",
+      "llm_tldr": "发现大推理模型在显式思考过程中可能引发事实漂移，即思考诱导幻觉。将思考视为残差项，提出混合模式优势正则化方法，在保持思考有益性的同时抑制其负面影响。实验验证该方法能有效减少推理模型的事实幻觉。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.09207v1",
+      "source": "arxiv",
+      "title": "Bidirectional Resource Scheduling for Disaggregated and Asynchronous RL Post-Training",
+      "abstract": "It is well established that the reasoning capabilities of large language models (LLMs) can be improved by applying reinforcement learning (RL) in a post-training stage. In a standard RL iteration, the current model (the policy) generates experience through rollouts, and the resulting data is then used to update the policy during training. High-performance RL frameworks such as StreamRL and AReaL employ a disaggregated architecture and asynchronous rollouts to better exploit both rollout and training resources, thereby increasing overall system throughput.   Nonetheless, across varying RL setups (e.g., hardware configurations, model scales, staleness levels, and hyperparameters) and under changing workloads, it remains common for both rollout and training resources to experience idle periods.   In this paper, we present BiDiRL, a hybrid time-space multiplexing architecture for asynchronous, disaggregated RL designed to reduce resource idleness. First, we develop a hot-switch runtime that enables rapid switching between rollout and training resources with negligible overhead. Second, we propose a static, scheduling-aware planner based on time-performance modeling that chooses a hot-switch-friendly resource partition, so that rollout and training durations are roughly balanced at a coarse level. Third, at execution time, we introduce a bidirectional scheduler that further exploits runtime bubbles through fine-grained resource switching, allowing the bottleneck stage to temporarily borrow idle resources from the other pool. Across a wide range of workloads, datasets, and models on two 32-GPU testbeds, BiDiRL increases RL training throughput by up to 1.94x compared with RL systems including veRL, AReaL, and ROLL, without affecting convergence behavior.",
+      "authors": [
+        "Tan Zhiqiang",
+        "Wang Maoxin",
+        "Wang Sijie",
+        "Yin Yiming",
+        "Wang Qiang",
+        "Chu Xiaowen",
+        "Shi Shaohuai"
+      ],
+      "primary_category": "cs.DC",
+      "categories": [
+        "cs.DC"
+      ],
+      "published": "2026-07-10T08:51:14+00:00",
+      "link": "https://arxiv.org/pdf/2607.09207v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Resource scheduling for disaggregated asynchronous RL post-training of LLMs",
+      "llm_evidence_cn": "面向LLM解耦异步RL后训练的资源调度",
+      "llm_evidence": "面向LLM解耦异步RL后训练的资源调度",
+      "canonical_evidence": "面向LLM解耦异步RL后训练的资源调度",
+      "llm_tldr_en": "Proposes bidirectional resource scheduling for disaggregated asynchronous RL post-training to balance rollout and training resources.",
+      "llm_tldr_cn": "大模型RL后训练中，解耦异步架构下滚动和训练资源常出现闲置或瓶颈。本文提出双向资源调度方案，动态调整滚动与训练资源分配，以提升整体吞吐量。实验表明该方法在不同配置和工作负载下均能有效提高资源利用率和训练效率。该方法对优化RL后训练基础设施具有实用价值。",
+      "llm_tldr": "大模型RL后训练中，解耦异步架构下滚动和训练资源常出现闲置或瓶颈。本文提出双向资源调度方案，动态调整滚动与训练资源分配，以提升整体吞吐量。实验表明该方法在不同配置和工作负载下均能有效提高资源利用率和训练效率。该方法对优化RL后训练基础设施具有实用价值。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
