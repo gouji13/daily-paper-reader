@@ -6,45 +6,59 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-13
-- 运行时间：2026-07-13 20:26:53 UTC
+- 最新运行日期：2026-07-14
+- 运行时间：2026-07-14 21:28:30 UTC
 - 运行状态：成功
-- 本次总论文数：7
-- 精读区：5
-- 速读区：2
+- 本次总论文数：13
+- 精读区：6
+- 速读区：7
 
 ### 今日简报（AI）
-今日精选7篇论文，精读2篇高分工作：9.0分的《Mach-Mind-4-Flash》技术报告聚焦大脑启发模型，8.0分的《反馈操作正则化》提出离线模仿学习对齐新范式。
-
-最值得关注两个方向：大推理模型的事实幻觉缓解（7.0分速读）与异步强化学习后训练的资源调度优化（7.0分速读）。
-
-建议普通读者优先阅读精读论文了解前沿对齐技术，再通过速读论文掌握幻觉抑制与训练效率提升的实用方法。
-- 详情：[/202607/13/README](/202607/13/README)
+今天精选13篇论文，精读6篇、速读7篇，聚焦大模型强化学习与智能体安全边界。最值得关注的两个方向：一是用预测性分歧掩码提升LLM在线RL稳定性（满分10分），二是揭示智能体安全防护中“幽灵传递”漏洞（8分）。建议普通读者优先精读这两篇，后续可结合离线锚样本技术（ARMOR）构建更稳健的LLM训练流程。
+- 详情：[/202607/14/README](/202607/14/README)
 
 ### 精读区论文标签
-1. [Mach-Mind-4-Flash Technical Report](/202607/13/2607.09375v1-mach-mind-4-flash-technical-report)  
+1. [Predictive Divergence Masks for LLM RL](/202607/14/2607.10848v1-predictive-divergence-masks-for-llm-rl)  
+   标签：评分：10.0/10、query:agentic-rl
+   evidence：用于LLM强化学习策略优化的新掩码方法
+2. [ARMOR: Stabilizing On-Policy LLM RL with Off-Policy Anchor Samples](/202607/14/2607.10481v1-armor-stabilizing-on-policy-llm-rl-with-off-policy-anchor-samples)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：统一RL/在线策略蒸馏训练基础设施与动态多教师调度
-2. [Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning](/202607/13/2607.07859v1-feedback-manipulation-regularization-enabling-offline-agent-alignment-for-imitation-learning)  
+   evidence：通过离策略锚样本稳定LLM在线强化学习
+3. [Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories](/202607/14/2607.10601v1-agentic-dpo-from-imitation-to-agentic-policy-optimization-on-expert-trajectories)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：面向LLM智能体的离线策略优化方法
+4. [Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation](/202607/14/2607.10805v1-diagnosing-and-mitigating-thinking-collapse-in-on-policy-self-distillation)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：诊断并缓解在线策略自蒸馏中的思维崩溃
+5. [EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models](/202607/14/2607.11012v1-easyopd-an-easy-to-use-on-policy-distillation-framework-for-large-language-models)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：大语言模型在策略蒸馏框架
+6. [Reinforcement Learning with Verifiable Physics: Post-training LLMs with Continuous Rewards](/202607/14/2607.10474v1-reinforcement-learning-with-verifiable-physics-post-training-llms-with-continuous-rewards)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：利用反馈和强化学习进行离线智能体对齐
-3. [Prompt-Driven Exploration](/202607/13/2607.08837v1-prompt-driven-exploration)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：使用LLM提示进行策略探索
-4. [Learning More from Less: Reinforcement Learning from Hindsight](/202607/13/2607.09042v1-learning-more-from-less-reinforcement-learning-from-hindsight)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：利用事后重标对视觉-语言-动作模型进行强化学习后训练
-5. [Multimodal Reward Hacking in Reinforcement Learning](/202607/13/2607.09492v1-multimodal-reward-hacking-in-reinforcement-learning)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：研究多模态大语言模型强化学习对齐中的奖励黑客问题，提出NRFR指标
+   evidence：利用可验证奖励的强化学习后训练大语言模型，可推广至推理任务
 
 ### 速读区论文标签
-1. [Mitigating Factual Hallucination in Large Reasoning Models via Mixed-Mode Advantage Regularization](/202607/13/2607.05861v1-mitigating-factual-hallucination-in-large-reasoning-models-via-mixed-mode-advantage-regularization)  
+1. [Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF](/202607/14/2607.10750v1-filtering-harmful-actions-isnt-enough-phantom-transfer-in-agentic-sdf)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：使用近似强化学习轨迹的合成数据微调模型以研究智能体行为
+2. [SETA: Scaling Environments for Terminal Agents](/202607/14/2607.10891v1-seta-scaling-environments-for-terminal-agents)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：为LLM智能体生成强化学习环境的可扩展框架
+3. [Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals](/202607/14/2607.11505v1-proxy-exploration-and-reusable-guidance-a-modular-llm-post-training-paradigm-via-proxy-guided-update-signals)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：使用代理引导的RL信号进行LLM后训练
+4. [GRASP: GRanularity-Aware Search Policy for Agentic RAG](/202607/14/2607.10463v1-grasp-granularity-aware-search-policy-for-agentic-rag)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：利用优势正则化改善LLM推理
-2. [Bidirectional Resource Scheduling for Disaggregated and Asynchronous RL Post-Training](/202607/13/2607.09207v1-bidirectional-resource-scheduling-for-disaggregated-and-asynchronous-rl-post-training)  
+   evidence：用于训练LLM智能体检索策略的RL框架
+5. [Tool-Adaptive LLM Reranker](/202607/14/2607.10555v1-tool-adaptive-llm-reranker)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：面向LLM解耦异步RL后训练的资源调度
+   evidence：将评分形式化为agentic MDP的LLM重排序器
+6. [To Answer or to Abstain: Mitigating Search-Agent Hallucinations via Abstention-Aware Reinforcement Learning](/202607/14/2607.10738v1-to-answer-or-to-abstain-mitigating-search-agent-hallucinations-via-abstention-aware-reinforcement-learning)  
+   标签：评分：7.0/10、query:agentic-rl
+   evidence：针对LLM搜索智能体的强化学习，加入回避奖励
+7. [Actor as Its Own Critic: Unifying Region Understanding and Localization via CycleGRPO](/202607/14/2607.11581v1-actor-as-its-own-critic-unifying-region-understanding-and-localization-via-cyclegrpo)  
+   标签：评分：7.0/10、query:agentic-rl
+   evidence：多模态大语言模型的强化学习框架
 
 
 <div class="dpr-home-promo-card">
