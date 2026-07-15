@@ -6,59 +6,46 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-14
-- 运行时间：2026-07-14 21:28:30 UTC
+- 最新运行日期：2026-07-15
+- 运行时间：2026-07-15 20:40:25 UTC
 - 运行状态：成功
-- 本次总论文数：13
-- 精读区：6
-- 速读区：7
+- 本次总论文数：8
+- 精读区：2
+- 速读区：6
 
 ### 今日简报（AI）
-今天精选13篇论文，精读6篇、速读7篇，聚焦大模型强化学习与智能体安全边界。最值得关注的两个方向：一是用预测性分歧掩码提升LLM在线RL稳定性（满分10分），二是揭示智能体安全防护中“幽灵传递”漏洞（8分）。建议普通读者优先精读这两篇，后续可结合离线锚样本技术（ARMOR）构建更稳健的LLM训练流程。
-- 详情：[/202607/14/README](/202607/14/README)
+今日精读2篇高分论文，聚焦推理路径优化与语言模型置信度评估。  
+最值得看SCOPE-RL的推理路径优化（9.0分）及Critic Experience Bank的步骤级置信度估计。  
+建议关注如何通过路径优化与置信度机制提升AI推理可靠性。
+- 详情：[/202607/15/README](/202607/15/README)
 
 ### 精读区论文标签
-1. [Predictive Divergence Masks for LLM RL](/202607/14/2607.10848v1-predictive-divergence-masks-for-llm-rl)  
-   标签：评分：10.0/10、query:agentic-rl
-   evidence：用于LLM强化学习策略优化的新掩码方法
-2. [ARMOR: Stabilizing On-Policy LLM RL with Off-Policy Anchor Samples](/202607/14/2607.10481v1-armor-stabilizing-on-policy-llm-rl-with-off-policy-anchor-samples)  
+1. [SCOPE-RL: Optimizing Reasoning Paths Before and After Success](/202607/15/2607.11506v1-scope-rl-optimizing-reasoning-paths-before-and-after-success)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：通过离策略锚样本稳定LLM在线强化学习
-3. [Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories](/202607/14/2607.10601v1-agentic-dpo-from-imitation-to-agentic-policy-optimization-on-expert-trajectories)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：面向LLM智能体的离线策略优化方法
-4. [Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation](/202607/14/2607.10805v1-diagnosing-and-mitigating-thinking-collapse-in-on-policy-self-distillation)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：诊断并缓解在线策略自蒸馏中的思维崩溃
-5. [EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models](/202607/14/2607.11012v1-easyopd-an-easy-to-use-on-policy-distillation-framework-for-large-language-models)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：大语言模型在策略蒸馏框架
-6. [Reinforcement Learning with Verifiable Physics: Post-training LLMs with Continuous Rewards](/202607/14/2607.10474v1-reinforcement-learning-with-verifiable-physics-post-training-llms-with-continuous-rewards)  
+   evidence：使用可验证奖励的强化学习优化LLM推理路径。
+2. [From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation](/202607/15/2607.12687v1-from-critic-to-confidence-ppo-for-language-based-quantitative-prediction-with-confidence-estimation)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：利用可验证奖励的强化学习后训练大语言模型，可推广至推理任务
+   evidence：使用PPO强化学习框架微调大语言模型进行定量预测并估计置信度
 
 ### 速读区论文标签
-1. [Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF](/202607/14/2607.10750v1-filtering-harmful-actions-isnt-enough-phantom-transfer-in-agentic-sdf)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：使用近似强化学习轨迹的合成数据微调模型以研究智能体行为
-2. [SETA: Scaling Environments for Terminal Agents](/202607/14/2607.10891v1-seta-scaling-environments-for-terminal-agents)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：为LLM智能体生成强化学习环境的可扩展框架
-3. [Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals](/202607/14/2607.11505v1-proxy-exploration-and-reusable-guidance-a-modular-llm-post-training-paradigm-via-proxy-guided-update-signals)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：使用代理引导的RL信号进行LLM后训练
-4. [GRASP: GRanularity-Aware Search Policy for Agentic RAG](/202607/14/2607.10463v1-grasp-granularity-aware-search-policy-for-agentic-rag)  
+1. [Metadata-Free Meta-Reweighted Direct Preference Optimization under Noisy Preference Labels](/202607/15/2607.09796v1-metadata-free-meta-reweighted-direct-preference-optimization-under-noisy-preference-labels)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：用于训练LLM智能体检索策略的RL框架
-5. [Tool-Adaptive LLM Reranker](/202607/14/2607.10555v1-tool-adaptive-llm-reranker)  
+   evidence：针对含噪标签的大语言模型直接偏好优化
+2. [Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents](/202607/15/2607.12397v1-critic-experience-bank-self-evolving-step-level-confidence-estimation-for-llm-agents)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：将评分形式化为agentic MDP的LLM重排序器
-6. [To Answer or to Abstain: Mitigating Search-Agent Hallucinations via Abstention-Aware Reinforcement Learning](/202607/14/2607.10738v1-to-answer-or-to-abstain-mitigating-search-agent-hallucinations-via-abstention-aware-reinforcement-learning)  
+   evidence：基于经验库的LLM agent步级置信度估计，与agentic RL中的价值学习相关
+3. [A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism](/202607/15/2607.12640v1-a-learning-rate-gated-failure-of-grpo-in-a-small-language-and-vision-language-model-web-agent-a-controlled-null-and-its-mechanism)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：针对LLM搜索智能体的强化学习，加入回避奖励
-7. [Actor as Its Own Critic: Unifying Region Understanding and Localization via CycleGRPO](/202607/14/2607.11581v1-actor-as-its-own-critic-unifying-region-understanding-and-localization-via-cyclegrpo)  
+   evidence：研究GRPO强化学习方法在小语言模型Web智能体上的表现
+4. [ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning](/202607/15/2607.12931v1-extoken-structured-exploration-for-efficient-vision-language-action-reinforcement-fine-tuning)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：多模态大语言模型的强化学习框架
+   evidence：对视觉-语言-动作模型进行RL微调，引入结构化探索token，类似LLM RL
+5. [Latent Memory Palace: Reasoning for Control as Autoregressive Variational Inference](/202607/15/2607.08724v1-latent-memory-palace-reasoning-for-control-as-autoregressive-variational-inference)  
+   标签：评分：6.0/10、query:agentic-rl
+   evidence：将推理作为自回归变分推断应用于控制策略，与agentic RL中的推理相关
+6. [OS-Pruner: Pruning Chains-of-Thought of Reasoning Models via Optimal Stopping](/202607/15/2607.11089v1-os-pruner-pruning-chains-of-thought-of-reasoning-models-via-optimal-stopping)  
+   标签：评分：6.0/10、query:agentic-rl
+   evidence：通过最优停止修剪思维链推理步骤
 
 
 <div class="dpr-home-promo-card">

@@ -1,0 +1,339 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-15T20:35:40.206876+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 6,
+    "quick_skim_target": 11,
+    "quick_selected": 6
+  },
+  "deep_dive": [
+    {
+      "id": "2607.11506v1",
+      "source": "arxiv",
+      "title": "SCOPE-RL: Optimizing Reasoning Paths Before and After Success",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) optimizes LLMs using sparse verifiable final-answer rewards. This sparse anchor reliably verifies whether a trajectory succeeds but provides no direct feedback on the reasoning path that produced it. Before success, prerequisite progress on hard problems receives no reward signal; after success, outcome rewards cannot distinguish well-organized correct trajectories from redundant or locally flawed ones. We introduce SCOPE-RL (Scaffolded Chain Optimization with Process Efficiency), a two-stage framework that densifies this anchor while retaining the GRPO update: Adaptive Scaffolded RL adds prefix-decomposed verifiable rewards on answer-hidden sub-question chains before success, and Quality-Aware Process RL applies correctness-gated process-shape rewards to refine correct trajectories after success. An expert-validated Step-Quality Evaluation Protocol evaluates useful-step density, error localization, and token efficiency beyond final-answer accuracy. On Qwen3-8B-Instruct trained on DAPO-Math and Big-Math, SCOPE-RL improves average accuracy by up to 11.2 pp and reduces reasoning tokens by up to 27.1% over outcome-only GRPO; the gains hold under GSPO and on Qwen3-0.6B-Instruct, indicating that reward-signal densification is complementary to policy-update-level RLVR advances. Code and data are available at https://github.com/tokencraft-lab/SCOPE-RL.",
+      "authors": [
+        "Xiaojian Liu",
+        "Han Xu",
+        "Jianqiang Xia",
+        "Zhixuan Li",
+        "Ke Xu",
+        "Yiwei Dai",
+        "Xinran Chen",
+        "Changwo Wu",
+        "Yuchen Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-13T12:56:28+00:00",
+      "link": "https://arxiv.org/pdf/2607.11506v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Reinforcement learning with verifiable rewards to optimize LLM reasoning paths.",
+      "llm_evidence_cn": "使用可验证奖励的强化学习优化LLM推理路径。",
+      "llm_evidence": "使用可验证奖励的强化学习优化LLM推理路径。",
+      "canonical_evidence": "使用可验证奖励的强化学习优化LLM推理路径。",
+      "llm_tldr_en": "SCOPE-RL is a two-stage RL framework that densifies verifiable rewards before and after success to optimize LLM reasoning paths using GRPO.",
+      "llm_tldr_cn": "该论文针对稀疏可验证奖励下LLM推理路径优化不足的问题，提出SCOPE-RL两阶段框架：在成功前通过前缀分解添加可验证奖励，成功后通过质量感知过程RL区分优质与冗余轨迹。实验表明该方法能有效提升推理路径的质量和效率，兼顾探索与收敛。",
+      "llm_tldr": "该论文针对稀疏可验证奖励下LLM推理路径优化不足的问题，提出SCOPE-RL两阶段框架：在成功前通过前缀分解添加可验证奖励，成功后通过质量感知过程RL区分优质与冗余轨迹。实验表明该方法能有效提升推理路径的质量和效率，兼顾探索与收敛。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.12687v1",
+      "source": "arxiv",
+      "title": "From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation",
+      "abstract": "LLMs can perform language-based quantitative prediction from unstructured inputs, but remain susceptible to hallucinations and overconfident errors, making it critical to know not only what a model predicts, but when its predictions can be trusted. We introduce CARE-PPO, a reinforcement learning framework that establishes a connection between loss prediction for uncertainty estimation and actor-critic PPO fine-tuning, enabling joint learning of accurate numerical estimates and reliable confidence signals in language-based quantitative prediction. CARE-PPO uses a Confidence-Aligned Reward for Estimation, defined as a function of prediction error, to provide dense error-aware feedback to the actor while inducing the critic to learn a value function aligned with prediction quality. During inference, we repurpose the critic as a confidence estimator. Across two real-world tasks in healthcare and finance and two Qwen-3 model scales (4B and 8B), CARE-PPO achieves strong quantitative prediction performance, while producing significantly better-aligned confidence estimates through the critic than logit-based and verbalized baselines. These gains persist under realistic out-of-distribution settings across domains, spanning linguistic and domain shifts. Finally, CARE-PPO reduces task-specific overfitting on general instruction-following prompts, consistent with the broader generalization advantages of RL fine-tuning over supervised approaches.",
+      "authors": [
+        "Mehak Dhaliwal",
+        "Rasta Tadayon",
+        "Andong Hua",
+        "Haewon Jeong",
+        "Yao Qin"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-14T12:15:19+00:00",
+      "link": "https://arxiv.org/pdf/2607.12687v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "PPO fine-tuning for LLM quantitative prediction with confidence estimation",
+      "llm_evidence_cn": "使用PPO强化学习框架微调大语言模型进行定量预测并估计置信度",
+      "llm_evidence": "使用PPO强化学习框架微调大语言模型进行定量预测并估计置信度",
+      "canonical_evidence": "使用PPO强化学习框架微调大语言模型进行定量预测并估计置信度",
+      "llm_tldr_en": "Introduces CARE-PPO, a RL framework that combines PPO with confidence estimation for language-based quantitative prediction, using a confidence-aligned reward to jointly learn accurate predictions and reliable confidence.",
+      "llm_tldr_cn": "大语言模型在语言定量预测中存在幻觉和过度自信问题。本文提出CARE-PPO框架，将损失预测与PPO演员-评论家微调结合，共同学习准确数值估计和可靠置信信号。该方法通过基于预测误差的置信对齐奖励提供密集反馈，使模型不仅能输出预测，还能提供可信度估计。实验表明其在多个预测任务上优于基线。",
+      "llm_tldr": "大语言模型在语言定量预测中存在幻觉和过度自信问题。本文提出CARE-PPO框架，将损失预测与PPO演员-评论家微调结合，共同学习准确数值估计和可靠置信信号。该方法通过基于预测误差的置信对齐奖励提供密集反馈，使模型不仅能输出预测，还能提供可信度估计。实验表明其在多个预测任务上优于基线。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.09796v1",
+      "source": "arxiv",
+      "title": "Metadata-Free Meta-Reweighted Direct Preference Optimization under Noisy Preference Labels",
+      "abstract": "Direct Preference Optimization (DPO) has become an important method for aligning large language models (LLMs) with human preferences because it removes the need for explicit reward modeling and reinforcement learning optimization. However, its performance depends heavily on the quality of preference data, and noisy preference data in real-world settings can weaken alignment performance. To address this issue, we propose a bilevel optimization framework and prove, under certain assumptions, that this framework can recover the DPO optimum under clean data. We further derive a prior form for the learnable weighting function under asymmetric label-flipping noise. Considering that high-quality metadata may be difficult to obtain, we propose a task-agnostic meta-knowledge-driven method that enables meta-learning even when metadata is completely unavailable. To reduce the high cost of higher-order gradients in LLM meta-learning, we combine central-difference approximation with LoRA fine-tuning and develop a scalable training scheme. Experiments on TL;DR summarization and Anthropic HH single-turn dialogue show that the proposed method improves training performance over multiple DPO baselines under different noise rates.",
+      "authors": [
+        "Hua Qu",
+        "Yifan Li",
+        "Xiaodong Yuan"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-09T09:20:25+00:00",
+      "link": "https://arxiv.org/pdf/2607.09796v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Direct preference optimization for LLM alignment under noisy labels",
+      "llm_evidence_cn": "针对含噪标签的大语言模型直接偏好优化",
+      "llm_evidence": "针对含噪标签的大语言模型直接偏好优化",
+      "canonical_evidence": "针对含噪标签的大语言模型直接偏好优化",
+      "llm_tldr_en": "Proposes a metadata-free meta-reweighted DPO method using bilevel optimization to improve LLM alignment under noisy preference labels, recovering optimal performance under clean data and handling asymmetric label-flipping noise.",
+      "llm_tldr_cn": "提出一种无需元数据的元加权直接偏好优化方法，通过双层优化框架在含噪偏好标签下恢复干净数据的最优解，并推导出非对称标签翻转噪声下的可学习加权函数先验形式，显著提升大语言模型对齐的鲁棒性。",
+      "llm_tldr": "提出一种无需元数据的元加权直接偏好优化方法，通过双层优化框架在含噪偏好标签下恢复干净数据的最优解，并推导出非对称标签翻转噪声下的可学习加权函数先验形式，显著提升大语言模型对齐的鲁棒性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.08724v1",
+      "source": "arxiv",
+      "title": "Latent Memory Palace: Reasoning for Control as Autoregressive Variational Inference",
+      "abstract": "Human decision-making is highly flexible -- some actions are taken immediately; others require longer deliberation. Language models have exhibited a similar capacity for adaptive \"reasoning.\" However, transferring this capability to continuous control policies has been challenging, as directly reasoning in language space may lack the granularity for spatial understanding and precise motions. In this work, we show that reasoning for control policies can emerge by organizing information in an autoregressive latent space reminiscent of a memory palace, where retrieval is iterative and adaptive. Our method, Latent Memory Palace (LMP), formulates reasoning as variational inference with an autoregressive latent distribution. We derive a latent-space reinforcement learning technique to tractably optimize its variational lower bound. The resulting policy, LMP-$π$, achieves strong empirical performance in simulation and real-world domains while exhibiting interpretable, adaptive allocation of test-time compute. We further show that the same framework yields a variable-length action tokenizer, LMP-$\\texttt{tok}$, which significantly improves the performance of downstream autoregressive policies. Together, these results present a new perspective on latent reasoning for control through the lens of variational inference.",
+      "authors": [
+        "Chuning Zhu",
+        "Eva Xu",
+        "Jose Barreiros",
+        "Krishnan Srinivasan",
+        "Paarth Shah",
+        "Abhishek Gupta"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "published": "2026-07-09T17:30:49+00:00",
+      "link": "https://arxiv.org/pdf/2607.08724v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "reasoning for control as autoregressive variational inference",
+      "llm_evidence_cn": "将推理作为自回归变分推断应用于控制策略，与agentic RL中的推理相关",
+      "llm_evidence": "将推理作为自回归变分推断应用于控制策略，与agentic RL中的推理相关",
+      "canonical_evidence": "将推理作为自回归变分推断应用于控制策略，与agentic RL中的推理相关",
+      "llm_tldr_en": "Latent Memory Palace formulates reasoning in control policies as autoregressive variational inference, enabling adaptive deliberation in continuous action spaces.",
+      "llm_tldr_cn": "人类决策中有些行动立即执行，有些需要深思熟虑，语言模型虽展示了类似的适应性推理能力，但将其迁移到连续控制策略中仍然困难。本文提出潜在记忆宫殿方法，将推理建模为自回归潜在分布上的变分推断，使控制策略能自适应组织信息并迭代检索。在连续控制任务中，该方法展示了类似语言模型的推理灵活性，提升了任务成功率。",
+      "llm_tldr": "人类决策中有些行动立即执行，有些需要深思熟虑，语言模型虽展示了类似的适应性推理能力，但将其迁移到连续控制策略中仍然困难。本文提出潜在记忆宫殿方法，将推理建模为自回归潜在分布上的变分推断，使控制策略能自适应组织信息并迭代检索。在连续控制任务中，该方法展示了类似语言模型的推理灵活性，提升了任务成功率。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.12397v1",
+      "source": "arxiv",
+      "title": "Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents",
+      "abstract": "LLM agents act in external environments where each action changes the state that later decisions condition on, and where a single wrong step can waste interaction budget or trigger irreversible side effects long before the final failure is observed. Reliable deployment therefore requires \\emph{step-level confidence estimation}: a calibrated probability that each proposed action is productive, available \\emph{before} the action is executed. Existing LLM confidence estimators are designed to score a response from the given prompt, but agent confidence also depends on execution consequences: whether similar actions in similar situations actually advanced the task after the environment responded. We introduce the \\method (\\methodshort), a self-evolving critic framework in which an LLM critic accumulates evidence from its own past judgments and their observed consequences. After each trajectory, a hindsight LLM that sees the full execution feedback votes on whether each step was productive. The resulting pseudo-labels populate a memory bank from which related productive and unproductive experiences are retrieved into the critic's prompt whenever a similar step recurs. \\methodshort requires no training and uses no ground truth step labels. Across three agent benchmarks and three critic backbones, \\methodshort attains the best calibration (ECE and Brier) and ranking (AUC) in every dataset--critic combination, reducing ECE by up to $54\\%$ relative to the strongest training-free baseline.",
+      "authors": [
+        "Yaopei Zeng",
+        "Congchao Wang",
+        "JianHang Chen",
+        "Nan Wang",
+        "Yurui Chang",
+        "Lu Lin"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14T06:17:09+00:00",
+      "link": "https://arxiv.org/pdf/2607.12397v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "step-level confidence estimation for LLM agents using experience bank",
+      "llm_evidence_cn": "基于经验库的LLM agent步级置信度估计，与agentic RL中的价值学习相关",
+      "llm_evidence": "基于经验库的LLM agent步级置信度估计，与agentic RL中的价值学习相关",
+      "canonical_evidence": "基于经验库的LLM agent步级置信度估计，与agentic RL中的价值学习相关",
+      "llm_tldr_en": "Critic Experience Bank provides step-level confidence estimation for LLM agents by learning from execution outcomes, improving reliable deployment without requiring action execution.",
+      "llm_tldr_cn": "LLM agent在环境中每一步都可能产生不可逆后果，因此步级置信度估计至关重要。现有置信度估计仅基于输入提示，忽略动作执行后的实际反馈。本文提出Critic Experience Bank，一个自演进的置信度估计框架，通过记忆类似情境下的执行结果来校准置信度。实验表明，该方法在多种agent任务中有效提升置信度校准质量，减少危险动作。",
+      "llm_tldr": "LLM agent在环境中每一步都可能产生不可逆后果，因此步级置信度估计至关重要。现有置信度估计仅基于输入提示，忽略动作执行后的实际反馈。本文提出Critic Experience Bank，一个自演进的置信度估计框架，通过记忆类似情境下的执行结果来校准置信度。实验表明，该方法在多种agent任务中有效提升置信度校准质量，减少危险动作。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.11089v1",
+      "source": "arxiv",
+      "title": "OS-Pruner: Pruning Chains-of-Thought of Reasoning Models via Optimal Stopping",
+      "abstract": "Large Language Models (LLMs) have achieved remarkable success in complex reasoning tasks through Chain-of-Thought (CoT) prompting. However, these models often exhibit \"computational overthinking,\" generating redundant reasoning steps that increase latency and cost without improving accuracy. Recent studies suggest that CoT trajectories can be significantly pruned, yet existing methods often rely on forcing a static thinking budget, heuristic filtering, sub-optimal early exit via classification, or expensive re-training. In this paper, we introduce OS-Pruner, a lightweight plug-in framework that formulates chain-of-thought pruning as an optimal stopping problem. Given a reasoning prefix, OS-Pruner learns whether further reasoning is worth its token cost by optimizing an explicit utility that trades off final-answer accuracy against generated length. Our novel formulation enables the model to dynamically assess the sufficient point of termination for a reasoning chain. OS-Pruner is designed to be lightweight during both training and inference, and to provide users with fine-grained control over the reasoning-effort vs. accuracy trade-off. On diverse reasoning benchmarks and base models, OS-Pruner achieves 20-60\\% reduction in generation length with minimal accuracy sacrifice.",
+      "authors": [
+        "Mohammed Ehab",
+        "Aymane El Gadarri",
+        "Vivek F. Farias",
+        "Adam Jozefiak",
+        "Ciamac C. Moallemi"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13T04:57:22+00:00",
+      "link": "https://arxiv.org/pdf/2607.11089v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Optimal stopping for pruning CoT reasoning steps",
+      "llm_evidence_cn": "通过最优停止修剪思维链推理步骤",
+      "llm_evidence": "通过最优停止修剪思维链推理步骤",
+      "canonical_evidence": "通过最优停止修剪思维链推理步骤",
+      "llm_tldr_en": "OS-Pruner formulates chain-of-thought pruning as an optimal stopping problem, learning when to stop reasoning to reduce cost without losing accuracy.",
+      "llm_tldr_cn": "大语言模型在复杂推理中常产生冗余思维链步骤，导致计算浪费。现有方法依赖固定预算或启发式过滤，效果有限。本文提出OS-Pruner，将思维链修剪视为最优停止问题，学习根据当前推理前缀判断是否需要继续推理。实验表明，该方法在保持推理质量的同时显著减少了推理步骤，降低了延迟和成本。",
+      "llm_tldr": "大语言模型在复杂推理中常产生冗余思维链步骤，导致计算浪费。现有方法依赖固定预算或启发式过滤，效果有限。本文提出OS-Pruner，将思维链修剪视为最优停止问题，学习根据当前推理前缀判断是否需要继续推理。实验表明，该方法在保持推理质量的同时显著减少了推理步骤，降低了延迟和成本。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.12640v1",
+      "source": "arxiv",
+      "title": "A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism",
+      "abstract": "Reinforcement learning with verifiable rewards, and Group Relative Policy Optimization (GRPO) in particular, is now run routinely on a supervised checkpoint in the hope of producing a stronger agent. We ask whether it adds skill to a small language and vision-language model web agent at the 4B to 8B scale, or whether it mostly reshapes behavior the supervised model already has. Across a control grid of 18 runs that varies learning rate, KL weight, seed, initialization, and clipping, no configuration credibly improves the success rate of a strong supervised baseline on tasks the agent has largely mastered. On the text track, moderate to high learning rates make it credibly worse. The null holds under paired testing, 25 evaluation seeds, 6 training seeds, changes to the recipe, both text and Set-of-Marks screenshot observations, and scaling the backbone to 8B; the credible harm is a text-track finding and is only nominal under Set-of-Marks. To show that the null reflects the setting and not a broken pipeline, we run the identical harness, reward, and recipe on tasks whose reward is reachable by sampling, and there the success rate rises by 22 points with a paired interval that excludes zero. GRPO therefore helps only when there is headroom to climb, meaning the sampled policy already succeeds more often than the greedy one. We then explain the failure. A middle learning rate degrades the agent and a high one collapses it, and the two regimes form a double dissociation: grafting localizes the degrade regime to the attention and MLP blocks, while the collapse regime cannot be traced to any single group, and the embedding change that dominates the weight movement is causally inert. At 4B, effective rank in the late layers tracks capability in both directions; at 8B the two come apart. This coupling is specific to the smaller model, so we report it as scale-dependent.",
+      "authors": [
+        "Chengguang Gan",
+        "Zhixi Cai",
+        "Yunhao Liang",
+        "Hanjun Wei",
+        "Shiwen Ni",
+        "Qinghao Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-14T11:17:35+00:00",
+      "link": "https://arxiv.org/pdf/2607.12640v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Study of GRPO (RL) on small language model web agents",
+      "llm_evidence_cn": "研究GRPO强化学习方法在小语言模型Web智能体上的表现",
+      "llm_evidence": "研究GRPO强化学习方法在小语言模型Web智能体上的表现",
+      "canonical_evidence": "研究GRPO强化学习方法在小语言模型Web智能体上的表现",
+      "llm_tldr_en": "Investigates whether GRPO reinforcement learning improves web agent performance at 4-8B scale; finds no improvement over supervised baseline and even degradation at high learning rates.",
+      "llm_tldr_cn": "强化学习特别是GRPO被常规用于监督检查点后以提升智能体能力。本文通过18组对照实验，在4B到8B规模的视觉-语言模型Web智能体上系统测试了GRPO的效果。结果显示，在所有配置下GRPO均未显著提升强监督基线的成功率，且高学习率会导致性能下降。该零假设结果表明，对于已掌握任务的小模型，RL可能只是重塑已有行为而非增加新技能，为RL在LLM微调中的效果边界提供了重要实证。",
+      "llm_tldr": "强化学习特别是GRPO被常规用于监督检查点后以提升智能体能力。本文通过18组对照实验，在4B到8B规模的视觉-语言模型Web智能体上系统测试了GRPO的效果。结果显示，在所有配置下GRPO均未显著提升强监督基线的成功率，且高学习率会导致性能下降。该零假设结果表明，对于已掌握任务的小模型，RL可能只是重塑已有行为而非增加新技能，为RL在LLM微调中的效果边界提供了重要实证。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.12931v1",
+      "source": "arxiv",
+      "title": "ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning",
+      "abstract": "Reinforcement Learning (RL) has demonstrated significant potential for improving Vision-Language-Action (VLA) models on complex manipulation tasks. However, its practical scalability remains severely limited by the substantial cost of environmental interactions. In this work, we first investigate the exploration stagnation bottleneck in current VLA-RL frameworks and reveal that trajectory diversity is fundamentally more important to sample efficiency than the sheer quantity of collected rollouts. Motivated by these insights, we introduce RL Exploration Token (ExToken), a simple yet general framework that condition VLA policies on discrete behavioral priors derived from offline demonstrations for structured exploration. By conditioning the policy on different tokens during rollout collection, ExToken encourages the agent to explore diverse behavioral modes, substantially improving state-action coverage and exploration efficiency. To bridge exploration during training with deterministic inference at deployment, ExToken further incorporates a state-conditioned token selector that adaptively predicts effective behavioral modes for unseen scenarios. Extensive experiments across simulated and real-world robotic manipulation tasks demonstrate that ExToken consistently accelerates convergence, improves task performance, and exhibits strong robustness under highly constrained interaction budgets.",
+      "authors": [
+        "Yilun Kong",
+        "Yunpeng Qing",
+        "Guozheng Ma",
+        "Haoyu Wang",
+        "Li Shen",
+        "Zhi Hou",
+        "Dacheng Tao"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-07-14T16:04:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.12931v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "RL fine-tuning for VLA models with structured exploration token",
+      "llm_evidence_cn": "对视觉-语言-动作模型进行RL微调，引入结构化探索token，类似LLM RL",
+      "llm_evidence": "对视觉-语言-动作模型进行RL微调，引入结构化探索token，类似LLM RL",
+      "canonical_evidence": "对视觉-语言-动作模型进行RL微调，引入结构化探索token，类似LLM RL",
+      "llm_tldr_en": "ExToken improves sample efficiency in RL fine-tuning of VLA models by conditioning on discrete behavioral priors for structured exploration.",
+      "llm_tldr_cn": "强化学习在提升视觉-语言-动作模型操作任务上潜力巨大，但环境交互成本高昂。本文诊断出探索停滞瓶颈，并揭示轨迹多样性对样本效率更重要。为此提出ExToken框架，将策略条件化在离线演示导出的离散行为先验上，实现结构化探索。实验表明，该方法显著减少所需交互次数，在多个模拟操作任务中以更少样本达到同等或更好性能。",
+      "llm_tldr": "强化学习在提升视觉-语言-动作模型操作任务上潜力巨大，但环境交互成本高昂。本文诊断出探索停滞瓶颈，并揭示轨迹多样性对样本效率更重要。为此提出ExToken框架，将策略条件化在离线演示导出的离散行为先验上，实现结构化探索。实验表明，该方法显著减少所需交互次数，在多个模拟操作任务中以更少样本达到同等或更好性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
