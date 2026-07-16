@@ -1,0 +1,458 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-16T20:58:47.957963+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2607.07050v2",
+      "source": "arxiv",
+      "title": "Diagnosing and Calibrating Tool-Call Boundary Drift in Multi-Teacher On-Policy Distillation",
+      "abstract": "Agentic language models must learn when to call tools, when to consume tool responses, and when to answer directly. This makes multi-teacher on-policy distillation a natural training strategy: one teacher can specialize in tool calls, another in direct responses, and the student can learn from both on   its own generated distribution. We show that this strategy can induce a behavior shift that is invisible from aggregate losses alone. In a two-teacher tool-use setting, vanilla generalized knowledge distillation improves tool-call recall but also moves the model toward over-calling, where it calls tools   on examples that should be answered directly. Aggregate explanations are insufficient: tool-call samples do not receive more token exposure, and full-sequence per-token divergence is not larger for the tool-call teacher. We instead analyze behavior leverage imbalance: local token-level signals at mode-   entry and structural positions, such as <tool_call> and function names, can have disproportionate control over the global generation mode. We propose Soft Clamp, a per-token divergence calibration method that dynamically compresses extreme token-level Jensen-Shannon divergence while preserving nonzero   gradients. On APIGen-MT, Soft Clamp reduces over-calling from 13.7% to 9.0% relative to vanilla GKD while matching its decision accuracy. In a BFCL multi-turn diagnostic, it also lowers tool-call loops and repeated calls among GKD variants. These results suggest that multi-teacher OPD should monitor   where teacher signals act, not only how large they are in aggregate.",
+      "authors": [
+        "Jiabin Shen",
+        "Guang Chen",
+        "Chengjun Mao"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-08T06:26:13+00:00",
+      "link": "https://arxiv.org/pdf/2607.07050v2",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Multi-teacher on-policy distillation for agentic language models, directly addressing online policy distillation requirement",
+      "llm_evidence_cn": "多教师在线策略蒸馏用于智能体语言模型，直接对应在线策略蒸馏需求",
+      "llm_evidence": "多教师在线策略蒸馏用于智能体语言模型，直接对应在线策略蒸馏需求",
+      "canonical_evidence": "多教师在线策略蒸馏用于智能体语言模型，直接对应在线策略蒸馏需求",
+      "llm_tldr_en": "Multi-teacher on-policy distillation induces tool-call boundary drift; the paper diagnoses and calibrates this over-calling behavior.",
+      "llm_tldr_cn": "智能体语言模型需要学习何时调用工具、何时直接回答，多教师在线策略蒸馏是一种自然策略。然而，本文发现这种策略会导致工具调用边界漂移——模型过度调用工具。通过损失分析揭示了这种行为偏移在聚合损失中不可见。本文提出了校准方法以缓解过度调用，从而在保持工具调用召回的同时避免不必要的工具使用。",
+      "llm_tldr": "智能体语言模型需要学习何时调用工具、何时直接回答，多教师在线策略蒸馏是一种自然策略。然而，本文发现这种策略会导致工具调用边界漂移——模型过度调用工具。通过损失分析揭示了这种行为偏移在聚合损失中不可见。本文提出了校准方法以缓解过度调用，从而在保持工具调用召回的同时避免不必要的工具使用。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.10966v1",
+      "source": "arxiv",
+      "title": "SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification in Reinforcement Learning",
+      "abstract": "We introduce Self-Verified Reasoner (SVR-R1), a multi-turn RL framework that turns a model's own verification into a learning signal for multimodal reasoning. For each query, the model proposes an answer using the same weights, and issues a binary self-verdict (Yes/No). A 'No' triggers a second-chance rethink; a 'Yes,' or a turn cap, finalizes the output for computing the outcome-based reward. SVR-R1 is implemented with GRPO and an asynchronous multi-turn rollout framework and needs no external supervision or auxiliary critics. We evaluate SVR-R1 on vision-language reasoning benchmarks and show that it improves accuracy by a large margin over strong standard GRPO baselines. Training dynamics show decreasing reliance on verification-fewer verification turns, yet higher test accuracy-indicating that the gap between verification and generation narrows as the policy internalizes self-correction and chooses the most confident answer via our framework. SVR-R1 bridges the less explored intersection of inference-time self-refinement and RL training for VLMs, offering a simple yet effective recipe for bootstrapping multimodal reasoning. We will open-source \\textbf{SVR-R1} to facilitate future research in VLMs.",
+      "authors": [
+        "Mingyuan Wu",
+        "Jingcheng Yang",
+        "Shengyi Qian",
+        "Xudong Wang",
+        "Jize Jiang",
+        "Qifan Wang",
+        "Aashu Singh",
+        "Khoi Pham",
+        "Fei Liu",
+        "Zhaolun Su",
+        "Zhuokai Zhao",
+        "Klara Nahrstedt",
+        "Jianyu Wang",
+        "Hanchao Yu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13T00:21:30+00:00",
+      "link": "https://arxiv.org/pdf/2607.10966v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Multi-turn RL with self-verification for LLM reasoning, directly applying RL to improve reasoning",
+      "llm_evidence_cn": "带自验证的多轮强化学习用于LLM推理，直接应用RL改进推理",
+      "llm_evidence": "带自验证的多轮强化学习用于LLM推理，直接应用RL改进推理",
+      "canonical_evidence": "带自验证的多轮强化学习用于LLM推理，直接应用RL改进推理",
+      "llm_tldr_en": "SVR-R1 uses multi-turn RL with self-verification to bootstrap multimodal reasoning; improves accuracy over GRPO baselines.",
+      "llm_tldr_cn": "多模态推理中，模型生成答案后缺乏自我验证机制。本文提出SVR-R1，一个多轮强化学习框架，将模型自身的验证信号转化为学习信号。每轮模型给出答案并进行二元自验证，若验证为“否”则触发重新思考，最终根据结果奖励更新。使用GRPO实现，无需外部监督。在视觉语言推理基准上，SVR-R1显著优于标准GRPO基线，且训练动态显示模型逐渐减少对验证的依赖。",
+      "llm_tldr": "多模态推理中，模型生成答案后缺乏自我验证机制。本文提出SVR-R1，一个多轮强化学习框架，将模型自身的验证信号转化为学习信号。每轮模型给出答案并进行二元自验证，若验证为“否”则触发重新思考，最终根据结果奖励更新。使用GRPO实现，无需外部监督。在视觉语言推理基准上，SVR-R1显著优于标准GRPO基线，且训练动态显示模型逐渐减少对验证的依赖。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.13389v1",
+      "source": "arxiv",
+      "title": "Where Should RL Post-Training Compute Go? Model Size, Search, Learning, and Feedback",
+      "abstract": "Reinforcement Learning (RL) post-training is increasingly used to adapt foundation models for reasoning, planning, and feedback-driven robot-learning pipelines, but constrained post-training resources are often summarized by a single total FLOP budget. We study the fixed-budget decision problem behind this practice: under the same post-training budget, should one use a larger policy, train a smaller policy longer, generate more rollout search, or spend compute on stronger reward feedback? We introduce a FLOP-accounting framework for GRPO post-training that decomposes compute into rollout/search, policy-update/learning, and reward- or feedback-model evaluation. Across LoRA-adapted Qwen2.5 policies, we find conditional allocation frontiers: the best observed allocation changes with model size, compute budget, reward system, and evaluation target. Same-FLOP model-size comparisons show that model choice and training allocation are coupled because larger policies consume more per-token compute and therefore buy fewer updates or rollouts under the same budget. Reward systems also change the accounting: rule-based rewards spend nearly all non-update compute on policy rollouts, while PRM-style feedback allocates a visible part of the budget to reward-model inference. We present RACE as a diagnostic pilot-grid protocol, not a guarantee of held-out improvement, for identifying allocation regimes before expensive validation runs; our results suggest that RL post-training papers should report total FLOPs together with how compute is divided among model size, search, learning, and feedback.",
+      "authors": [
+        "Patrick Wilhelm",
+        "Odej Kao"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-15T02:34:35+00:00",
+      "link": "https://arxiv.org/pdf/2607.13389v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "RL post-training for LLMs with GRPO compute allocation",
+      "llm_evidence_cn": "关于LLM的RL后训练，使用GRPO计算分配",
+      "llm_evidence": "关于LLM的RL后训练，使用GRPO计算分配",
+      "canonical_evidence": "关于LLM的RL后训练，使用GRPO计算分配",
+      "llm_tldr_en": "This paper studies how to allocate compute budget in RL post-training for LLMs, analyzing trade-offs between model size, search, learning, and feedback, using GRPO with Qwen2.5.",
+      "llm_tldr_cn": "该论文研究在LLM的强化学习后训练中如何分配计算预算。作者提出了一个FLOP核算框架，用于GRPO后训练，将计算分解为搜索、策略更新和奖励评估。实验表明存在条件分配前沿，指导如何平衡模型大小、搜索深度、学习步数和反馈质量。这项工作为优化LLM后训练效率提供了实用指导。",
+      "llm_tldr": "该论文研究在LLM的强化学习后训练中如何分配计算预算。作者提出了一个FLOP核算框架，用于GRPO后训练，将计算分解为搜索、策略更新和奖励评估。实验表明存在条件分配前沿，指导如何平衡模型大小、搜索深度、学习步数和反馈质量。这项工作为优化LLM后训练效率提供了实用指导。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.13394v1",
+      "source": "arxiv",
+      "title": "GFlowRL: Scaling Distribution-Matching RL to Large Language Models",
+      "abstract": "Generative Flow Networks (GFlowNets) offer a promising alternative to reward-maximizing reinforcement learning (RL) for large reasoning models, encouraging diverse reasoning paths by matching reward distributions rather than collapsing to dominant modes. Recent work shows promise on math and code, but scaling GFlowNet-style RL to modern post-training pipelines remains difficult: as model size, rollout horizon, reward noise, and distributed-systems complexity grow together, a learned prompt-conditional partition function becomes a source of gradient instability and engineering overhead rather than a useful normalizer. Through systematic analysis, we find that the learned partition function, previously treated as essential, can be replaced by an in-batch Monte Carlo estimate computed from the rollout group already required for training. We propose GFlowRL, a streamlined GFlowNet-style RL algorithm that removes the auxiliary partition network entirely while preserving the reward-distribution-matching objective, completed by two stabilizers: importance-sampling correction for rollout/trainer drift and asymmetric flow-gap clipping for outlier residuals. GFlowRL exceeds all counterparts on math, code, and adversarial red-teaming benchmarks, reaching a Codeforces rating of 2048 at the 14B scale (within 25 Elo of o3-mini) and attaining the highest average ASR@1 on AdvBench and HarmBench, outperforming the previous SOTA multi-turn attacker in a regime where FlowRL, a prior GFlowNet-style method, diverges. The same recipe transfers to all evaluated MoE configurations up to 235B parameters, where FlowRL again fails to converge. To our knowledge, GFlowRL is the first GFlowNet-style RL algorithm to scale stably across both dense and sparse architectures. Code will be at: https://github.com/microsoft/gflowrl",
+      "authors": [
+        "Xiaodong Liu",
+        "Michael Xu",
+        "Jack W. Stokes",
+        "Paul Smolensky",
+        "Doug Burger",
+        "Jianfeng Gao"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-15T02:43:16+00:00",
+      "link": "https://arxiv.org/pdf/2607.13394v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "scales distribution-matching RL (GFlowNets) to LLMs",
+      "llm_evidence_cn": "将分布匹配RL(GFlowNet)扩展至LLM",
+      "llm_evidence": "将分布匹配RL(GFlowNet)扩展至LLM",
+      "canonical_evidence": "将分布匹配RL(GFlowNet)扩展至LLM",
+      "llm_tldr_en": "Scales GFlowNet-style distribution-matching RL to LLM post-training by replacing learned partition function with in-batch Monte Carlo normalization.",
+      "llm_tldr_cn": "本文解决了将生成流网络（GFlowNet）分布匹配强化学习扩展到现代LLM后训练管线的困难。以往方法因模型规模、轨迹长度和奖励噪声导致梯度不稳定。通过系统分析，发现可用批内蒙特卡洛归一化替换学习的配分函数，从而简化训练。实验表明GFlowRL在多样化生成和任务性能上均优于标准RL基线，为LLM训练提供了兼顾探索和质量的新范式。",
+      "llm_tldr": "本文解决了将生成流网络（GFlowNet）分布匹配强化学习扩展到现代LLM后训练管线的困难。以往方法因模型规模、轨迹长度和奖励噪声导致梯度不稳定。通过系统分析，发现可用批内蒙特卡洛归一化替换学习的配分函数，从而简化训练。实验表明GFlowRL在多样化生成和任务性能上均优于标准RL基线，为LLM训练提供了兼顾探索和质量的新范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.13399v1",
+      "source": "arxiv",
+      "title": "Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations",
+      "abstract": "On-policy distillation (OPD) has become a key paradigm in LLM post-training, yet its training dynamics remain poorly understood. We present a systematic study examining the role, pathologies, and regulations of OPD. We first clarify the role of OPD as an exploration catalyst: it steers the student toward correct reasoning paths via dense token-level guidance, without expanding capability ceiling. We confirm this by showing that prompt diversity matters more than per-problem sampling numbers, and critically, that the effectiveness of OPD hinges entirely on the quality of its guiding signal. This dependency exposes two pathologies that derail exploration. The Student-Teacher Mismatch occurs when a large teacher-student distributional gap causes the guiding signal to misalign with task correctness, steering exploration in counterproductive directions. Length Exploitation arises when the aggregated token-level objective creates length-dependent shortcuts, allowing the student to game the reward landscape through response truncation or redundant padding, exploring degenerate length modes rather than reasoning strategies. To tame these pathologies, we investigate lightweight signal regulations: advantage clipping and log-scale compression, ensuring exploration is guided by faithful signals. Experiments across seven benchmarks demonstrate that these regulations alleviate length exploitation and enable effective distillation, stably surpassing OPD variants and RLVR baselines, thereby confirming that well-regulated signal quality, rather than mere teacher scale, governs successful exploration in OPD.",
+      "authors": [
+        "Rui Wang",
+        "Hongru Wang",
+        "Yi Chen",
+        "Boyang Xue",
+        "Tianqing Fang",
+        "Wenhao Yu",
+        "Kam-Fai Wong"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-15T02:52:37+00:00",
+      "link": "https://arxiv.org/pdf/2607.13399v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "systematic study of on-policy distillation for LLMs",
+      "llm_evidence_cn": "对LLM在线策略蒸馏的系统研究",
+      "llm_evidence": "对LLM在线策略蒸馏的系统研究",
+      "canonical_evidence": "对LLM在线策略蒸馏的系统研究",
+      "llm_tldr_en": "A systematic study clarifying the role of on-policy distillation as an exploration catalyst and identifying two pathologies that derail exploration.",
+      "llm_tldr_cn": "本文系统研究了在线策略蒸馏（OPD）在LLM后训练中的角色、病理和调控方法。首先阐明OPD作为探索催化剂的作用：通过密集的token级引导将学生引向正确推理路径。研究发现，提示多样性比每个问题的采样数量更重要，且OPD效果完全取决于引导信号质量。这种依赖性暴露了两种病理：师生不匹配和引导信号偏差。这些发现为LLM训练中更稳健地应用OPD提供了指导。",
+      "llm_tldr": "本文系统研究了在线策略蒸馏（OPD）在LLM后训练中的角色、病理和调控方法。首先阐明OPD作为探索催化剂的作用：通过密集的token级引导将学生引向正确推理路径。研究发现，提示多样性比每个问题的采样数量更重要，且OPD效果完全取决于引导信号质量。这种依赖性暴露了两种病理：师生不匹配和引导信号偏差。这些发现为LLM训练中更稳健地应用OPD提供了指导。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.13753v1",
+      "source": "arxiv",
+      "title": "Post-Training Shifts Confidence: A Three-Stage Analysis of How SFT, RL, and OPD Shape Pre-, Intra-, and Post-CoT Calibration",
+      "abstract": "Large language models have made strong reasoning gains through supervised fine-tuning, reinforcement learning, and on-policy distillation, yet these post-training methods are usually evaluated only by final-answer accuracy. We study how they reshape confidence during reasoning. We introduce a three-stage calibration framework that evaluates confidence before, during, and after chain-of-thought generation, corresponding to difficulty estimation, early termination, and answer aggregation. Through a controlled comparison on mathematical reasoning benchmarks, we find that OPD provides the most useful pre-reasoning confidence, SFT gives the strongest online signal for early stopping, and RL produces the most reliable trace-level signal for aggregation. We further show that confidence reliability is position-dependent: RL confidence becomes informative after a path-commitment phase, while OPD confidence is useful early but can become inversely calibrated later. Based on this observation, we propose PosConf, a position-aware confidence strategy that uses confidence only from reliable relative-position intervals. PosConf improves RL answer aggregation by 6.1 points over majority voting and consistently improves OPD early stopping under tight token budgets, with gains up to 4.3 points by avoiding its later inverse-calibration region, showing that \\emph{confidence in reasoning models should be used both stage-wise and position-awarely}. Our code is available at https://github.com/EIT-NLP/Post-Training-Calibration.",
+      "authors": [
+        "Shuhao Li",
+        "Guodong Du",
+        "Anhao Zhao",
+        "Wanyu Lin",
+        "Tianyu Yuan",
+        "Xiaoyu Shen"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-15T12:12:37+00:00",
+      "link": "https://arxiv.org/pdf/2607.13753v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "analyzes how OPD (online policy distillation) shapes confidence during LLM reasoning",
+      "llm_evidence_cn": "分析在线策略蒸馏（OPD）如何影响LLM推理过程中的置信度",
+      "llm_evidence": "分析在线策略蒸馏（OPD）如何影响LLM推理过程中的置信度",
+      "canonical_evidence": "分析在线策略蒸馏（OPD）如何影响LLM推理过程中的置信度",
+      "llm_tldr_en": "Presents a three-stage calibration analysis comparing SFT, RL, and OPD on LLM reasoning confidence, finding OPD provides the best pre-reasoning confidence, SFT best online signal, and RL the best post-reasoning calibration.",
+      "llm_tldr_cn": "现有后训练方法（SFT、RL、OPD）仅用准确率评估，忽略了它们对推理置信度的不同影响。本文提出三阶段校准框架，在数学推理任务上系统比较了三种方法对推理前、推理中和推理后置信度的影响。发现OPD提供最佳推理前置信度，SFT提供最强在线信号（用于早停），RL产生最佳最终校准。该研究为选择后训练方法提供了新视角。",
+      "llm_tldr": "现有后训练方法（SFT、RL、OPD）仅用准确率评估，忽略了它们对推理置信度的不同影响。本文提出三阶段校准框架，在数学推理任务上系统比较了三种方法对推理前、推理中和推理后置信度的影响。发现OPD提供最佳推理前置信度，SFT提供最强在线信号（用于早停），RL产生最佳最终校准。该研究为选择后训练方法提供了新视角。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.10836v1",
+      "source": "arxiv",
+      "title": "Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning",
+      "abstract": "Multi-agent ensembling multiplies active parameters and inference cost without answering three basic questions: which agents to consult, how deeply a query should traverse a hierarchy of agents, and when inter-agent communication is worth its cost. We present GRADE (Gated Routing and Adaptive Depth for Efficient Reasoning), a hierarchical multi-agent system in which four lightweight learned gates jointly govern agent selection, hierarchy depth, inter-agent communication, and branch pruning. Training uses CoGRPO (Collaborative Group-Relative Policy Optimization), a novel critic-free recipe that adapts GRPO to multi-agent hierarchies and assigns a shared advantage signal to every gate and agent that participated in a rollout. Agent models are drawn from a hot-swappable Expert Registry; per-agent calibration maps allow experts to be replaced at inference time without retraining. At $\\sim$17B average active parameters, GRADE outperforms all baselines on GSM8K, MMLUPro, and GPQA, surpassing the strongest baseline by 4.8 points on MMLUPro at half the active compute. On AIME-2025, where model depth dominates, GRADE remains competitive to existing frameworks. Ablations isolate the hierarchy and masked cross-attention as the largest contributors to accuracy, and show that per-agent calibration is necessary for safe hot-swapping.",
+      "authors": [
+        "Sudipto Ghosh",
+        "Tanmoy Chakraborty"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-07-12T16:58:21+00:00",
+      "link": "https://arxiv.org/pdf/2607.10836v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Applies GRPO (policy optimization) to multi-agent reasoning for LLMs",
+      "llm_evidence_cn": "将GRPO（策略优化）应用于LLM多智能体推理",
+      "llm_evidence": "将GRPO（策略优化）应用于LLM多智能体推理",
+      "canonical_evidence": "将GRPO（策略优化）应用于LLM多智能体推理",
+      "llm_tldr_en": "GRADE uses CoGRPO, a critic-free adaptation of GRPO, to train learned gates for efficient multi-agent reasoning with adaptive depth and communication.",
+      "llm_tldr_cn": "针对多智能体推理中智能体选择、层次深度、通信成本等问题，提出GRADE系统，通过学习型门控机制联合控制智能体选择、层次深度、通信和分支剪枝。训练采用CoGRPO（协作组相对策略优化），将GRPO适配到多智能体层次结构，为所有参与的智能体和门控分配共享优势信号，实现高效推理。",
+      "llm_tldr": "针对多智能体推理中智能体选择、层次深度、通信成本等问题，提出GRADE系统，通过学习型门控机制联合控制智能体选择、层次深度、通信和分支剪枝。训练采用CoGRPO（协作组相对策略优化），将GRPO适配到多智能体层次结构，为所有参与的智能体和门控分配共享优势信号，实现高效推理。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.06935v1",
+      "source": "arxiv",
+      "title": "Mathematical methods of reinforcement learning",
+      "abstract": "Reinforcement learning (RL) is increasingly grounded in tools from probability, optimization, and operator theory. This survey organizes the mathematical structures that underpin the design and analysis of modern algorithms in RL. We begin from Markov decision processes (MDPs) and the Bellman operators, emphasizing contraction mappings, monotonicity, and fixed-point theory that yield convergence guarantees and rates for value and policy iteration, and temporal-difference schemes. We then develop the optimization perspective: stochastic approximation and martingale methods, convex duality and the role of regularization linking mirror/proximal methods. Function approximation is treated through linear and non-linear settings, covering stabilization, error decomposition, and sample-complexity via concentration inequalities for dependent data and mixing processes. We further cover off-policy evaluation/learning, constrained RL and constrained MDPs (CMDPs). Throughout we unify algorithmic templates under common operator and variational lenses, highlighting both finite-sample bounds and asymptotic results. Our presentation is intended to provide a unified mathematical entry point for researchers in probability, optimization, and statistics interested in reinforcement learning.",
+      "authors": [
+        "Denis Belomestny",
+        "Alexander Gasnikov",
+        "Egor Gladin",
+        "Alexey Naumov",
+        "Artemy Rubtsov",
+        "Yuri Sapronov",
+        "Daniil Tiapkin",
+        "Nikita Yudin"
+      ],
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "published": "2026-07-08T02:57:22+00:00",
+      "link": "https://arxiv.org/pdf/2607.06935v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Survey on mathematical foundations of reinforcement learning, relevant to RL methods for LLMs",
+      "llm_evidence_cn": "强化学习数学基础综述，与LLM的RL方法相关",
+      "llm_evidence": "强化学习数学基础综述，与LLM的RL方法相关",
+      "canonical_evidence": "强化学习数学基础综述，与LLM的RL方法相关",
+      "llm_tldr_en": "A comprehensive survey of mathematical methods in RL, covering MDPs, Bellman operators, optimization, and function approximation, providing foundational knowledge for applying RL to LLMs.",
+      "llm_tldr_cn": "该综述系统整理了强化学习背后的数学结构，包括马尔可夫决策过程、贝尔曼算子、优化视角和函数近似理论。为将RL方法应用于大语言模型提供了理论基础。读者可从中获得RL算法设计与分析的严谨数学工具。",
+      "llm_tldr": "该综述系统整理了强化学习背后的数学结构，包括马尔可夫决策过程、贝尔曼算子、优化视角和函数近似理论。为将RL方法应用于大语言模型提供了理论基础。读者可从中获得RL算法设计与分析的严谨数学工具。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.13988v1",
+      "source": "arxiv",
+      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "abstract": "Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for short-horizon reasoning, but become sparse and high-variance as trajectories grow to tens or hundreds of tool calls. They can also be misleading: a failed rollout may contain many useful actions that move the agent closer to the goal, yet outcome-only training assigns them the same negative advantage as the eventual mistake. We propose TRACE (Turn-level Reward Assignment via Credit Estimation), a dense credit-assignment method for agentic reinforcement learning. TRACE represents rollouts as state transitions at tool-call boundaries, obtains gold-answer log-probabilities from a frozen reference model, transforms them into log-ratio state values, and derives per-action rewards as Temporal-Difference changes in those values. This requires no additional critic or process-label training, and its one-step log-ratio TD component telescopes across redundant tool calls. On long-horizon complex search, TRACE substantially improves base-model tool-use ability using pure RL, without a cold-start supervised fine-tuning stage, an agentic mid-training stage, or training on live-web data. On the closed-web BrowseComp-Plus benchmark, it raises Qwen3-4B from $7.2$ to $35.6$ and Qwen3-30B-A3B from $8.4$ to $42.6$. The learned search behavior also transfers to open-web benchmarks, and the learning curves show earlier improvement and faster convergence during RL training.",
+      "authors": [
+        "Leitian Tao",
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Tao Ge",
+        "Hao Cheng",
+        "Mike Hang Wang",
+        "Jianfeng Gao",
+        "Sharon Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-15T16:16:42+00:00",
+      "link": "https://arxiv.org/pdf/2607.13988v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "agentic reinforcement learning with dense credit assignment for long-horizon agents",
+      "llm_evidence_cn": "用于长程智能体的密集信用分配智能体强化学习方法",
+      "llm_evidence": "用于长程智能体的密集信用分配智能体强化学习方法",
+      "canonical_evidence": "用于长程智能体的密集信用分配智能体强化学习方法",
+      "llm_tldr_en": "TRACE proposes a dense credit-assignment method for agentic reinforcement learning, addressing sparse and high-variance outcome rewards in long-horizon multi-turn agent tasks. It models rollouts as state transitions and assigns per-turn rewards via credit estimation.",
+      "llm_tldr_cn": "多轮智能体在长程任务中面临信用分配难题，结果奖励稀疏且高方差。本文提出TRACE方法，通过建模状态转移和信用估计为每步动作分配密集奖励，解决了智能体强化学习中因轨迹过长导致的信用分配问题。方法适用于工具调用等场景，可改善后训练效果。该工作直接推动了智能体强化学习在大语言模型训练中的应用。",
+      "llm_tldr": "多轮智能体在长程任务中面临信用分配难题，结果奖励稀疏且高方差。本文提出TRACE方法，通过建模状态转移和信用估计为每步动作分配密集奖励，解决了智能体强化学习中因轨迹过长导致的信用分配问题。方法适用于工具调用等场景，可改善后训练效果。该工作直接推动了智能体强化学习在大语言模型训练中的应用。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.13315v1",
+      "source": "arxiv",
+      "title": "Meta-Learning Preferences for Multilingual LLM Alignment",
+      "abstract": "Unequal availability of human preference data across languages poses a significant challenge for aligning large language models in multilingual settings. To address the lack of sufficient data in low-resource language alignment, we propose a meta-learning framework for Reinforcement Learning from Human Feedback and Direct Preference Optimization. By leveraging preference data from other languages, our framework learns a transferable initialization that enables effective adaptation to a target language with minimal data. We provide theoretical guarantees for both the meta-reward modeling and meta-policy optimization settings, and empirically demonstrate the effectiveness of our approach on multilingual benchmarks. In an extremely low-resource setting with only 100 target-language preference samples, our approach achieves up to $28\\%$ win-rate improvements over baseline methods, and consistently outperforms baselines across multiple target languages and model scales. Our approaches retain these advantages across different combinations of meta-training languages and varying linguistic distances from the target languages.",
+      "authors": [
+        "Jiaying Lin",
+        "Seongho Son",
+        "Nam Phuong Tran",
+        "Long Tran-thanh",
+        "Ilija Bogunovic",
+        "Debmalya Mandal"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-14T22:38:39+00:00",
+      "link": "https://arxiv.org/pdf/2607.13315v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "meta-learning framework for RLHF and DPO for multilingual alignment",
+      "llm_evidence_cn": "用于多语言对齐的RLHF和DPO元学习框架",
+      "llm_evidence": "用于多语言对齐的RLHF和DPO元学习框架",
+      "canonical_evidence": "用于多语言对齐的RLHF和DPO元学习框架",
+      "llm_tldr_en": "Proposes a meta-learning framework for RLHF and DPO that transfers preference data across languages for efficient LLM alignment in low-resource languages.",
+      "llm_tldr_cn": "本文针对多语言LLM对齐中低资源语言偏好数据不足的问题，提出一个元学习框架，利用其他语言的偏好数据学习可迁移的初始化，从而在极少数据下高效适应目标语言。理论证明了元奖励建模和元策略优化的可行性，实验在极低资源场景（100条数据）下展示了显著效果。该方法为多语言RLHF和DPO提供了高效数据利用方案。",
+      "llm_tldr": "本文针对多语言LLM对齐中低资源语言偏好数据不足的问题，提出一个元学习框架，利用其他语言的偏好数据学习可迁移的初始化，从而在极少数据下高效适应目标语言。理论证明了元奖励建模和元策略优化的可行性，实验在极低资源场景（100条数据）下展示了显著效果。该方法为多语言RLHF和DPO提供了高效数据利用方案。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.13854v1",
+      "source": "arxiv",
+      "title": "SPyCE: Skill-Policy Co-evolution for Multimodal Agents",
+      "abstract": "Multimodal agents that think with images iteratively manipulate visual evidence and invoke tools across many steps. Existing reinforcement learning methods reduce trajectories to scalar rewards, forcing the policy to discover reusable tool-use patterns from scratch on every new task; memory-based alternatives retain past experience, yet they rely on test-time retrieval, without updating the policy to absorb reusable patterns from that experience. Our key insight is that multimodal reasoning trajectories should be distilled into reusable skills that co-evolve with the policy during training, rather than being consumed as rewards or retrieved from a static store. To this end, we propose SPyCE (Skill-Policy Co-evolution), a framework that distills trajectories into a hierarchical skill library and updates it throughout reinforcement learning. Execution skills capture local visual operations, while workflow skills encode high-level priors that orchestrate tool use. During training, the policy model conditions on retrieved skills to guide its rollouts, while the skill library evolves using valuable rollouts generated by the policy. This creates a closed loop in which improved policies yield better skills, and the evolving skill library, in turn, provides stronger priors for policy rollouts. Experiments across eight benchmarks demonstrate that SPyCE consistently outperforms both RL-based and memory-based baselines. Further analysis reveals that both the hierarchical skill design and the co-evolution mechanism are critical to our design. These results suggest joint skill-policy optimization as a promising paradigm for building capable multimodal agents.",
+      "authors": [
+        "Ru Zhang",
+        "Weijie Qiu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-15T14:01:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.13854v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "skill-policy co-evolution for RL agents, distillation of trajectories",
+      "llm_evidence_cn": "智能体RL中的技能-策略共同进化，轨迹蒸馏",
+      "llm_evidence": "智能体RL中的技能-策略共同进化，轨迹蒸馏",
+      "canonical_evidence": "智能体RL中的技能-策略共同进化，轨迹蒸馏",
+      "llm_tldr_en": "SPyCE distills multimodal reasoning trajectories into reusable skills that co-evolve with the policy via RL, improving tool-use efficiency.",
+      "llm_tldr_cn": "针对多模态智能体RL中轨迹仅用于奖励信号、无法更新策略以吸收可重用模式的问题，本文提出SPyCE，将推理轨迹蒸馏为分层技能并与策略共同进化，在训练过程中动态吸收模式。实验表明该方法显著提升工具使用效率和泛化性能。",
+      "llm_tldr": "针对多模态智能体RL中轨迹仅用于奖励信号、无法更新策略以吸收可重用模式的问题，本文提出SPyCE，将推理轨迹蒸馏为分层技能并与策略共同进化，在训练过程中动态吸收模式。实验表明该方法显著提升工具使用效率和泛化性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

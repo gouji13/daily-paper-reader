@@ -6,46 +6,53 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-15
-- 运行时间：2026-07-15 20:40:25 UTC
+- 最新运行日期：2026-07-16
+- 运行时间：2026-07-16 21:06:40 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：2
-- 速读区：6
+- 本次总论文数：11
+- 精读区：6
+- 速读区：5
 
 ### 今日简报（AI）
-今日精读2篇高分论文，聚焦推理路径优化与语言模型置信度评估。  
-最值得看SCOPE-RL的推理路径优化（9.0分）及Critic Experience Bank的步骤级置信度估计。  
-建议关注如何通过路径优化与置信度机制提升AI推理可靠性。
-- 详情：[/202607/15/README](/202607/15/README)
+今日聚焦工具调用边界漂移诊断与多模态推理自我验证两大前沿。最值得看《Diagnosing and Calibrating Tool-Call Boundary Drift》与《SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification》，分别解决多教师蒸馏漂移和强化学习自验证问题。建议优先精读这两篇9分论文，了解工具调用鲁棒性和多模态推理新范式。
+- 详情：[/202607/16/README](/202607/16/README)
 
 ### 精读区论文标签
-1. [SCOPE-RL: Optimizing Reasoning Paths Before and After Success](/202607/15/2607.11506v1-scope-rl-optimizing-reasoning-paths-before-and-after-success)  
+1. [Diagnosing and Calibrating Tool-Call Boundary Drift in Multi-Teacher On-Policy Distillation](/202607/16/2607.07050v2-diagnosing-and-calibrating-tool-call-boundary-drift-in-multi-teacher-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：使用可验证奖励的强化学习优化LLM推理路径。
-2. [From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation](/202607/15/2607.12687v1-from-critic-to-confidence-ppo-for-language-based-quantitative-prediction-with-confidence-estimation)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：使用PPO强化学习框架微调大语言模型进行定量预测并估计置信度
+   evidence：多教师在线策略蒸馏用于智能体语言模型，直接对应在线策略蒸馏需求
+2. [SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification in Reinforcement Learning](/202607/16/2607.10966v1-svr-r1-bootstrapping-multi-modal-reasoning-with-self-verification-in-reinforcement-learning)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：带自验证的多轮强化学习用于LLM推理，直接应用RL改进推理
+3. [Where Should RL Post-Training Compute Go? Model Size, Search, Learning, and Feedback](/202607/16/2607.13389v1-where-should-rl-post-training-compute-go-model-size-search-learning-and-feedback)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：关于LLM的RL后训练，使用GRPO计算分配
+4. [GFlowRL: Scaling Distribution-Matching RL to Large Language Models](/202607/16/2607.13394v1-gflowrl-scaling-distribution-matching-rl-to-large-language-models)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：将分布匹配RL(GFlowNet)扩展至LLM
+5. [Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations](/202607/16/2607.13399v1-demystifying-on-policy-distillation-roles-pathologies-and-regulations)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：对LLM在线策略蒸馏的系统研究
+6. [Post-Training Shifts Confidence: A Three-Stage Analysis of How SFT, RL, and OPD Shape Pre-, Intra-, and Post-CoT Calibration](/202607/16/2607.13753v1-post-training-shifts-confidence-a-three-stage-analysis-of-how-sft-rl-and-opd-shape-pre--intra--and-post-cot-calibration)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：分析在线策略蒸馏（OPD）如何影响LLM推理过程中的置信度
 
 ### 速读区论文标签
-1. [Metadata-Free Meta-Reweighted Direct Preference Optimization under Noisy Preference Labels](/202607/15/2607.09796v1-metadata-free-meta-reweighted-direct-preference-optimization-under-noisy-preference-labels)  
+1. [Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning](/202607/16/2607.10836v1-route-communicate-and-reason-gated-routing-and-adaptive-depth-for-efficient-multi-agent-reasoning)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：将GRPO（策略优化）应用于LLM多智能体推理
+2. [TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents](/202607/16/2607.13988v1-trace-turn-level-reward-assignment-via-credit-estimation-for-long-horizon-agents)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：用于长程智能体的密集信用分配智能体强化学习方法
+3. [Mathematical methods of reinforcement learning](/202607/16/2607.06935v1-mathematical-methods-of-reinforcement-learning)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：针对含噪标签的大语言模型直接偏好优化
-2. [Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents](/202607/15/2607.12397v1-critic-experience-bank-self-evolving-step-level-confidence-estimation-for-llm-agents)  
+   evidence：强化学习数学基础综述，与LLM的RL方法相关
+4. [Meta-Learning Preferences for Multilingual LLM Alignment](/202607/16/2607.13315v1-meta-learning-preferences-for-multilingual-llm-alignment)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：基于经验库的LLM agent步级置信度估计，与agentic RL中的价值学习相关
-3. [A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism](/202607/15/2607.12640v1-a-learning-rate-gated-failure-of-grpo-in-a-small-language-and-vision-language-model-web-agent-a-controlled-null-and-its-mechanism)  
+   evidence：用于多语言对齐的RLHF和DPO元学习框架
+5. [SPyCE: Skill-Policy Co-evolution for Multimodal Agents](/202607/16/2607.13854v1-spyce-skill-policy-co-evolution-for-multimodal-agents)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：研究GRPO强化学习方法在小语言模型Web智能体上的表现
-4. [ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning](/202607/15/2607.12931v1-extoken-structured-exploration-for-efficient-vision-language-action-reinforcement-fine-tuning)  
-   标签：评分：7.0/10、query:agentic-rl
-   evidence：对视觉-语言-动作模型进行RL微调，引入结构化探索token，类似LLM RL
-5. [Latent Memory Palace: Reasoning for Control as Autoregressive Variational Inference](/202607/15/2607.08724v1-latent-memory-palace-reasoning-for-control-as-autoregressive-variational-inference)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：将推理作为自回归变分推断应用于控制策略，与agentic RL中的推理相关
-6. [OS-Pruner: Pruning Chains-of-Thought of Reasoning Models via Optimal Stopping](/202607/15/2607.11089v1-os-pruner-pruning-chains-of-thought-of-reasoning-models-via-optimal-stopping)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：通过最优停止修剪思维链推理步骤
+   evidence：智能体RL中的技能-策略共同进化，轨迹蒸馏
 
 
 <div class="dpr-home-promo-card">
