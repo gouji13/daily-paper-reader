@@ -6,53 +6,52 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-16
-- 运行时间：2026-07-16 21:06:40 UTC
+- 最新运行日期：2026-07-17
+- 运行时间：2026-07-17 20:59:08 UTC
 - 运行状态：成功
-- 本次总论文数：11
+- 本次总论文数：10
 - 精读区：6
-- 速读区：5
+- 速读区：4
 
 ### 今日简报（AI）
-今日聚焦工具调用边界漂移诊断与多模态推理自我验证两大前沿。最值得看《Diagnosing and Calibrating Tool-Call Boundary Drift》与《SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification》，分别解决多教师蒸馏漂移和强化学习自验证问题。建议优先精读这两篇9分论文，了解工具调用鲁棒性和多模态推理新范式。
-- 详情：[/202607/16/README](/202607/16/README)
+今日聚焦强化学习与语言智能体研究，精读两项高分突破。
+最值得看的是“沙盒原生语言智能体RL优化”与“可验证奖励下的非真空泛化界”两个方向。
+建议从这两篇精读入手理解理论边界，速读中LOTAPO的多轮搜索归因也值得跟进。
+- 详情：[/202607/17/README](/202607/17/README)
 
 ### 精读区论文标签
-1. [Diagnosing and Calibrating Tool-Call Boundary Drift in Multi-Teacher On-Policy Distillation](/202607/16/2607.07050v2-diagnosing-and-calibrating-tool-call-boundary-drift-in-multi-teacher-on-policy-distillation)  
+1. [Branching Policy Optimization: Sandbox-Native Language Agent Reinforcement Learning](/202607/17/2607.14171v1-branching-policy-optimization-sandbox-native-language-agent-reinforcement-learning)  
+   标签：评分：10.0/10、query:agentic-rl
+   evidence：提出针对沙箱环境的LLM智能体分支策略优化
+2. [Non-vacuous Generalization Bounds for Reinforcement Learning with Verifiable Rewards](/202607/17/2607.14506v1-non-vacuous-generalization-bounds-for-reinforcement-learning-with-verifiable-rewards)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：多教师在线策略蒸馏用于智能体语言模型，直接对应在线策略蒸馏需求
-2. [SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification in Reinforcement Learning](/202607/16/2607.10966v1-svr-r1-bootstrapping-multi-modal-reasoning-with-self-verification-in-reinforcement-learning)  
+   evidence：通过可验证奖励强化学习提升LLM推理，包含在线策略蒸馏
+3. [Beyond Entropy: Correctness-Aware Advantage Shaping via Contrastive Policy Optimization](/202607/17/2607.14614v1-beyond-entropy-correctness-aware-advantage-shaping-via-contrastive-policy-optimization)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：带自验证的多轮强化学习用于LLM推理，直接应用RL改进推理
-3. [Where Should RL Post-Training Compute Go? Model Size, Search, Learning, and Feedback](/202607/16/2607.13389v1-where-should-rl-post-training-compute-go-model-size-search-learning-and-feedback)  
+   evidence：提出对比策略优化，指出在线策略蒸馏是其特例
+4. [SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning](/202607/17/2607.14777v1-seed-self-evolving-on-policy-distillation-for-agentic-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：关于LLM的RL后训练，使用GRPO计算分配
-4. [GFlowRL: Scaling Distribution-Matching RL to Large Language Models](/202607/16/2607.13394v1-gflowrl-scaling-distribution-matching-rl-to-large-language-models)  
+   evidence：面向智能体RL的自演化在线策略蒸馏，直接覆盖多个需求
+5. [On-Policy Delta Distillation](/202607/17/2607.15161v1-on-policy-delta-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：将分布匹配RL(GFlowNet)扩展至LLM
-5. [Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations](/202607/16/2607.13399v1-demystifying-on-policy-distillation-roles-pathologies-and-regulations)  
+   evidence：直接研究在线策略蒸馏，提出delta信号
+6. [Mask-Aware Policy Gradients for Diffusion Language Models](/202607/17/2607.15200v1-mask-aware-policy-gradients-for-diffusion-language-models)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：对LLM在线策略蒸馏的系统研究
-6. [Post-Training Shifts Confidence: A Three-Stage Analysis of How SFT, RL, and OPD Shape Pre-, Intra-, and Post-CoT Calibration](/202607/16/2607.13753v1-post-training-shifts-confidence-a-three-stage-analysis-of-how-sft-rl-and-opd-shape-pre--intra--and-post-cot-calibration)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：分析在线策略蒸馏（OPD）如何影响LLM推理过程中的置信度
+   evidence：针对掩码扩散语言模型的策略梯度方法
 
 ### 速读区论文标签
-1. [Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning](/202607/16/2607.10836v1-route-communicate-and-reason-gated-routing-and-adaptive-depth-for-efficient-multi-agent-reasoning)  
+1. [LOTAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning](/202607/17/2607.13501v2-lotapo-leave-one-turn-attribution-for-self-generated-process-rewards-in-multi-turn-search-reasoning)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：将GRPO（策略优化）应用于LLM多智能体推理
-2. [TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents](/202607/16/2607.13988v1-trace-turn-level-reward-assignment-via-credit-estimation-for-long-horizon-agents)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：用于长程智能体的密集信用分配智能体强化学习方法
-3. [Mathematical methods of reinforcement learning](/202607/16/2607.06935v1-mathematical-methods-of-reinforcement-learning)  
+   evidence：多轮搜索推理的强化学习过程奖励方法
+2. [Correlation-Aware Contextual Bandits with Surrogate Rewards for LLM Routing](/202607/17/2607.09015v1-correlation-aware-contextual-bandits-with-surrogate-rewards-for-llm-routing)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：强化学习数学基础综述，与LLM的RL方法相关
-4. [Meta-Learning Preferences for Multilingual LLM Alignment](/202607/16/2607.13315v1-meta-learning-preferences-for-multilingual-llm-alignment)  
+   evidence：面向LLM路由的上下文赌博机算法，使用替代奖励信号
+3. [Stop Thinking, Start Looking: Efficient Post-Training for Multimodal Document Question Answering via Reasoning-Free Alignment](/202607/17/2607.14682v1-stop-thinking-start-looking-efficient-post-training-for-multimodal-document-question-answering-via-reasoning-free-alignment)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：用于多语言对齐的RLHF和DPO元学习框架
-5. [SPyCE: Skill-Policy Co-evolution for Multimodal Agents](/202607/16/2607.13854v1-spyce-skill-policy-co-evolution-for-multimodal-agents)  
-   标签：评分：7.0/10、query:agentic-rl
-   evidence：智能体RL中的技能-策略共同进化，轨迹蒸馏
+   evidence：将GRPO（强化学习算法）应用于多模态大模型后训练
+4. [Step-Level Preference Learning for Generative Agents in Social Simulations](/202607/17/2607.14485v1-step-level-preference-learning-for-generative-agents-in-social-simulations)  
+   标签：评分：6.0/10、query:agentic-rl
+   evidence：LLM智能体步骤级偏好学习
 
 
 <div class="dpr-home-promo-card">
