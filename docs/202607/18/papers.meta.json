@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-18",
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T20:23:01",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/18/2607.14777v1-seed-self-evolving-on-policy-distillation-for-agentic-reinforcement-learning",
+      "section": "deep",
+      "title_en": "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+      "authors": "Jinyang Wu, Shuo Yang, Zhengxi Lu, Fan Zhang, Yuhao Shen, Lang Feng, Haoran Luo, Zheng Lian, Shuai Zhang, Zhengqi Wen, Jianhua Tao",
+      "date": "2026-07-16",
+      "pdf": "https://arxiv.org/pdf/2607.14777v1",
+      "score": "10.0",
+      "evidence": "提出面向agentic RL的自演化在线策略蒸馏方法",
+      "tldr": "长程智能体任务中基于结果的强化学习因稀疏奖励难以指导中间决策。SEED提出自演进同轨策略蒸馏框架，从已完成轨迹中提取自然语言技能作为事后分析，并将其概率偏移转化为密集的token级蒸馏信号，与结果强化学习联合优化。在文本和视觉智能体基准上，SEED一致提升性能与样本效率，并展现出对未见场景的强泛化能力。该工作为稀疏奖励场景下的智能体学习提供了高效、自适应的辅助监督范式。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Large language models are increasingly trained as interactive agents for long-horizon tasks involving multi-turn interaction, tool use, and environment feedback. Outcome-based reinforcement learning (RL) provides a practical optimization paradigm, but its sparse trajectory-level rewards offer limited guidance on intermediate decisions, leaving a supervision gap between episode-level outcomes and token-level policy learning. We propose SEED (SElf-Evolving On-Policy Distillation), a self-evolving framework that converts completed on-policy trajectories into training-time hindsight skills and distills their behavioral effect back into the policy model. SEED first fine-tunes the policy to analyze completed trajectories and generate natural-language skills that capture reusable workflows, decisive observations, or failure-avoidance rules. During RL, the current policy both collects trajectories and serves as the analyzer that extracts hindsight skills from them. Policy updates therefore improve subsequent decision making and skill analysis together, allowing hindsight supervision to evolve with the policy. SEED then re-scores the sampled actions under ordinary and skill-augmented contexts, converting the skill-induced probability shift into a dense token-level on-policy distillation signal. This signal is jointly optimized with outcome-based RL, keeping the auxiliary supervision aligned with the current trajectory distribution. Extensive experiments on text-based and vision-based agentic tasks show that SEED consistently improves performance and sample efficiency, exhibiting robust generalization to unseen scenarios. Our code is available at https://github.com/jinyangwu/SEED.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/18/2607.11506v2-scope-rl-optimizing-reasoning-paths-before-and-after-success",
+      "section": "deep",
+      "title_en": "SCOPE-RL: Optimizing Reasoning Paths Before and After Success",
+      "authors": "Xiaojian Liu, Han Xu, Jianqiang Xia, Zhixuan Li, Ke Xu, Yiwei Dai, Xinran Chen, Changwo Wu, Yuchen Li",
+      "date": "2026-07-13",
+      "pdf": "https://arxiv.org/pdf/2607.11506v2",
+      "score": "9.0",
+      "evidence": "优化推理路径的强化学习框架",
+      "tldr": "针对RLVR中稀疏最终答案奖励无法有效指导推理路径的问题，本文提出SCOPE-RL框架。该方法在成功前通过前缀分解的验证奖励（自适应脚手架RL）提供中间信号，在成功后利用正确性门控过程形状奖励（质量感知过程RL）细化正确轨迹。在Qwen3-8B上，准确率提升11.2%，推理令牌减少27.1%，且适用于小模型和其他策略更新方法。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Reinforcement learning with verifiable rewards (RLVR) optimizes LLMs using sparse verifiable final-answer rewards. This sparse anchor reliably verifies whether a trajectory succeeds but provides no direct feedback on the reasoning path that produced it. Before success, prerequisite progress on hard problems receives no reward signal; after success, outcome rewards cannot distinguish well-organized correct trajectories from redundant or locally flawed ones. We introduce SCOPE-RL (Scaffolded Chain Optimization with Process Efficiency), a two-stage framework that densifies this anchor while retaining the GRPO update: Adaptive Scaffolded RL adds prefix-decomposed verifiable rewards on answer-hidden sub-question chains before success, and Quality-Aware Process RL applies correctness-gated process-shape rewards to refine correct trajectories after success. An expert-validated Step-Quality Evaluation Protocol evaluates useful-step density, error localization, and token efficiency beyond final-answer accuracy. On Qwen3-8B-Instruct trained on DAPO-Math and Big-Math, SCOPE-RL improves average accuracy by up to 11.2 pp and reduces reasoning tokens by up to 27.1% over outcome-only GRPO; the gains hold under GSPO and on Qwen3-0.6B-Instruct, indicating that reward-signal densification is complementary to policy-update-level RLVR advances. Code and data are available at https://github.com/tokencraft-lab/SCOPE-RL.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/18/2607.14895v1-leveraging-instruction-tuning-and-merging-for-reasoning-model-adaptation",
+      "section": "quick",
+      "title_en": "Leveraging Instruction Tuning and Merging for Reasoning Model Adaptation",
+      "authors": "Yu-Du Feng, Niels Mündler-Sasahara, Mark Vero, Martin Vechev",
+      "date": "2026-07-16",
+      "pdf": "https://arxiv.org/pdf/2607.14895v1",
+      "score": "7.0",
+      "evidence": "通过指令微调和模型合并改进推理模型性能，与基于强化学习的推理增强相关",
+      "tldr": "推理语言模型在数学和编码等可验证领域表现优异，但在缺乏可靠验证器的领域训练困难。本文提出利用现有监督微调数据，先对RLM进行指令微调，再与原始推理模型合并，恢复目标领域的推理行为。实验表明，该方法在编码和文本摘要等可验证与难验证领域均提升性能，同时保留其他领域能力。该方法成本极低，不到3美元即可实现改进。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "Reasoning language models (RLMs) have demonstrated impressive performance in domains such as mathematics and coding. These domains permit reliable verification of model outputs, which is important for enabling the reinforcement learning that drives RLM performance gains. However, training RLMs on domains that lack reliable verifiers remains challenging. Meanwhile, for both verifiable and unverifiable domains, large amounts of unused supervised fine-tuning data with human-written solutions exist. In this work, we show that these data can be used efficiently to further improve RLM performance. For this, we first use classic instruction tuning, supervised fine-tuning without reasoning traces, on the RLM. Next, we merge our instruction-tuned model with the original reasoning model, recovering its reasoning behavior on the target domain. Our extensive evaluation demonstrates that our technique improves RLM performance in both verifiable and hard-to-verify domains, including coding and text summarization, while preserving RLM capabilities across other domains. Importantly, our method is highly cost-effective, enabling such improvements for less than USD $3.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/18/2607.14522v1-a-continuous-time-reinforcement-learning-framework-for-fine-tuning-discrete-diffusion-models",
+      "section": "quick",
+      "title_en": "A Continuous-Time Reinforcement Learning Framework for Fine-Tuning Discrete Diffusion Models",
+      "authors": "Zikun Zhang, Jiayuan Sheng, David D. Yao, Wenpin Tang",
+      "date": "2026-07-16",
+      "pdf": "https://arxiv.org/pdf/2607.14522v1",
+      "score": "6.0",
+      "evidence": "连续时间RL微调框架，包含PPO和GRPO变体",
+      "tldr": "离散扩散模型微调面临奖励不可微且仅能用终端奖励的限制。本文提出连续时间强化学习框架，将状态建模为连续时间马尔可夫链，推导出连续时间PPO和GRPO策略梯度方法，并引入中间奖励信号。针对掩码扩散模型，实现了解析概率比和轨迹子采样加速。在低维优化和dLLM数学推理编码任务上，该方法有效提升性能，为离散扩散模型策略优化提供统一高效框架。",
+      "tags": "query:agentic-rl",
+      "abstract_en": "We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC). We consider policy optimization problems and derive the corresponding policy gradient methods, leading to continuous-time variants of proximal policy optimization (PPO) and group relative policy optimization (GRPO). As a primary application, we develop a complete continuous-time RL framework for fine-tuning score-based discrete diffusion models. The proposed framework enables reward-driven optimization without requiring differentiability on the reward signals. In contrast to the existing GRPO-based approaches that only rely on terminal rewards, our formulation allows intermediate reward or advantage signals to be incorporated throughout the denoising trajectory. Importantly, when specialized to masked diffusion models (MDMs), our framework encompasses a rich class of policy parameterizations over the vocabulary simplex with analytically tractable probability ratios, providing a unified perspective on exploration and policy optimization in MDMs. For masked diffusion large language models (dLLMs), we further propose trajectory subsampling techniques to efficiently estimate computationally prohibitive trajectory likelihoods, reducing the computational cost of computing per-position probability ratios. We showcase the effectiveness of our methods on both low-dimensional entropy-regularized optimization problems and RL post-training of dLLMs on mathematical reasoning and coding tasks.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
