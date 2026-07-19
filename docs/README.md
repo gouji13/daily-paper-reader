@@ -6,32 +6,32 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-18
-- 运行时间：2026-07-18 20:22:57 UTC
+- 最新运行日期：2026-07-19
+- 运行时间：2026-07-19 20:40:03 UTC
 - 运行状态：成功
 - 本次总论文数：4
-- 精读区：2
-- 速读区：2
+- 精读区：1
+- 速读区：3
 
 ### 今日简报（AI）
-今日精读2篇、速读2篇论文，重点聚焦自主强化学习与推理路径优化。最值得关注的是《SEED》提出的自我进化蒸馏方法和《SCOPE-RL》对成功前后推理路径的双向优化。建议优先精读这两篇以掌握强化学习的前沿框架，速读其余两篇作为补充。
-- 详情：[/202607/18/README](/202607/18/README)
+今日重点精读《LongStraw》长上下文强化学习，速读3篇涉及无标签自蒸馏、资源受限微调与LLM记忆管理。最值得关注《LongStraw》在固定GPU预算下实现超200万token的长上下文RL训练方法，以及无标签自蒸馏的共识特权上下文机制。建议优先阅读《LongStraw》以掌握长上下文RL的突破性技巧，再结合自身资源限制参考微调策略。
+- 详情：[/202607/19/README](/202607/19/README)
 
 ### 精读区论文标签
-1. [SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning](/202607/18/2607.14777v1-seed-self-evolving-on-policy-distillation-for-agentic-reinforcement-learning)  
-   标签：评分：10.0/10、query:agentic-rl
-   evidence：提出面向agentic RL的自演化在线策略蒸馏方法
-2. [SCOPE-RL: Optimizing Reasoning Paths Before and After Success](/202607/18/2607.11506v2-scope-rl-optimizing-reasoning-paths-before-and-after-success)  
+1. [LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget](/202607/19/2607.14952v1-longstraw-long-context-rl-beyond-2m-tokens-under-a-fixed-gpu-budget)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：优化推理路径的强化学习框架
+   evidence：使用GRPO实现百万级tokens的强化学习后训练
 
 ### 速读区论文标签
-1. [Leveraging Instruction Tuning and Merging for Reasoning Model Adaptation](/202607/18/2607.14895v1-leveraging-instruction-tuning-and-merging-for-reasoning-model-adaptation)  
+1. [Consensus as Privileged Context for Label-Free Self-Distillation](/202607/19/2607.13643v1-consensus-as-privileged-context-for-label-free-self-distillation)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：通过指令微调和模型合并改进推理模型性能，与基于强化学习的推理增强相关
-2. [A Continuous-Time Reinforcement Learning Framework for Fine-Tuning Discrete Diffusion Models](/202607/18/2607.14522v1-a-continuous-time-reinforcement-learning-framework-for-fine-tuning-discrete-diffusion-models)  
+   evidence：基于共识的自蒸馏方法提供令牌级监督，与在线策略蒸馏相关。
+2. [Learning to Fine-tune Foundation Models under Resource Limitations](/202607/19/2607.10694v1-learning-to-fine-tune-foundation-models-under-resource-limitations)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：连续时间RL微调框架，包含PPO和GRPO变体
+   evidence：使用强化学习决定资源受限时何时微调LLM
+3. [Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents](/202607/19/2607.13591v1-memory-as-a-controlled-process-learned-adaptive-memory-management-for-llm-agents)  
+   标签：评分：6.0/10、query:agentic-rl
+   evidence：针对LLM代理的学习型自适应记忆管理，上下文相关策略
 
 
 <div class="dpr-home-promo-card">

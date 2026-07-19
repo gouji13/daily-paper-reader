@@ -1,0 +1,197 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-19T20:35:31.782219+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.14952v1",
+      "source": "arxiv",
+      "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+      "abstract": "A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment. The gap is especially important for AI agents, whose observations, tool outputs, documents, and prior decisions accumulate over long trajectories. LongStraw is an architecture-aware execution stack for million-token RL post-training under a fixed GPU budget, instantiated with Group Relative Policy Optimization (GRPO). It evaluates the shared prompt without autograd, retains only model-specific state needed by later tokens, and replays short response branches one at a time, reducing the live training graph at the cost of additional replay time. We implement it for the hybrid recurrent and full-attention Qwen3.6-27B and the compressed-attention mixture-of-experts GLM-5.2. On eight H20 GPUs, LongStraw completes grouped Qwen scoring and response backward at 2.1M positions for groups of 2 and 8; increasing the group size adds only 0.21 GB of peak allocated memory, while a separate stress test reaches 4.46M positions. On 32 H20 GPUs, we validate the end-to-end LongStraw execution path for a 2.1M-token prompt across all 78 layers of GLM-5.2. These experiments establish execution capacity rather than complete training correctness because the captured prompt state is detached and some distributed forward and gradient composition paths remain incomplete.",
+      "authors": [
+        "Changhai Zhou",
+        "Kieran Liu",
+        "Yuhua Zhou",
+        "Qian Qiao",
+        "Jun Gao",
+        "Harry Zhang",
+        "Irvine Lu",
+        "Nolan Ho",
+        "Lucian Li",
+        "Andrew Lei",
+        "Cleon Cheng",
+        "Steven Chiang",
+        "Yihang Zeng",
+        "Di Zhang",
+        "Rio Yang",
+        "Kaijie Chen",
+        "Andrew Chen",
+        "Pony Ma",
+        "Weizhong Zhang",
+        "Cheng Jin"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "published": "2026-07-16T13:00:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.14952v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "million-token RL post-training for LLMs using GRPO",
+      "llm_evidence_cn": "使用GRPO实现百万级tokens的强化学习后训练",
+      "llm_evidence": "使用GRPO实现百万级tokens的强化学习后训练",
+      "canonical_evidence": "使用GRPO实现百万级tokens的强化学习后训练",
+      "llm_tldr_en": "LongStraw enables million-token RL post-training for LLMs under fixed GPU budget by using GRPO and a memory-efficient execution stack, addressing the context length gap in RL fine-tuning.",
+      "llm_tldr_cn": "大型语言模型的强化学习后训练受限于短上下文（通常256K tokens），与实际推理场景脱节。LongStraw提出架构感知的执行栈，利用GRPO算法在固定GPU预算下支持超过200万tokens的RL训练。其核心是共享prompt无梯度计算、仅保留必要状态并逐条回放分支，大幅降低计算图大小。实验证明该方法能有效扩展RL训练的上下文长度。",
+      "llm_tldr": "大型语言模型的强化学习后训练受限于短上下文（通常256K tokens），与实际推理场景脱节。LongStraw提出架构感知的执行栈，利用GRPO算法在固定GPU预算下支持超过200万tokens的RL训练。其核心是共享prompt无梯度计算、仅保留必要状态并逐条回放分支，大幅降低计算图大小。实验证明该方法能有效扩展RL训练的上下文长度。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.13643v1",
+      "source": "arxiv",
+      "title": "Consensus as Privileged Context for Label-Free Self-Distillation",
+      "abstract": "Sampling multiple solutions and returning the majority answer is among the most reliable ways to improve the reasoning accuracy of large language models without labels, and a growing family of methods converts this consensus signal into training supervision. However, existing approaches use consensus only in restricted forms: as a filter that selects solutions for fine-tuning, as a preference between answers, or as a scalar reward for reinforcement learning, discarding most of the information that the agreeing solutions contain. We present CANON (Consensus-ANchored self-distillatiON), a label-free training method that turns consensus into dense, token-level supervision. For each unlabeled prompt, CANON samples multiple solutions, extracts the majority answer, and conditions a frozen snapshot of the model on a solution that reaches it; this consensus-anchored teacher then supervises the model on its own rollouts at every token. Experiments on mathematical and scientific reasoning benchmarks show that CANON improves pass@1 by up to 12 points, outperforming label-free reinforcement learning by 6 points at a seventh of its compute and approaching a teacher conditioned on gold solutions; trained on pooled unlabeled data, it transfers to held-out benchmarks, matching training methods that use gold labels. Analysis suggests that the improvements are not pure distribution sharpening: after training, the model solves problems it previously never solved in 32 attempts, and its majority vote itself becomes more accurate.",
+      "authors": [
+        "John Gkountouras",
+        "Josip Jukić",
+        "Ivan Titov"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-15T09:39:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.13643v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Consensus-based self-distillation provides token-level supervision, related to online policy distillation.",
+      "llm_evidence_cn": "基于共识的自蒸馏方法提供令牌级监督，与在线策略蒸馏相关。",
+      "llm_evidence": "基于共识的自蒸馏方法提供令牌级监督，与在线策略蒸馏相关。",
+      "canonical_evidence": "基于共识的自蒸馏方法提供令牌级监督，与在线策略蒸馏相关。",
+      "llm_tldr_en": "CANON transforms consensus among multiple LLM solutions into dense token-level supervision for label-free self-distillation, outperforming consensus-as-reward RL baselines.",
+      "llm_tldr_cn": "现有方法将LLM多次采样的共识仅用作筛选或标量奖励，丢弃了大量信息。本文提出CANON，将共识转化为密集的令牌级监督信号，用于无标签自蒸馏。通过提取多数答案对应的令牌分布作为锚点，模型无需人工标注即可学习更细粒度的知识。在多个推理任务上，CANON优于使用共识作为RL奖励的方法，表明令牌级蒸馏比标量奖励更有效。",
+      "llm_tldr": "现有方法将LLM多次采样的共识仅用作筛选或标量奖励，丢弃了大量信息。本文提出CANON，将共识转化为密集的令牌级监督信号，用于无标签自蒸馏。通过提取多数答案对应的令牌分布作为锚点，模型无需人工标注即可学习更细粒度的知识。在多个推理任务上，CANON优于使用共识作为RL奖励的方法，表明令牌级蒸馏比标量奖励更有效。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.10694v1",
+      "source": "arxiv",
+      "title": "Learning to Fine-tune Foundation Models under Resource Limitations",
+      "abstract": "We study the problem of optimal continual fine-tuning for a pre-trained Foundation Model deployed at a resource-limited device. At each time slot, a new batch of training data arrives, and the controller is faced with two options: either use the data to fine-tune the model and incur a compute cost, or do not fine-tune the model and discard the data. After the decision, the performance of the current model is measured in terms of an application-specific performance metric such as classification accuracy. Our objective is to learn an optimal policy that determines \\emph{when to fine-tune the model} on a single task (e.g., sentiment analysis), under a finite compute budget. We formulate this online decision-making problem as a constrained Markov Decision Process, where the system state captures three essential aspects: (\\textit{i}) model's performance, (\\textit{ii}) computational budget, and (\\textit{iii}) data distribution relevance to historic data encountered up to that point. The transition to the next state is stochastic and therefore, we propose a reinforcement learning-based method to solve this problem, namely the \\emph{actor-critic} algorithm. We also consider the special case where the performance of fine-tuning for a given model can be predicted or estimated prior to decision; in this case the problem becomes a Dynamic Programming one. Experiments with a large pre-trained model on a widely-used text classification dataset demonstrate that our method consistently outperforms fine-tuning approaches with the same compute budget by more than $4\\%$ in terms of accuracy and achieves $97\\%$ of full-parameter fine-tuning accuracy while requiring only $25\\%$ of the fine-tuning steps.",
+      "authors": [
+        "Thomas Tsouparopoulos",
+        "Iordanis Koutsopoulos"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-12T10:32:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.10694v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Reinforcement learning for deciding when to fine-tune LLMs under resource constraints",
+      "llm_evidence_cn": "使用强化学习决定资源受限时何时微调LLM",
+      "llm_evidence": "使用强化学习决定资源受限时何时微调LLM",
+      "canonical_evidence": "使用强化学习决定资源受限时何时微调LLM",
+      "llm_tldr_en": "Proposes a constrained MDP framework to learn a policy for optimal continual fine-tuning of foundation models under limited compute budget.",
+      "llm_tldr_cn": "该论文针对资源受限设备上的基础模型持续微调问题，提出将微调时机选择形式化为约束马尔可夫决策过程，使用强化学习学习最优策略。在每个时间步，控制器在数据到达时决定是否微调，以在有限计算预算下最大化性能指标。该方法解决了在固定预算下动态微调调度的难题，为LLM在边缘设备的自适应部署提供了实用方案。",
+      "llm_tldr": "该论文针对资源受限设备上的基础模型持续微调问题，提出将微调时机选择形式化为约束马尔可夫决策过程，使用强化学习学习最优策略。在每个时间步，控制器在数据到达时决定是否微调，以在有限计算预算下最大化性能指标。该方法解决了在固定预算下动态微调调度的难题，为LLM在边缘设备的自适应部署提供了实用方案。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.13591v1",
+      "source": "arxiv",
+      "title": "Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents",
+      "abstract": "Large Language Model (LLM) agents increasingly rely on external memory systems to accumulate experience across tasks. Yet nearly all existing approaches, from graph-structured memories to reflective insight stores, access memory through fixed, hand-designed heuristics. We argue that this static view of memory is a core bottleneck for agentic learning because optimal memory behavior is fundamentally context-dependent. The early stages of the tasks, benefit from minimal retrieval because memory is sparse; recurring goal types benefit from plan reuse rather than generic nearest-neighbor lookup; stuck agents benefit from re-retrieval with alternative queries; and across long task streams, the memory store itself must be consolidated and pruned to remain useful. We present Memory as a Controlled Process (MemCon), a framework that models memory operations as a Markov Decision Process and learns an online policy that adaptively decides when, what, and how much to retrieve, when to inject a distilled plan, and when to consolidate or forget. MemCon is backend-agnostic: it wraps any existing memory implementation, learns from task-by-task binary feedback with no pretraining and no additional LLM calls, and uses a lightweight tabular contextual bandit with UCB exploration that converges within tens of tasks. Across 6 benchmarks, 3 agent frameworks, and 3 LLM backbones, MemCon consistently outperforms multiple memory baselines by up to 15.2 points in task success while reducing token consumption by 5--20%.",
+      "authors": [
+        "Eric Hanchen Jiang",
+        "Zhi Zhang",
+        "Yuchen Wu",
+        "Levina Li",
+        "Dong Liu",
+        "Xiao Liang",
+        "Rui Sun",
+        "Yubei Li",
+        "Edward Sun",
+        "Haozheng Luo",
+        "Zhaolu Kang",
+        "Aylin Caliskan",
+        "Kai-Wei Chang",
+        "Ying Nian Wu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-15T08:32:40+00:00",
+      "link": "https://arxiv.org/pdf/2607.13591v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "learned adaptive memory management for LLM agents, context-dependent policy",
+      "llm_evidence_cn": "针对LLM代理的学习型自适应记忆管理，上下文相关策略",
+      "llm_evidence": "针对LLM代理的学习型自适应记忆管理，上下文相关策略",
+      "canonical_evidence": "针对LLM代理的学习型自适应记忆管理，上下文相关策略",
+      "llm_tldr_en": "Argues that static memory heuristics are a bottleneck for agentic learning and proposes learned adaptive memory management that adjusts retrieval and consolidation based on context.",
+      "llm_tldr_cn": "现有LLM代理记忆机制依赖固定启发式规则，忽略了上下文依赖性。本文提出学习型自适应记忆管理，根据任务阶段和状态动态调整检索与压缩策略，提升代理在长任务流中的表现。该工作为代理性学习中的记忆策略提供了可学习方法。",
+      "llm_tldr": "现有LLM代理记忆机制依赖固定启发式规则，忽略了上下文依赖性。本文提出学习型自适应记忆管理，根据任务阶段和状态动态调整检索与压缩策略，提升代理在长任务流中的表现。该工作为代理性学习中的记忆策略提供了可学习方法。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
