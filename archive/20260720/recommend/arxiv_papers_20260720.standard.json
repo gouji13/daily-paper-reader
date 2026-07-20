@@ -1,0 +1,354 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-20T21:11:17.797705+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2607.15610v1",
+      "source": "arxiv",
+      "title": "Process Reward Informed Tree Rollout for Effective Multi-Turn RL",
+      "abstract": "Reinforcement learning (RL) has become a key approach for training LLM agents, yet popular methods such as GRPO/RLOO rely on multiple independently sampled complete trajectories for advantage estimation. In long-horizon agentic tasks, such a uniform rollout strategy can waste budget on uninformative dead-end attempts, while promising intermediate states do not receive sufficient exploration. The multi-turn structure of agentic trajectories, with interleaved actions and observations, naturally supports organizing a trajectory group as a tree, where each turn serves as a decision point for exploration. This perspective reframes effective exploration as the problem of deciding where to branch. We propose Process-Scorer Guided Adaptive Tree Rollout (PATR), a quality-aware rollout framework for multi-turn agent RL. PATR uses task-appropriate process feedback to score partial trajectories, selectively branches from promising states, reuses shared prefixes, and conservatively stops degenerate paths to reduce wasted sampling. The resulting rollout groups remain compatible with standard policy optimization while providing more efficient exploration under the same training budget. We evaluate PATR on FrozenLake and the challenging SWE-Bench, which is largely unexplored by prior tree-rollout agent RL methods. Experiments show that PATR improves performance by up to +5.0 points on SWE-Bench and +9.3 points on FrozenLake, highlighting process-guided tree rollouts as an effective strategy for scalable multi-turn RL.",
+      "authors": [
+        "Xintong Li",
+        "Sha Li",
+        "Yuwei Zhang",
+        "Changlong Yu",
+        "Rongmei Lin",
+        "Hongye Jin",
+        "Shuyi Guan",
+        "Xin Liu",
+        "Linwei Li",
+        "Qingyu Yin",
+        "Jingbo Shang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-17T04:16:58+00:00",
+      "link": "https://arxiv.org/pdf/2607.15610v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "agentic RL with tree rollout for LLM agents",
+      "llm_evidence_cn": "基于树展开的智能体强化学习",
+      "llm_evidence": "基于树展开的智能体强化学习",
+      "canonical_evidence": "基于树展开的智能体强化学习",
+      "llm_tldr_en": "PATR improves multi-turn RL for LLM agents by constructing trajectory trees and using process reward to guide adaptive rollout branching.",
+      "llm_tldr_cn": "该论文针对LLM智能体的多轮强化学习，提出基于过程奖励的自适应树展开方法，将轨迹组织为树结构并根据中间奖励智能选择分支，有效避免无效探索、提升样本效率，在长期任务中表现优越。",
+      "llm_tldr": "该论文针对LLM智能体的多轮强化学习，提出基于过程奖励的自适应树展开方法，将轨迹组织为树结构并根据中间奖励智能选择分支，有效避免无效探索、提升样本效率，在长期任务中表现优越。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.16169v1",
+      "source": "arxiv",
+      "title": "When Does Muon Help Agentic Reinforcement Learning?",
+      "abstract": "Muon is competitive with AdamW in large-scale pre-training, but its value for reinforcement-learning (RL) post-training remains unclear. We study vanilla Muon in sparse-reward agentic RL through matched single-seed comparisons with AdamW on ALFWorld using Qwen2.5-0.5B-Instruct. Under Group-in-Group Policy Optimization (GiGPO), applying Muon only to hidden weight matrices raises final-window validation success from 0.290 to 0.546 (+88%); high-rate AdamW controls retain no post-update success. The effect depends on the advantage estimator and learning rate. At 3e-5, Muon improves GRPO from 0.161 to 0.268, whereas GraphGPO's late-window gap narrows near saturation. At 1e-5, GraphGPO Muon reaches 0.901, raises normalized validation AUC from 0.399 to 0.556, and reaches 0.5 and 0.75 success 30 and 60 updates earlier, respectively. These exploratory results show that Muon can benefit agentic RL and motivate studying the policy optimizer, advantage estimator, and learning rate jointly. Multi-seed and cross-task validation remain open.",
+      "authors": [
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Zihe Huang",
+        "Ziqi Zhou",
+        "Qianshan Wei",
+        "Xuan Wang",
+        "Hao Sun"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-17T17:49:05+00:00",
+      "link": "https://arxiv.org/pdf/2607.16169v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "studies Muon optimizer in agentic RL for LLMs",
+      "llm_evidence_cn": "研究Muon优化器在LLM智能体强化学习中的应用",
+      "llm_evidence": "研究Muon优化器在LLM智能体强化学习中的应用",
+      "canonical_evidence": "研究Muon优化器在LLM智能体强化学习中的应用",
+      "llm_tldr_en": "Investigates when Muon optimizer improves agentic RL for LLMs, showing significant gains on ALFWorld with Qwen2.5-0.5B and GiGPO algorithm.",
+      "llm_tldr_cn": "本文研究Muon优化器在LLM智能体强化学习中的效果。在ALFWorld任务上使用Qwen2.5-0.5B模型和GiGPO算法进行实验，发现Muon仅应用于隐藏权重矩阵即可将验证成功率从0.290提升至0.546（+88%），效果依赖于优势估计器和学习率。结果表明Muon在智能体强化学习中具有潜力，但需谨慎选择超参数。",
+      "llm_tldr": "本文研究Muon优化器在LLM智能体强化学习中的效果。在ALFWorld任务上使用Qwen2.5-0.5B模型和GiGPO算法进行实验，发现Muon仅应用于隐藏权重矩阵即可将验证成功率从0.290提升至0.546（+88%），效果依赖于优势估计器和学习率。结果表明Muon在智能体强化学习中具有潜力，但需谨慎选择超参数。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.15660v1",
+      "source": "arxiv",
+      "title": "ToolVerse: Unlocking Massive Environments and Long-Horizon Tasks for Agentic Reinforcement Learning",
+      "abstract": "While LLM agents demonstrate strong reasoning abilities in compact and well-defined scenarios, they struggle to maintain robustness and effectiveness when faced with large-scale, diverse, and dynamic real-world environments that demand seamless tool integration. To address this gap, we introduce ToolVerse, a comprehensive framework that scales up agentic RL environments and enables agents to perform complex long-horizon reasoning in Tool-Integrated Reasoning (TIR) tasks. First, ToolVerse automatically builds the massive executable agent training environments from nearly 400 real-world Model Context Protocols (MCPs) that contain about 4500 tools. Second, we propose a task design strategy based on a tool dependency graph, utilizing Dynamic Unlocking Sampling Algorithm to generate long-horizon tasks, and produce GUST (Graph Unlocking Sampling Tasks) dataset. Third, to alleviate the credit assigment problem in long-horizon agentic RL, we propose a fine-grained Turn-Aware Relative Advantage algorithm. We conduct extensive Agentic RL training using ToolVerse and evaluate our framework on serveral agentic benchmarks. Experimental results demonstrate that our framework significantly strengthens LLMs' capabilities in long-horizon tool use, achieving a marked performance boost and showcasing robust reasoning within dynamic environments.",
+      "authors": [
+        "Shuaiyu Zhou",
+        "Fengpeng Yue",
+        "Zengjie Hu",
+        "Yuanzhe Shen",
+        "Chenyang Zhang",
+        "feng hong",
+        "Cao Liu",
+        "Ke Zeng"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-17T06:12:04+00:00",
+      "link": "https://arxiv.org/pdf/2607.15660v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "directly addresses scaling agentic RL environments for LLM agents",
+      "llm_evidence_cn": "直接针对LLM代理的强化学习环境扩展",
+      "llm_evidence": "直接针对LLM代理的强化学习环境扩展",
+      "canonical_evidence": "直接针对LLM代理的强化学习环境扩展",
+      "llm_tldr_en": "ToolVerse scales agentic RL environments by automatically building massive training environments from 400+ real-world MCPs with about 4500 tools, enabling long-horizon reasoning.",
+      "llm_tldr_cn": "本文提出ToolVerse框架，从400多个真实世界模型上下文协议（MCP）中自动构建包含约4500个工具的大规模可执行环境，扩展了代理强化学习场景。它采用基于工具依赖图的任务设计策略，使LLM代理能执行复杂的长时推理任务。该工作弥补了现有环境在规模和多样性上的不足，为agentic RL提供了更真实的训练平台。",
+      "llm_tldr": "本文提出ToolVerse框架，从400多个真实世界模型上下文协议（MCP）中自动构建包含约4500个工具的大规模可执行环境，扩展了代理强化学习场景。它采用基于工具依赖图的任务设计策略，使LLM代理能执行复杂的长时推理任务。该工作弥补了现有环境在规模和多样性上的不足，为agentic RL提供了更真实的训练平台。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.15810v1",
+      "source": "arxiv",
+      "title": "QUADS: Stabilizing NVFP4 Reinforcement Learning for MoE via QUantization-error Alignment across Dual Sides",
+      "abstract": "Rollout generation is a major bottleneck in Reinforcement Learning (RL) for Mixture-of-Experts (MoE) Large Language Models, motivating low-precision rollout acceleration such as FP8. As an emerging low-precision format, NVFP4 combines fine-grained scaling for accuracy preservation with native W4A4 FP4 GEMMs for higher throughput than FP8. However, we find that directly applying NVFP4 to MoE RL rollout is impractical. NVFP4 rollout with BF16 training collapses after roughly 150 steps, accompanied by rapidly growing rollout-trainer log-probability gaps. Through training-inference error analysis and controlled ablations, we identify activation error, rather than weight error, as the dominant source of FP4 RL instability: weights can be synchronized and aligned by a shared quantization-dequantization path, whereas activations are recomputed online and error is amplified by the coarse E2M1 grid. Therefore, to stabilize NVFP4 RL for MoE, we propose QUantization-error Alignment across Dual Sides (QUADS). On the trainer side, we introduce Asymmetric Quantization-Aware Training fake-quantizing weights while keeping activations unquantized for better alignment. On the rollout side, Residual Activation Compensation corrects high-error activation channels while preserving native W4A4 GEMMs. In our MoE RL experiments on several benchmarks, QUADS achieves BF16-level accuracy, improves average pass@1 by 21.49 points over naive NVFP4 RL, and delivers ~16% higher rollout throughput than FP8.",
+      "authors": [
+        "Zhengyang Zhuge",
+        "Hao Yu",
+        "Xin Wang",
+        "Zheng Li",
+        "Yizhong Cao",
+        "Dayiheng Liu",
+        "Jianwei Zhang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-17T10:21:27+00:00",
+      "link": "https://arxiv.org/pdf/2607.15810v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "addresses instability in reinforcement learning for MoE LLMs with low-precision quantization",
+      "llm_evidence_cn": "解决MoE大语言模型强化学习中的低精度量化不稳定问题",
+      "llm_evidence": "解决MoE大语言模型强化学习中的低精度量化不稳定问题",
+      "canonical_evidence": "解决MoE大语言模型强化学习中的低精度量化不稳定问题",
+      "llm_tldr_en": "QUADS stabilizes NVFP4 RL for MoE LLMs by aligning quantization errors on both sides, enabling faster rollout generation without training collapse.",
+      "llm_tldr_cn": "MoE大语言模型的强化学习滚动词生成是主要瓶颈，使用低精度NVFP4虽能加速但导致训练崩溃。QUADS通过量化误差对齐技术，分别处理激活和权重的误差，稳定了FP4 RL训练。实验表明在保持精度的同时显著提升了吞吐量。",
+      "llm_tldr": "MoE大语言模型的强化学习滚动词生成是主要瓶颈，使用低精度NVFP4虽能加速但导致训练崩溃。QUADS通过量化误差对齐技术，分别处理激活和权重的误差，稳定了FP4 RL训练。实验表明在保持精度的同时显著提升了吞吐量。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.15374v1",
+      "source": "arxiv",
+      "title": "Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning",
+      "abstract": "Multimodal large language models (MLLMs) ground whole objects well from free-form language queries, but they struggle when the query names a part rather than the object. We trace this to a missing object-part hierarchy, since parts are localized in the same single step used for objects. We propose Object-Part Hierarchical Reflective Grounding (OP-HRG), a coarse-to-fine reasoning-guided grounding strategy that first localizes the parent object and then the part within it. A self-check then reflects on the result, with an extension to re-encode the predicted crop to inspect the region it is correcting. We introduce a part-aware GRPO framework to train our pipeline with stage-wise rewards. A 4B model trained this way outperforms 7B grounding LLMs and SAM3 across PascalPart, PartImageNet, and InstructPart, and transfers to reasoning segmentation.",
+      "authors": [
+        "Kazi Sajeed Mehrab",
+        "Hani Alomari",
+        "Najibul Haque Sarker",
+        "Chia-Wei Tang",
+        "Zaber Ibn Abdul Hakim",
+        "Anuj Karpatne",
+        "Chris Thomas"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-16T18:18:31+00:00",
+      "link": "https://arxiv.org/pdf/2607.15374v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "uses GRPO for fine-tuning MLLM with RL",
+      "llm_evidence_cn": "使用GRPO对多模态大模型进行强化学习微调",
+      "llm_evidence": "使用GRPO对多模态大模型进行强化学习微调",
+      "canonical_evidence": "使用GRPO对多模态大模型进行强化学习微调",
+      "llm_tldr_en": "Proposes Object-Part Hierarchical Reflective Grounding with part-aware GRPO for fine-tuning MLLM, outperforming 7B models on part-level visual grounding.",
+      "llm_tldr_cn": "本文针对多模态大模型在部件级视觉定位中的不足，提出对象-部件分层反思定位（OP-HRG）策略，并引入部件感知的GRPO框架进行训练。使用4B模型训练后，在部件定位任务上优于7B定位LLM和SAM模型。表明强化学习可有效用于多模态大模型的微调。",
+      "llm_tldr": "本文针对多模态大模型在部件级视觉定位中的不足，提出对象-部件分层反思定位（OP-HRG）策略，并引入部件感知的GRPO框架进行训练。使用4B模型训练后，在部件定位任务上优于7B定位LLM和SAM模型。表明强化学习可有效用于多模态大模型的微调。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.13884v1",
+      "source": "arxiv",
+      "title": "Experience Memory Graph: One-Shot Error Correction for Agents",
+      "abstract": "Large Language Model (LLM) agents have shown remarkable capabilities in autonomous decision-making by generating sequential trajectories of states, actions, and observations. However, in complex, long-horizon tasks, these agents frequently suffer from compounding errors and struggle to recover from failures. Existing self-correction mechanisms rely on prompt-based reflection, which is inherently brittle, incurs heavy time and API costs due to iterative trial-and-error loops, and produces task-specific memory that may be hard to generalize to new scenarios. To address this, we propose Experience Memory Graph (EMG), a framework that reformulates agent failure recovery as a graph matching problem. At training time, we convert both failed exploration trajectories and successful expert trajectories into directed action decision graphs. By matching these graphs, we extract common subgraphs (successful workflows) and graph edit paths that explicitly indicate how to correct failures (e.g., which actions to add, delete, or relabel under a given observation), and store them in a memory graph with intra-task nodes and cross-task edges. At test time, EMG retrieves relevant insights and guides the agent in a single, loop-free execution. Experiments on ALFWorld and ScienceWorld show that EMG consistently outperforms state-of-the-art reflection baselines in success rate and average reward, while requiring no test-time trial-and-error.",
+      "authors": [
+        "Wenjun Wang",
+        "Yuchen Fang",
+        "Fengrui Liu",
+        "Zibo Liang",
+        "Kai Zheng"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-15T14:33:15+00:00",
+      "link": "https://arxiv.org/pdf/2607.13884v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "agent error correction via graph matching for LLM agents",
+      "llm_evidence_cn": "通过图匹配进行LLM代理错误纠正，属于代理强化学习技术",
+      "llm_evidence": "通过图匹配进行LLM代理错误纠正，属于代理强化学习技术",
+      "canonical_evidence": "通过图匹配进行LLM代理错误纠正，属于代理强化学习技术",
+      "llm_tldr_en": "EMG reformulates agent failure recovery as a graph matching problem, enabling one-shot error correction without iterative trial-and-error, reducing cost and improving generalization.",
+      "llm_tldr_cn": "针对LLM代理在长周期任务中易犯累积错误且现有自纠正方法脆弱、成本高的问题，本文提出经验记忆图框架，将失败恢复转化为图匹配问题。通过将失败探索轨迹转换为图结构，并匹配成功经验，实现一次性错误纠正。实验表明该方法减少了迭代开销，提高了新场景的泛化能力。",
+      "llm_tldr": "针对LLM代理在长周期任务中易犯累积错误且现有自纠正方法脆弱、成本高的问题，本文提出经验记忆图框架，将失败恢复转化为图匹配问题。通过将失败探索轨迹转换为图结构，并匹配成功经验，实现一次性错误纠正。实验表明该方法减少了迭代开销，提高了新场景的泛化能力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Search for agentic reinforcement learning techniques applied to language model training",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.16097v1",
+      "source": "arxiv",
+      "title": "Understanding Reasoning from Pretraining to Post-Training",
+      "abstract": "Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex reasoning tasks, yet RL post-training is largely studied in isolation from the pretraining that precedes it. As a result, two basic questions remain open: (1) how do pretraining choices (model size, data) shape the returns to RL compute, and (2) what does RL actually do to the model? These questions are difficult to study in the standard LLM setting: pretraining corpora are vast and uncontrolled, making it hard to attribute behaviors to pretraining versus RL, and systematic compute sweeps across both stages are prohibitively expensive. To address these challenges, we use chess as a controlled testbed for studying reasoning across the full pretraining-to-post-training pipeline. We follow the standard LLM training pipeline by pretraining language models from 5M to 1B parameters on human chess games, supervised fine-tuning on synthetic reasoning traces, and running RL on chess puzzles with verifiable rewards. Using this framework, we find that the post-RL performance at given RL compute level is well-predicted from the pretraining loss, and slope of the RL reward curves improves approximately linearly with the pretraining tokens. Beyond scaling, we find that RL does not simply sharpen the SFT policy: on easy puzzles it amplifies correct moves the SFT policy already preferred, while on hard puzzles it surfaces correct moves that were nearly absent under SFT. We further test whether our findings transfer beyond chess by training a 1B language model on math-domain text, where the same predictive pattern emerges: longer-pretrained checkpoints reach higher post-RL performance and improve faster under RL. In sum, we provide a quantitative account of the pretraining-to-RL interface and a controlled testbed for studying the science of reasoning across the full pretraining-to-post-training pipeline.",
+      "authors": [
+        "Jingyan Shen",
+        "Ang Li",
+        "Salman Rahman",
+        "Yifan Sun",
+        "Micah Goldblum",
+        "Matus Telgarsky",
+        "Pavel Izmailov"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-17T16:31:58+00:00",
+      "link": "https://arxiv.org/pdf/2607.16097v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "understanding RL post-training for LLM reasoning using chess as testbed",
+      "llm_evidence_cn": "以国际象棋为受控环境研究RL后训练对LLM推理的影响",
+      "llm_evidence": "以国际象棋为受控环境研究RL后训练对LLM推理的影响",
+      "canonical_evidence": "以国际象棋为受控环境研究RL后训练对LLM推理的影响",
+      "llm_tldr_en": "This paper uses chess as a controlled testbed to study how pretraining choices affect RL post-training returns and what RL actually changes in the model, providing insights for reasoning improvement.",
+      "llm_tldr_cn": "针对RL后训练与预训练隔离研究的现状，本文以国际象棋为受控环境，系统探究预训练选择（模型规模、数据）如何影响RL后训练的回报，以及RL对模型内部表征的改变。通过跨阶段的计算量扫描，揭示了RL主要强化了预训练中已习得的推理模式，而非从头构建推理能力。",
+      "llm_tldr": "针对RL后训练与预训练隔离研究的现状，本文以国际象棋为受控环境，系统探究预训练选择（模型规模、数据）如何影响RL后训练的回报，以及RL对模型内部表征的改变。通过跨阶段的计算量扫描，揭示了RL主要强化了预训练中已习得的推理模式，而非从头构建推理能力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.14159v1",
+      "source": "arxiv",
+      "title": "MemoHarness: Agent Harnesses That Learn from Experience",
+      "abstract": "An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness design strongly affects agent behavior, most automatic improvement methods optimize narrower artifacts such as prompts, pipelines, or workflows, and deployed agents usually reuse a single global harness for all cases. We introduce MemoHarness, an adaptive harness optimization framework that learns from its own executions. MemoHarness decomposes the harness into six editable control dimensions, stores per-case diagnoses and distilled global patterns in a dual-layer experience bank, and adapts the learned harness to each test case using retrieved experience without test-time labels, feedback, or additional search. In our evaluation across shell-agent, code-generation, and analytical-reasoning benchmarks, MemoHarness improves over the fixed harnesses we compare against and shows selective transfer to unseen suites and base models. Its additional context can also remain cost-competitive when much of the retrieved experience is cacheable. These results provide evidence that execution experience is a practical substrate for building agent harnesses that are more adaptive than a single static configuration, while leaving broader claims about statistical robustness and component attribution to future work.",
+      "authors": [
+        "Yue Huang",
+        "Wenjie Wang",
+        "Han Bao",
+        "Yuchen Ma",
+        "Xiaonan Luo",
+        "Yi Nian",
+        "Haomin Zhuang",
+        "Zheyuan Liu",
+        "Yue Zhao",
+        "Xiangliang Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-14T21:22:18+00:00",
+      "link": "https://arxiv.org/pdf/2607.14159v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "learns agent harness from experience for LLMs",
+      "llm_evidence_cn": "从经验中学习智能体框架以改进LLM行为",
+      "llm_evidence": "从经验中学习智能体框架以改进LLM行为",
+      "canonical_evidence": "从经验中学习智能体框架以改进LLM行为",
+      "llm_tldr_en": "MemoHarness introduces an adaptive harness optimization framework that learns from its own executions to improve LLM agent behavior, addressing agentic RL without explicit RL.",
+      "llm_tldr_cn": "当前智能体框架设计依赖全局静态设置，限制了自动改进。MemoHarness将框架分解为六个可编辑控制维度，构建双层经验库存储案例诊断和全局模式，并通过检索经验自适应调整框架。实验表明该方法能有效提升智能体在不同任务上的表现，为智能体强化学习提供了可学习的框架优化途径。",
+      "llm_tldr": "当前智能体框架设计依赖全局静态设置，限制了自动改进。MemoHarness将框架分解为六个可编辑控制维度，构建双层经验库存储案例诊断和全局模式，并通过检索经验自适应调整框架。实验表明该方法能有效提升智能体在不同任务上的表现，为智能体强化学习提供了可学习的框架优化途径。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
