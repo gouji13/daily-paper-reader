@@ -6,46 +6,56 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-20
-- 运行时间：2026-07-20 21:15:43 UTC
+- 最新运行日期：2026-07-21
+- 运行时间：2026-07-21 21:22:10 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：4
-- 速读区：4
+- 本次总论文数：12
+- 精读区：6
+- 速读区：6
 
 ### 今日简报（AI）
-今日日报聚焦强化学习与智能体推理，精读两篇满分论文涉及多轮RL树展开策略与Muon优化器适用性。
-最值得关注的方向：多轮RL中利用过程奖励的树展开方法有效提升性能，以及Muon优化器在特定条件下对agent RL有显著增益。
-建议普通读者关注推理增强的RL技术，尤其是过程奖励指导搜索的策略，并留意优化器选择对智能体学习效率的影响。
-- 详情：[/202607/20/README](/202607/20/README)
+今日梳理12篇强化学习与LLM后训练前沿论文，其中两篇精读获9.0高分。组熵控制策略优化与蒸馏强化学习在LLM后训练中表现突出，值得重点关注。建议优先阅读这两篇精读论文，尤其适合对强化学习优化感兴趣的读者深入探究。
+- 详情：[/202607/21/README](/202607/21/README)
 
 ### 精读区论文标签
-1. [Process Reward Informed Tree Rollout for Effective Multi-Turn RL](/202607/20/2607.15610v1-process-reward-informed-tree-rollout-for-effective-multi-turn-rl)  
+1. [Group Entropy-Controlled Policy Optimization](/202607/21/2607.16850v1-group-entropy-controlled-policy-optimization)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：基于树展开的智能体强化学习
-2. [When Does Muon Help Agentic Reinforcement Learning?](/202607/20/2607.16169v1-when-does-muon-help-agentic-reinforcement-learning)  
+   evidence：提出组熵控制策略优化（GEPO）用于大语言模型的强化学习微调
+2. [Distilled Reinforcement Learning for LLM Post-training](/202607/21/2607.17247v1-distilled-reinforcement-learning-for-llm-post-training)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：研究Muon优化器在LLM智能体强化学习中的应用
-3. [ToolVerse: Unlocking Massive Environments and Long-Horizon Tasks for Agentic Reinforcement Learning](/202607/20/2607.15660v1-toolverse-unlocking-massive-environments-and-long-horizon-tasks-for-agentic-reinforcement-learning)  
+   evidence：将强化学习与在线策略蒸馏结合用于大模型后训练
+3. [WAR: Workload-Aware Rollouts for Synchronous Agentic Reinforcement Learning](/202607/21/2607.17299v1-war-workload-aware-rollouts-for-synchronous-agentic-reinforcement-learning)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：同步Agentic RL的负载感知规划
+4. [Theoretical Foundations of $\max$@$k$ Reinforcement Learning](/202607/21/2607.17823v1-theoretical-foundations-of-maxk-reinforcement-learning)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：大模型强化学习的理论基础
+5. [Trace-Based On-Policy Distillation for Masked Diffusion Language Models](/202607/21/2607.16872v1-trace-based-on-policy-distillation-for-masked-diffusion-language-models)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：直接针对LLM代理的强化学习环境扩展
-4. [QUADS: Stabilizing NVFP4 Reinforcement Learning for MoE via QUantization-error Alignment across Dual Sides](/202607/20/2607.15810v1-quads-stabilizing-nvfp4-reinforcement-learning-for-moe-via-quantization-error-alignment-across-dual-sides)  
+   evidence：基于轨迹的在线策略蒸馏用于扩散语言模型
+6. [Reward-Driven LLM Agent Workflows: Synthesizing POMDP Routing and Self-Correction for Autonomous Decision-Making](/202607/21/2607.17038v1-reward-driven-llm-agent-workflows-synthesizing-pomdp-routing-and-self-correction-for-autonomous-decision-making)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：解决MoE大语言模型强化学习中的低精度量化不稳定问题
+   evidence：基于POMDP路由和自校正的LLM智能体工作流，属于智能体强化学习
 
 ### 速读区论文标签
-1. [Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning](/202607/20/2607.15374v1-reasoning-guided-part-level-visual-grounding-via-reinforcement-learning)  
+1. [Why Does Feedback-Augmented Self-Distillation Fail to Improve Retrieval-Interleaved Search Agents?](/202607/21/2607.17558v1-why-does-feedback-augmented-self-distillation-fail-to-improve-retrieval-interleaved-search-agents)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：面向agent任务的在线自蒸馏
+2. [MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models](/202607/21/2607.18006v1-mada-rl-multi-agent-debate-aware-reinforcement-learning-for-parameter-efficient-reasoning-in-compact-models)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：面向紧凑语言模型的RL微调框架
+3. [LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks](/202607/21/2607.18110v1-llm-as-a-coach-experiential-learning-for-non-verifiable-tasks)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：使用教练知识的在线上下文蒸馏
+4. [A Geometric Perspective on Stabilizing Value Conflict Resolution](/202607/21/2607.17946v1-a-geometric-perspective-on-stabilizing-value-conflict-resolution)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：使用GRPO对多模态大模型进行强化学习微调
-2. [Understanding Reasoning from Pretraining to Post-Training](/202607/20/2607.16097v1-understanding-reasoning-from-pretraining-to-post-training)  
-   标签：评分：7.0/10、query:agentic-rl
-   evidence：以国际象棋为受控环境研究RL后训练对LLM推理的影响
-3. [Experience Memory Graph: One-Shot Error Correction for Agents](/202607/20/2607.13884v1-experience-memory-graph-one-shot-error-correction-for-agents)  
+   evidence：RLHF中值冲突的稳定性研究
+5. [Joint On-and-Off Policy Learning for Vision-and-Language Navigation](/202607/21/2607.13461v1-joint-on-and-off-policy-learning-for-vision-and-language-navigation)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：通过图匹配进行LLM代理错误纠正，属于代理强化学习技术
-4. [MemoHarness: Agent Harnesses That Learn from Experience](/202607/20/2607.14159v1-memoharness-agent-harnesses-that-learn-from-experience)  
+   evidence：结合离线模仿学习与在线策略探索，适用于语言模型的智能体强化学习
+6. [Token-Level Off-Policy Learning for Faithful Generation Under Distribution Shift](/202607/21/2607.17524v1-token-level-off-policy-learning-for-faithful-generation-under-distribution-shift)  
    标签：评分：6.0/10、query:agentic-rl
-   evidence：从经验中学习智能体框架以改进LLM行为
+   evidence：令牌级离策略学习用于大模型后训练
 
 
 <div class="dpr-home-promo-card">
