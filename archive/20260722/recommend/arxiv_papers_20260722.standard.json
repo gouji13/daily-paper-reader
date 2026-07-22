@@ -1,0 +1,394 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-22T21:34:43.091764+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.19331v1",
+      "source": "arxiv",
+      "title": "ISO: An RLVR-Native Optimization Stack",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) is rapidly advancing the reasoning capabilities of language models, yet the optimization layer that converts reward feedback into weight-space updates remains poorly understood. Building on our prior analysis (Zhu et al., 2025), we study this missing layer through the singular structure of model weights and identify spectral inheritance: RLVR can reuse the base model's weight spectra while acquiring new behavior through changes in the associated input and output singular frames.   We operationalize spectral inheritance as Isospectral Optimization (ISO), an RLVR-native, fixed-spectrum optimization framework with complementary offline and online instantiations. Offline, ISO-Merger combines the frame changes of shared-base specialists into a single fixed-spectrum model, requiring no post-merge data, rollouts, gradient updates, or on-policy distillation (OPD). It recovers complementary specialist capabilities and achieves the strongest aggregate performance among the compared data-free merging methods. Online, ISO-Optimizer applies a chosen base optimizer, including AdamW and Muon, to the frame variables while keeping the base spectra fixed. Across reasoning and coding tasks ranging from 1.5B to 8B parameters, ISO-Optimizer improves accuracy in the reported runs and reaches matched scores with substantially fewer training steps. On Qwen3-8B-Base, AdamW reaches an aggregate accuracy of 0.495 after 270 training steps. ISO-AdamW reaches the same accuracy after only 100 training steps and improves further to 0.509 after 210 training steps. Together, ISO offers a concrete answer to RLVR's missing optimization layer: rather than inheriting pre-training optimization wholesale, design post-training around the structure of reward-driven adaptation: inherit the spectrum, optimize the frames.",
+      "authors": [
+        "Hanqing Zhu",
+        "Wenyan Cong",
+        "Zhizhou Sha",
+        "Sagnik Mukherjee",
+        "Xinyuan Song",
+        "David González-Martínez",
+        "Xiaoxia Wu",
+        "Yuandong Tian",
+        "Shiwei Liu",
+        "David Z. Pan",
+        "Zhangyang \"Atlas\" Wang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-21T17:51:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.19331v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Proposes ISO an RLVR-native optimization stack for LLMs directly advancing reinforcement learning for large language models",
+      "llm_evidence_cn": "提出ISO一个专为LLM设计的RLVR优化栈直接推进大语言模型的强化学习",
+      "llm_evidence": "提出ISO一个专为LLM设计的RLVR优化栈直接推进大语言模型的强化学习",
+      "canonical_evidence": "提出ISO一个专为LLM设计的RLVR优化栈直接推进大语言模型的强化学习",
+      "llm_tldr_en": "ISO is an RLVR-native fixed-spectrum optimization framework with offline and online instantiations advancing reasoning capabilities of language models.",
+      "llm_tldr_cn": "现有RLVR优化层不明确ISO基于谱继承发现RLVR可复用基模型权重谱而仅改变输入输出奇异帧据此提出等谱优化（ISO）框架离线和在线版本分别合并帧变化和迭代更新实验表明ISO显著提升LLM推理性能且效率更高",
+      "llm_tldr": "现有RLVR优化层不明确ISO基于谱继承发现RLVR可复用基模型权重谱而仅改变输入输出奇异帧据此提出等谱优化（ISO）框架离线和在线版本分别合并帧变化和迭代更新实验表明ISO显著提升LLM推理性能且效率更高",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.18481v1",
+      "source": "arxiv",
+      "title": "Search-on-Graph-R1: Training Large Language Models to Search Knowledge Graphs with Reinforcement Learning",
+      "abstract": "Knowledge graph question answering (KGQA) requires navigating from topic entities to an answer several relations away. Recent methods prompt a frontier LLM to explore the graph through a retrieval tool, but their reliance on frontier-scale inference makes them costly to deploy. We present Search-on-Graph-R1 (\\sogrone{}), which internalizes this navigation into a compact 8B model through supervised fine-tuning (SFT) followed by reinforcement learning (RL). Our central idea is to scaffold a frontier teacher with each question's gold SPARQL query, so the teacher traverses a known answer-bearing path with a live \\texttt{Search} tool rather than having to discover the path itself. Since every call executes against a live Freebase server, the resulting trajectories are grounded in the knowledge graph by construction. On WebQSP, CWQ, and GrailQA, \\sogrone{} at 8B surpasses every frozen frontier-LLM system in our comparison and posts the strongest results on CWQ of any system we compare against. It does so using no auxiliary module at inference and no LLM judge during training. Isolating each training stage shows that SFT and RL contribute complementary gains, our approach transfers across model families, and RL learns to reach answers in fewer \\texttt{Search} calls than its SFT initialization.",
+      "authors": [
+        "Jia Ao Sun",
+        "Hao Yu",
+        "Fengran Mo",
+        "Zhan Su",
+        "Yuchen Hui",
+        "Bang Liu",
+        "Jian-Yun Nie"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-20T19:58:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.18481v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning for LLMs to search knowledge graphs",
+      "llm_evidence_cn": "使用强化学习训练LLM搜索知识图谱",
+      "llm_evidence": "使用强化学习训练LLM搜索知识图谱",
+      "canonical_evidence": "使用强化学习训练LLM搜索知识图谱",
+      "llm_tldr_en": "Search-on-Graph-R1 trains a compact 8B LLM via SFT and RL to navigate knowledge graphs for question answering, achieving strong performance without relying on frontier-scale inference.",
+      "llm_tldr_cn": "知识图谱问答任务需要从主题实体导航到答案。现有方法依赖前沿大模型进行推理，部署成本高。本文提出Search-on-Graph-R1，通过监督微调结合强化学习将导航能力内化到一个8B模型中。实验表明，该方法在多个KGQA基准上取得了与前沿模型相媲美的效果，同时大幅降低了推理成本。",
+      "llm_tldr": "知识图谱问答任务需要从主题实体导航到答案。现有方法依赖前沿大模型进行推理，部署成本高。本文提出Search-on-Graph-R1，通过监督微调结合强化学习将导航能力内化到一个8B模型中。实验表明，该方法在多个KGQA基准上取得了与前沿模型相媲美的效果，同时大幅降低了推理成本。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.18915v1",
+      "source": "arxiv",
+      "title": "Reasoning Error from Known Fact: Step-Level Self-Consistency Group Relative Policy Optimization for LLM",
+      "abstract": "With the rapid advancement of large language models (LLMs), modern systems not only possess strong foundational capabilities and extensive knowledge, but can also solve complex problems via long, multi-step reasoning. However, as reasoning traces become longer, LLMs may produce a substantial amount of hallucinated content during the reasoning process, which is often difficult to detect. In this work, we conduct a fine-grained analysis of hallucinations arising in LLM reasoning and find that the reasoning traces are particularly prone to Context-Sensitive Factual Hallucinations: cases where the model actually has the relevant knowledge, yet makes factual errors due to contextual interference during reasoning. To address this issue, we propose Step-level Self-Consistency Group Relative Policy Optimization (SSC-GRPO), which assigns step-level rewards to reasoning traces by computing self-consistency scores of individual steps across multiple rollouts. Compared with prior methods, SSC-GRPO achieves state-of-the-art performance on both mathematical reasoning benchmarks and hallucination leaderboards. Our results offer a new perspective for detecting and mitigating hallucinations in the reasoning process of large language models.",
+      "authors": [
+        "Xiaomeng Hu",
+        "Jiaqi Hu",
+        "Hao Chen",
+        "Qi Zhang",
+        "Zhanming Shen",
+        "Wentao Ye",
+        "Junbo Zhao"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-21T09:56:58+00:00",
+      "link": "https://arxiv.org/pdf/2607.18915v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Step-level self-consistency group relative policy optimization for reducing hallucinations in LLM reasoning",
+      "llm_evidence_cn": "针对大语言模型推理中幻觉的步骤级自一致性群体相对策略优化",
+      "llm_evidence": "针对大语言模型推理中幻觉的步骤级自一致性群体相对策略优化",
+      "canonical_evidence": "针对大语言模型推理中幻觉的步骤级自一致性群体相对策略优化",
+      "llm_tldr_en": "Proposes step-level self-consistency GRPO to mitigate context-sensitive factual hallucinations in LLM reasoning chains.",
+      "llm_tldr_cn": "本文针对大语言模型长推理链中出现的上下文敏感事实性幻觉，提出步骤级自一致性群体相对策略优化方法。通过细粒度分析识别出模型虽拥有知识但因上下文干扰而犯错的情况，并在步骤级别进行优化。实验表明该方法有效减少了推理中的幻觉，提升了推理准确性。",
+      "llm_tldr": "本文针对大语言模型长推理链中出现的上下文敏感事实性幻觉，提出步骤级自一致性群体相对策略优化方法。通过细粒度分析识别出模型虽拥有知识但因上下文干扰而犯错的情况，并在步骤级别进行优化。实验表明该方法有效减少了推理中的幻觉，提升了推理准确性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.18955v1",
+      "source": "arxiv",
+      "title": "H$^2$SD: Hybrid Hindsight Self-Distillation",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has substantially improved the reasoning capabilities of large language models on tasks such as mathematical reasoning and code generation. However, most RLVR methods assign a scalar outcome reward to an entire trajectory, resulting in sparse supervision and limited token-level credit assignment. On-policy distillation (OPD) provides denser supervision by distilling token-level distributions from a stronger teacher model, but requires an additional teacher and typically assumes a shared vocabulary. On-policy self-distillation (OPSD) removes this dependency by conditioning the same model on privileged information to construct a teacher policy. However, directly matching the teacher distribution may cause information leakage and unstable optimization. RLSD avoids direct matching by using the teacher signal only to modulate update magnitudes, but it cannot provide an explicit correction direction when the sampled reasoning fails. To address this tradeoff, we introduce $\\mathrm{H}^{2}\\mathrm{SD}$, a hybrid hindsight self distillation framework that uses the teacher differently according to trajectory correctness. For successful trajectories, the teacher receives the student response confirmed as correct together with a rephrasing instruction, and its probabilities on the original response tokens are used to modulate update magnitudes without changing the direction determined by the reward. For failed trajectories, we condition the teacher on a reference hint containing key reasoning steps and a verified answer, and minimize the reverse KL divergence from the student to the teacher. Experiments on multiple challenging reasoning benchmarks show that H$^2$SD consistently outperforms representative RLVR, OPSD, and RLSD baselines while maintaining stable optimization and favorable generation efficiency.",
+      "authors": [
+        "Qiye Cai",
+        "Yichuan Ma",
+        "Linyang Li",
+        "Peiji Li",
+        "Yongkang Chen",
+        "Qipeng Guo",
+        "Yicheng Zou",
+        "Tao Gui",
+        "Xiaocheng Feng",
+        "Bing Qin"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-21T10:47:27+00:00",
+      "link": "https://arxiv.org/pdf/2607.18955v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "hybrid hindsight self-distillation for on-policy distillation in RLVR",
+      "llm_evidence_cn": "混合事后自蒸馏，针对RLVR中的在线策略蒸馏",
+      "llm_evidence": "混合事后自蒸馏，针对RLVR中的在线策略蒸馏",
+      "canonical_evidence": "混合事后自蒸馏，针对RLVR中的在线策略蒸馏",
+      "llm_tldr_en": "H2SD combines outcome RLVR with on-policy self-distillation to provide token-level credit assignment without an external teacher.",
+      "llm_tldr_cn": "本文指出RLVR仅提供稀疏标量奖励，限制令牌级信用分配，而在线策略蒸馏需要额外教师模型。为此提出混合事后自蒸馏（H2SD），利用事后信息构建教师策略，在保留蒸馏密度优势的同时避免信息泄露，显著提升数学推理等任务上的政策学习效率。",
+      "llm_tldr": "本文指出RLVR仅提供稀疏标量奖励，限制令牌级信用分配，而在线策略蒸馏需要额外教师模型。为此提出混合事后自蒸馏（H2SD），利用事后信息构建教师策略，在保留蒸馏密度优势的同时避免信息泄露，显著提升数学推理等任务上的政策学习效率。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.19046v1",
+      "source": "arxiv",
+      "title": "Contrastive On-Policy Distillation",
+      "abstract": "On-policy Distillation (OPD) supervises a student model on trajectories sampled from its own policy by minimizing the divergence between the output distributions of the teacher and student at each token position, thereby providing dense token-level supervision. Although existing OPD methods have demonstrated strong performance in improving the reasoning ability of student models, their objectives fundamentally rely on token-level distribution matching. Consequently, they lack an explicit signal for comparing a token's relative compatibility across reasoning modes and thus do not directly model preferences between these modes. To address this limitation, we propose COPD, a contrastive OPD framework. Specifically, for each token generated by the student model, a frozen teacher model scores the same student state under two contrasting instructions that elicit light and heavy reasoning. The difference between the resulting log probabilities serves as a token-level advantage signal to guide the OPD update. Rather than merely imitating a single teacher distribution, COPD directly encourages the student model to learn more concise and efficient reasoning strategies. We conduct experiments on nine multimodal benchmarks covering both reasoning and understanding tasks. The results show that COPD substantially reduces reasoning length without compromising model performance and consistently improves efficiency across different tasks and model scales. Furthermore, the contrastive formulation can be seamlessly integrated into the On-policy Self-distillation (OPSD) framework, where self-contrastive supervision is constructed without an additional teacher model, thereby enabling the model to distill itself toward lightweight reasoning.",
+      "authors": [
+        "Jiacheng Ruan",
+        "Jun Tang",
+        "Wenzhen Yuan",
+        "Ting Liu",
+        "Shuai Bai",
+        "Dayiheng Liu",
+        "Zhibo Yang",
+        "Yuzhuo Fu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-21T12:35:04+00:00",
+      "link": "https://arxiv.org/pdf/2607.19046v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Contrastive on-policy distillation framework for improving LLM reasoning",
+      "llm_evidence_cn": "对比式在线策略蒸馏框架，用于提升大语言模型推理能力",
+      "llm_evidence": "对比式在线策略蒸馏框架，用于提升大语言模型推理能力",
+      "canonical_evidence": "对比式在线策略蒸馏框架，用于提升大语言模型推理能力",
+      "llm_tldr_en": "Proposes COPD, a contrastive OPD framework that adds explicit token-level preference modeling to improve reasoning.",
+      "llm_tldr_cn": "本文针对现有在线策略蒸馏方法仅依赖令牌级分布匹配、缺乏推理模式间偏好建模的问题，提出对比式在线策略蒸馏框架COPD。通过冻结教师模型对每个令牌进行评分，引入对比损失来显式建模令牌在不同推理模式下的相对兼容性。实验表明该方法在推理任务上优于现有OPD方法。",
+      "llm_tldr": "本文针对现有在线策略蒸馏方法仅依赖令牌级分布匹配、缺乏推理模式间偏好建模的问题，提出对比式在线策略蒸馏框架COPD。通过冻结教师模型对每个令牌进行评分，引入对比损失来显式建模令牌在不同推理模式下的相对兼容性。实验表明该方法在推理任务上优于现有OPD方法。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.19313v1",
+      "source": "arxiv",
+      "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) improves reasoning in large language models. Yet, typical RLVR approaches fail on difficult problems: when a model cannot generate any correct solutions, it receives \\textit{zero} learning signal. Providing privileged guidance during training, such as solution prefixes, can help overcome this learning cliff by steering the model towards {correct solutions with non-zero reward}. {We call these rollouts \\textit{off-context}: they are generated from a training prompt that contains privileged guidance, while the target objective is defined by the original prompt without that guidance.} {We introduce} Off-Context GRPO (OC-GRPO), a minimally modified variant of GRPO that uses guided rollouts but applies an importance-corrected objective to steer the update back toward the original unguided objective, avoiding the mismatch that destabilizes uncorrected guided training. Empirically, our algorithm achieves a 3.9\\% absolute improvement (13.8\\% relative gain) over vanilla GRPO on average across standard mathematical reasoning benchmarks with negligible additional cost.",
+      "authors": [
+        "Priyank Agrawal",
+        "Ankur Samanta",
+        "Shervin Ghasemlou",
+        "Jalaj Bhandari",
+        "Kavosh Asadi",
+        "Daniel Jiang",
+        "Aditya Modi"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-21T17:28:40+00:00",
+      "link": "https://arxiv.org/pdf/2607.19313v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "off-context GRPO using privileged information for reasoning improvement",
+      "llm_evidence_cn": "利用特权信息的离上下文GRPO，改进推理能力",
+      "llm_evidence": "利用特权信息的离上下文GRPO，改进推理能力",
+      "canonical_evidence": "利用特权信息的离上下文GRPO，改进推理能力",
+      "llm_tldr_en": "OC-GRPO uses guided rollouts with privileged information to overcome zero-reward plateaus, enabling RLVR to learn from hard problems.",
+      "llm_tldr_cn": "本文指出标准RLVR在模型无法生成任何正确解答时会陷入零奖励困境，无法学习。提出离上下文GRPO（OC-GRPO），在训练时注入特权引导（如部分前缀）生成指导性轨迹，同时仍以原问题为目标，从而提供非零奖励信号。实验表明OC-GRPO显著提升模型在困难推理问题上的表现。",
+      "llm_tldr": "本文指出标准RLVR在模型无法生成任何正确解答时会陷入零奖励困境，无法学习。提出离上下文GRPO（OC-GRPO），在训练时注入特权引导（如部分前缀）生成指导性轨迹，同时仍以原问题为目标，从而提供非零奖励信号。实验表明OC-GRPO显著提升模型在困难推理问题上的表现。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.18979v1",
+      "source": "arxiv",
+      "title": "Fishing Out Free Riders: Shapley-Based Reward Attribution for Parallel Reasoning via Reinforcement Learning",
+      "abstract": "Large Language Models (LLMs) excel at multi-step reasoning, yet current parallel reasoning approaches often fail to distinguish the contributions of individual reasoning paths. Many paths may be redundant, misleading, or even detrimental, but outcome-level rewards assign uniform reward, leading to ambiguous learning signals and unstable training. We propose Parallel Shapley, a reinforcement learning framework that attributes fine-grained, path-level contributions in multi-path reasoning. Treating each path as a player in a cooperative game, we leverage Shapley values to quantify marginal contributions, using a generative reward model to evaluate path utilities and Monte Carlo sampling for efficient approximation. Experiments on mathematical reasoning benchmarks show that Parallel Shapley outperforms existing baselines while providing more stable and interpretable training. Our framework effectively \"fishes out the free riders,\" assigning reward proportionally and improving multi-path reasoning in LLMs.",
+      "authors": [
+        "Wentao Zhang",
+        "Haoyu Zhang",
+        "Xinke Jiang",
+        "Yuxuan Cheng",
+        "Yuhan Pan",
+        "Miao Li",
+        "Zhipeng Qiao",
+        "Tao Feng",
+        "Zhen Tao",
+        "Dengji Zhao"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21T11:14:33+00:00",
+      "link": "https://arxiv.org/pdf/2607.18979v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Shapley-based reward attribution for parallel reasoning RL",
+      "llm_evidence_cn": "基于夏普利值的并行推理强化学习奖励分配",
+      "llm_evidence": "基于夏普利值的并行推理强化学习奖励分配",
+      "canonical_evidence": "基于夏普利值的并行推理强化学习奖励分配",
+      "llm_tldr_en": "Parallel Shapley attributes per-path contributions via Shapley values in multi-path RL reasoning, improving training stability and model performance.",
+      "llm_tldr_cn": "并行推理的强化学习中，各推理路径贡献混杂，统一奖励导致训练不稳定。本文提出Parallel Shapley框架，将每条路径视为合作博弈参与方，通过夏普利值量化边际贡献。利用生成式奖励模型评估路径效用，蒙特卡洛采样实现高效计算。实验证明该方法提升模型在多步推理任务上的性能和训练稳定性。",
+      "llm_tldr": "并行推理的强化学习中，各推理路径贡献混杂，统一奖励导致训练不稳定。本文提出Parallel Shapley框架，将每条路径视为合作博弈参与方，通过夏普利值量化边际贡献。利用生成式奖励模型评估路径效用，蒙特卡洛采样实现高效计算。实验证明该方法提升模型在多步推理任务上的性能和训练稳定性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.19181v1",
+      "source": "arxiv",
+      "title": "Reasoning Before Translation: Enhancing Legal Machine Translation with Structured Reasoning",
+      "abstract": "Neural machine translation (NMT) in the legal domain is a linguistically and conceptually demanding task, primarily due to the complexity of legal language and the high level of precision it requires. The recent emergence of reasoning-capable language models opens new possibilities for tackling such challenges. They add to a set of other previously proposed techniques to enhance the translation quality, which includes supervised fine-tuning and reinforcement learning.   In this work, we perform a comparison between these various approaches. More particularly, we evaluate small language models such as Qwen3.5 4B, Qwen3.5 9B, and Gemma 3 12B enhanced with various re-training paradigms and compare their performances against frontier reasoning models. We focus on the Swiss legal system, which -- with its unique multilingual statutes -- offers a particularly challenging testbed for reasoning-augmented models. Our results show that the quality of small ``base'' models can be greatly enhanced, and that reinforcement learning with verifiable rewards can be applied to NMT in the legal domain and surpasses the translation quality of supervised fine-tuning. The performance of enhanced small models is close to the one of state-of-the-art reasoning models yet remains inferior. We also note that re-training paradigms yield diminishing returns as model size increase. The code and models are publicly available at https://github.com/aixiuxiuxiu/Legal-MT-SFT-RL.",
+      "authors": [
+        "Aixiu An",
+        "Michael Jungo",
+        "Eloi Eynard",
+        "Mark Drenhaus",
+        "Andreas Fischer",
+        "Jean Hennebert",
+        "Sébastien Rumley"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-21T15:15:56+00:00",
+      "link": "https://arxiv.org/pdf/2607.19181v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "compares reinforcement learning fine-tuning for LLMs in legal translation",
+      "llm_evidence_cn": "比较了强化学习微调在法律翻译中的应用",
+      "llm_evidence": "比较了强化学习微调在法律翻译中的应用",
+      "canonical_evidence": "比较了强化学习微调在法律翻译中的应用",
+      "llm_tldr_en": "This work compares SFT, RL, and reasoning-enhanced fine-tuning for legal NMT, finding that reasoning-based approaches significantly improve translation quality.",
+      "llm_tldr_cn": "法律领域神经机器翻译要求高精确度。本文比较了监督微调、强化学习和推理增强微调等方法在小模型上的表现。实验表明，结合结构化推理的微调方法显著优于传统方法，为在法律翻译中应用LLM提供了有价值的见解。",
+      "llm_tldr": "法律领域神经机器翻译要求高精确度。本文比较了监督微调、强化学习和推理增强微调等方法在小模型上的表现。实验表明，结合结构化推理的微调方法显著优于传统方法，为在法律翻译中应用LLM提供了有价值的见解。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.19226v1",
+      "source": "arxiv",
+      "title": "The Price of Reasoning: Cost-Quality Tradeoffs in Reinforcement Learning for Neural Machine Translation",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has been established as a viable paradigm for the post-training of Large Language Models (LLMs), including downstream tasks, such as Neural Machine Translation (NMT). With the latest research indicating that RLVR could be the preferred training method for translating legal documents due to the induced reasoning capabilities, it raises the question whether it is really attributed to the reasoning or more generally to the training paradigm. We investigate the importance of including the model's reasoning trace in the generated responses during both training and inference by systematically omitting it from one of the phases. Our experiments show that including the reasoning, specifically during inference, has a positive effect on the overall translation quality. Furthermore, we recognise that the reasoning leads to an increase in output tokens, hence we study the cost-quality tradeoff between the increased computational demands and the improved translation quality.",
+      "authors": [
+        "Michael Jungo",
+        "Aixiu An"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-21T15:57:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.19226v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "RLVR post-training of LLMs for NMT with reasoning traces",
+      "llm_evidence_cn": "使用可验证奖励的强化学习对大语言模型进行后训练",
+      "llm_evidence": "使用可验证奖励的强化学习对大语言模型进行后训练",
+      "canonical_evidence": "使用可验证奖励的强化学习对大语言模型进行后训练",
+      "llm_tldr_en": "Investigates the role of reasoning traces in RLVR for LLM post-training on NMT, revealing cost-quality tradeoffs.",
+      "llm_tldr_cn": "本文研究了在神经机器翻译任务中，使用可验证奖励的强化学习对大语言模型进行后训练时，推理轨迹的作用。实验通过系统性地省略推理轨迹，揭示了包含推理轨迹在训练和推理阶段对翻译质量与成本的影响，表明推理轨迹并非总是必要的，其效果取决于具体场景。",
+      "llm_tldr": "本文研究了在神经机器翻译任务中，使用可验证奖励的强化学习对大语言模型进行后训练时，推理轨迹的作用。实验通过系统性地省略推理轨迹，揭示了包含推理轨迹在训练和推理阶段对翻译质量与成本的影响，表明推理轨迹并非总是必要的，其效果取决于具体场景。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    }
+  ]
+}

@@ -6,56 +6,47 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-21
-- 运行时间：2026-07-21 21:22:10 UTC
+- 最新运行日期：2026-07-22
+- 运行时间：2026-07-22 21:40:23 UTC
 - 运行状态：成功
-- 本次总论文数：12
+- 本次总论文数：9
 - 精读区：6
-- 速读区：6
+- 速读区：3
 
 ### 今日简报（AI）
-今日梳理12篇强化学习与LLM后训练前沿论文，其中两篇精读获9.0高分。组熵控制策略优化与蒸馏强化学习在LLM后训练中表现突出，值得重点关注。建议优先阅读这两篇精读论文，尤其适合对强化学习优化感兴趣的读者深入探究。
-- 详情：[/202607/21/README](/202607/21/README)
+今日推荐9篇论文，精读6篇，重点聚焦强化学习在推理优化、知识图谱搜索及NMT成本质量权衡中的应用。最值得关注的两篇是RLVR原生优化堆栈《ISO》（10分）和基于强化学习训练大模型搜索知识图谱的《Search-on-Graph-R1》（9分）。建议优先精读这两篇高分论文，并速读探讨并行推理中Shapley奖励分配的《Fishing Out Free Riders》。
+- 详情：[/202607/22/README](/202607/22/README)
 
 ### 精读区论文标签
-1. [Group Entropy-Controlled Policy Optimization](/202607/21/2607.16850v1-group-entropy-controlled-policy-optimization)  
+1. [ISO: An RLVR-Native Optimization Stack](/202607/22/2607.19331v1-iso-an-rlvr-native-optimization-stack)  
+   标签：评分：10.0/10、query:agentic-rl
+   evidence：提出ISO一个专为LLM设计的RLVR优化栈直接推进大语言模型的强化学习
+2. [Search-on-Graph-R1: Training Large Language Models to Search Knowledge Graphs with Reinforcement Learning](/202607/22/2607.18481v1-search-on-graph-r1-training-large-language-models-to-search-knowledge-graphs-with-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：提出组熵控制策略优化（GEPO）用于大语言模型的强化学习微调
-2. [Distilled Reinforcement Learning for LLM Post-training](/202607/21/2607.17247v1-distilled-reinforcement-learning-for-llm-post-training)  
+   evidence：使用强化学习训练LLM搜索知识图谱
+3. [Reasoning Error from Known Fact: Step-Level Self-Consistency Group Relative Policy Optimization for LLM](/202607/22/2607.18915v1-reasoning-error-from-known-fact-step-level-self-consistency-group-relative-policy-optimization-for-llm)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：将强化学习与在线策略蒸馏结合用于大模型后训练
-3. [WAR: Workload-Aware Rollouts for Synchronous Agentic Reinforcement Learning](/202607/21/2607.17299v1-war-workload-aware-rollouts-for-synchronous-agentic-reinforcement-learning)  
+   evidence：针对大语言模型推理中幻觉的步骤级自一致性群体相对策略优化
+4. [H$^2$SD: Hybrid Hindsight Self-Distillation](/202607/22/2607.18955v1-h2sd-hybrid-hindsight-self-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：同步Agentic RL的负载感知规划
-4. [Theoretical Foundations of $\max$@$k$ Reinforcement Learning](/202607/21/2607.17823v1-theoretical-foundations-of-maxk-reinforcement-learning)  
+   evidence：混合事后自蒸馏，针对RLVR中的在线策略蒸馏
+5. [Contrastive On-Policy Distillation](/202607/22/2607.19046v1-contrastive-on-policy-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：大模型强化学习的理论基础
-5. [Trace-Based On-Policy Distillation for Masked Diffusion Language Models](/202607/21/2607.16872v1-trace-based-on-policy-distillation-for-masked-diffusion-language-models)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：基于轨迹的在线策略蒸馏用于扩散语言模型
-6. [Reward-Driven LLM Agent Workflows: Synthesizing POMDP Routing and Self-Correction for Autonomous Decision-Making](/202607/21/2607.17038v1-reward-driven-llm-agent-workflows-synthesizing-pomdp-routing-and-self-correction-for-autonomous-decision-making)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：基于POMDP路由和自校正的LLM智能体工作流，属于智能体强化学习
+   evidence：对比式在线策略蒸馏框架，用于提升大语言模型推理能力
+6. [Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information](/202607/22/2607.19313v1-off-context-grpo-learning-to-reason-on-hard-problems-using-privileged-information)  
+   标签：评分：9.0/10、query:agentic-rl
+   evidence：利用特权信息的离上下文GRPO，改进推理能力
 
 ### 速读区论文标签
-1. [Why Does Feedback-Augmented Self-Distillation Fail to Improve Retrieval-Interleaved Search Agents?](/202607/21/2607.17558v1-why-does-feedback-augmented-self-distillation-fail-to-improve-retrieval-interleaved-search-agents)  
+1. [Fishing Out Free Riders: Shapley-Based Reward Attribution for Parallel Reasoning via Reinforcement Learning](/202607/22/2607.18979v1-fishing-out-free-riders-shapley-based-reward-attribution-for-parallel-reasoning-via-reinforcement-learning)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：面向agent任务的在线自蒸馏
-2. [MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models](/202607/21/2607.18006v1-mada-rl-multi-agent-debate-aware-reinforcement-learning-for-parameter-efficient-reasoning-in-compact-models)  
+   evidence：基于夏普利值的并行推理强化学习奖励分配
+2. [The Price of Reasoning: Cost-Quality Tradeoffs in Reinforcement Learning for Neural Machine Translation](/202607/22/2607.19226v1-the-price-of-reasoning-cost-quality-tradeoffs-in-reinforcement-learning-for-neural-machine-translation)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：面向紧凑语言模型的RL微调框架
-3. [LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks](/202607/21/2607.18110v1-llm-as-a-coach-experiential-learning-for-non-verifiable-tasks)  
-   标签：评分：8.0/10、query:agentic-rl
-   evidence：使用教练知识的在线上下文蒸馏
-4. [A Geometric Perspective on Stabilizing Value Conflict Resolution](/202607/21/2607.17946v1-a-geometric-perspective-on-stabilizing-value-conflict-resolution)  
+   evidence：使用可验证奖励的强化学习对大语言模型进行后训练
+3. [Reasoning Before Translation: Enhancing Legal Machine Translation with Structured Reasoning](/202607/22/2607.19181v1-reasoning-before-translation-enhancing-legal-machine-translation-with-structured-reasoning)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：RLHF中值冲突的稳定性研究
-5. [Joint On-and-Off Policy Learning for Vision-and-Language Navigation](/202607/21/2607.13461v1-joint-on-and-off-policy-learning-for-vision-and-language-navigation)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：结合离线模仿学习与在线策略探索，适用于语言模型的智能体强化学习
-6. [Token-Level Off-Policy Learning for Faithful Generation Under Distribution Shift](/202607/21/2607.17524v1-token-level-off-policy-learning-for-faithful-generation-under-distribution-shift)  
-   标签：评分：6.0/10、query:agentic-rl
-   evidence：令牌级离策略学习用于大模型后训练
+   evidence：比较了强化学习微调在法律翻译中的应用
 
 
 <div class="dpr-home-promo-card">
