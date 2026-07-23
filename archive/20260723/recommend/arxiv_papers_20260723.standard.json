@@ -1,0 +1,416 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-23T21:30:47.857436+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2607.18955v2",
+      "source": "arxiv",
+      "title": "H$^2$SD: Hybrid Hindsight Self-Distillation",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) provides reliable outcome supervision for language model reasoning, but a scalar trajectory reward offers limited token-level guidance. Existing self-distillation methods add a privileged teacher but typically assign it a fixed role: direct distribution matching may destabilize successful behavior, while magnitude-only modulation offers little corrective guidance after failure. We observe that successful and failed trajectories require different forms of hindsight supervision. A successful response already contains a valid student-generated reasoning path and can therefore serve as privileged context rather than being replaced by an external rationale. A failed response, however, requires corrective reference information. We introduce Hybrid Hindsight Self-Distillation ($\\mathrm{H}^{2}\\mathrm{SD}$), which jointly adapts teacher context and update strategy to trajectory correctness. For successful trajectories, we construct the teacher context from the verified response and a rephrasing instruction, and use the teacher only to re-evaluate the original response tokens. This emphasizes essential deductions over redundant content and refines magnitude-based credit assignment without changing the reward direction. For failed trajectories, a verifier-confirmed reference hint provides corrective guidance through reverse-KL distillation. Controlled ablations show that the gains depend on outcome-conditioned routing and the rephrasing instruction. Experiments on challenging reasoning benchmarks show that H$^2$SD achieves the strongest overall performance among representative RLVR and self-distillation baselines, with stable optimization and a favorable accuracy-efficiency trade-off.",
+      "authors": [
+        "Qiye Cai",
+        "Yichuan Ma",
+        "Linyang Li",
+        "Peiji Li",
+        "Yongkang Chen",
+        "Qipeng Guo",
+        "Yicheng Zou",
+        "Xiaocheng Feng",
+        "Bing Qin"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-21T10:47:27+00:00",
+      "link": "https://arxiv.org/pdf/2607.18955v2",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Hybrid Hindsight Self-Distillation for RLVR in language model reasoning",
+      "llm_evidence_cn": "针对语言模型推理的RLVR混合事后自蒸馏方法",
+      "llm_evidence": "针对语言模型推理的RLVR混合事后自蒸馏方法",
+      "canonical_evidence": "针对语言模型推理的RLVR混合事后自蒸馏方法",
+      "llm_tldr_en": "Proposes Hybrid Hindsight Self-Distillation for RLVR, using different hindsight strategies for successful and failed trajectories to provide token-level guidance.",
+      "llm_tldr_cn": "该论文针对基于可验证奖励的强化学习（RLVR）中标量轨迹奖励缺乏细粒度指导的问题，提出混合事后自蒸馏方法（H2SD），根据成功或失败轨迹分别采用不同的后见之明监督信号，在不破坏成功行为的前提下提供校正引导。实验表明该方法在多个推理任务上优于基线RLVR方法。为提升LLM推理的RL训练效率提供了新的自蒸馏范式。",
+      "llm_tldr": "该论文针对基于可验证奖励的强化学习（RLVR）中标量轨迹奖励缺乏细粒度指导的问题，提出混合事后自蒸馏方法（H2SD），根据成功或失败轨迹分别采用不同的后见之明监督信号，在不破坏成功行为的前提下提供校正引导。实验表明该方法在多个推理任务上优于基线RLVR方法。为提升LLM推理的RL训练效率提供了新的自蒸馏范式。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.19450v1",
+      "source": "arxiv",
+      "title": "REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning",
+      "abstract": "Large-scale online reinforcement learning (RL) is the predominant means of eliciting advanced abilities including long-term reasoning and agentic tool use in large language models (LLMs). However, continuing to scale it across vast task domains of interest remains challenging in both computational infrastructure and cost, especially when considering RL as merely a one-off learning stage. Recently, a widely used technique for distilling knowledge across various domains and training stages, multi-teacher on-policy distillation (MOPD), helps to decouple the RL stage, saving costs, while maintaining generality across vast domains. Nonetheless, similar to online RL, MOPD requires coupled inference and backward passes, which continues to limit its scalability and computational efficiency. To address these challenges, we propose REGEN: Replay-recycling for Expert-to-Generalist Distillation with Offline RL. Instead of distilling from multiple teacher models, REGEN trains a generalist by simply recycling the replay memory -- the free by-product of the teachers' specialized RL training -- and employing offline RL algorithms. REGEN completely decouples the rollout sampling from the backward training process and thus greatly reduces the training cost. Across mathematical reasoning, code generation, and instruction following, REGEN matches the accuracy of MOPD at substantially lower cost. It potentially turns online RL into a data synthesis process instead of a one-off learning stage, and can potentially be extended to large-scale post-training without requiring heavy computational load.",
+      "authors": [
+        "Yunjie Chen",
+        "Xiaoxin Chen",
+        "Fang Wang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-21T13:36:23+00:00",
+      "link": "https://arxiv.org/pdf/2607.19450v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "replay-recycling and offline RL for expert-to-generalist distillation, related to on-policy distillation",
+      "llm_evidence_cn": "利用重放回收和离线强化学习进行专家到通用模型的蒸馏，与在线策略蒸馏相关",
+      "llm_evidence": "利用重放回收和离线强化学习进行专家到通用模型的蒸馏，与在线策略蒸馏相关",
+      "canonical_evidence": "利用重放回收和离线强化学习进行专家到通用模型的蒸馏，与在线策略蒸馏相关",
+      "llm_tldr_en": "REGEN decouples RL training from distillation by using replay-recycling and offline RL, reducing costs while enabling generalist model training.",
+      "llm_tldr_cn": "REGEN提出了一种将强化学习阶段解耦的蒸馏方法，通过重放回收和离线强化学习，无需耦合推理和反向传播。该方法继承自多教师在线策略蒸馏（MOPD），但降低了计算成本。实验表明，REGEN能在多个领域训练出通用模型，同时节省大量计算资源。这项工作为大规模模型蒸馏提供了高效方案，有助于在资源受限场景下部署强大模型。",
+      "llm_tldr": "REGEN提出了一种将强化学习阶段解耦的蒸馏方法，通过重放回收和离线强化学习，无需耦合推理和反向传播。该方法继承自多教师在线策略蒸馏（MOPD），但降低了计算成本。实验表明，REGEN能在多个领域训练出通用模型，同时节省大量计算资源。这项工作为大规模模型蒸馏提供了高效方案，有助于在资源受限场景下部署强大模型。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "online policy distillation for language models",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.19824v1",
+      "source": "arxiv",
+      "title": "Rewarding Better Thinking for LLM Preference Alignment",
+      "abstract": "LLM preference alignment aims to optimize models toward human preferences across diverse user instructions. Reinforcement learning has become a major post-training approach for this goal, but existing proxy rewards are often outcome-level, mainly evaluating the final response while providing limited guidance for the reasoning trajectory. This can make credit assignment coarse when multiple responses receive similar final scores, leaving trajectory-level preferences under-specified. To address this limitation, we propose Thinking Checklist Reward (TCR), a process-oriented reward for RL-based preference alignment. TCR converts preference pairs into sample-specific thinking checklists and uses them to evaluate whether the generated reasoning trace addresses the preference-implied considerations. To reduce overlap with outcome-level supervision, TCR further introduces an exponential moving average (EMA) residual formulation to isolate a complementary thinking surplus beyond what is predictable from the outcome reward. Experiments on five models from three model families show that TCR consistently improves alignment performance across diverse benchmarks, with ablations further validating the importance of EMA-based residual formulation and sample-specific checklist supervision.",
+      "authors": [
+        "Xubo Liu",
+        "Wenya Guo",
+        "Ruxue Yan",
+        "Xinying Qian",
+        "Ying Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-22T06:57:55+00:00",
+      "link": "https://arxiv.org/pdf/2607.19824v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "proposes Thinking Checklist Reward for RL-based LLM preference alignment",
+      "llm_evidence_cn": "提出思考清单奖励用于基于强化学习的LLM偏好对齐",
+      "llm_evidence": "提出思考清单奖励用于基于强化学习的LLM偏好对齐",
+      "canonical_evidence": "提出思考清单奖励用于基于强化学习的LLM偏好对齐",
+      "llm_tldr_en": "Proposes TCR, a process-oriented reward for RL-based preference alignment of LLMs, improving credit assignment with trajectory-level guidance.",
+      "llm_tldr_cn": "现有LLM偏好对齐的强化学习方法大多使用结果级奖励，导致对推理路径的监督不足。本文提出思考清单奖励（TCR），将偏好对转化为检查清单，为推理过程提供细粒度奖励信号。实验表明，TCR显著提升了对齐效果和推理质量，有效改善了奖励分配的准确性。",
+      "llm_tldr": "现有LLM偏好对齐的强化学习方法大多使用结果级奖励，导致对推理路径的监督不足。本文提出思考清单奖励（TCR），将偏好对转化为检查清单，为推理过程提供细粒度奖励信号。实验表明，TCR显著提升了对齐效果和推理质量，有效改善了奖励分配的准确性。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.20090v1",
+      "source": "arxiv",
+      "title": "Reinforcement Learning for Large Language Model Selective Evidence Adoption from Contaminated Retrieval Results",
+      "abstract": "Retrieval-augmented large language models frequently face contexts that interleave useful evidence with misleading statements or instruction-like content. Blanket refusal discards valid evidence, whereas uncritical adoption yields incorrect or unsafe answers. The ability to selectively adopt relevant information while rejecting deceptive or harmful content is therefore critical for reliable deployment in real-world retrieval settings. We introduce SelectBench, a controlled benchmark and training set for selective evidence adoption, and post-train Qwen3.5-4B directly with DAPO using either deterministic rule rewards or a frozen semantic judge. On the corrected 325-example SelectBench-v2 test set, strict success rises from 22.46% for the original checkpoint to 25.54% with DAPO-Rule and 26.46% with DAPO-DeepSeek. Both trained policies reduce forbidden-content adoption and produce shorter, more focused responses, yet prompt-injection following does not improve. The paired gains are modest and fail to survive Holm correction, suggesting that stronger reward shaping or additional training iterations may be needed for more robust gains. DAPO-DeepSeek exhibits no material degradation on MMLU or clean HotpotQA, indicating that the post-training procedure preserves general capabilities. These results demonstrate a directional improvement in selective evidence use, while identifying injection resistance and statistical robustness as important remaining challenges for future work.",
+      "authors": [
+        "Yanyu Chen",
+        "Yue Li",
+        "Yongyi Cui",
+        "Dongsheng Shi",
+        "Lichang Dai"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-22T12:45:04+00:00",
+      "link": "https://arxiv.org/pdf/2607.20090v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "reinforcement learning (DAPO) for LLM selective evidence adoption",
+      "llm_evidence_cn": "强化学习（DAPO）用于大模型选择性采纳证据",
+      "llm_evidence": "强化学习（DAPO）用于大模型选择性采纳证据",
+      "canonical_evidence": "强化学习（DAPO）用于大模型选择性采纳证据",
+      "llm_tldr_en": "Uses DAPO reinforcement learning to train LLMs to selectively adopt useful evidence from contaminated retrieval results, achieving high success rates.",
+      "llm_tldr_cn": "检索增强大模型常面临有用证据与误导内容交织的上下文。提出SelectBench基准，并使用DAPO强化学习方法训练模型选择性采纳证据，同时拒绝有害内容。在325例测试集上，结合规则奖励或语义评判器，实现了严格的成功率提升。展示了强化学习在指令微调中的潜力。",
+      "llm_tldr": "检索增强大模型常面临有用证据与误导内容交织的上下文。提出SelectBench基准，并使用DAPO强化学习方法训练模型选择性采纳证据，同时拒绝有害内容。在325例测试集上，结合规则奖励或语义评判器，实现了严格的成功率提升。展示了强化学习在指令微调中的潜力。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.13315v2",
+      "source": "arxiv",
+      "title": "Meta-Learning Preferences for Multilingual LLM Alignment",
+      "abstract": "Unequal availability of human preference data across languages poses a significant challenge for aligning large language models in multilingual settings. To address the lack of sufficient data in low-resource language alignment, we propose a meta-learning framework for Reinforcement Learning from Human Feedback and Direct Preference Optimization. By leveraging preference data from other languages, our framework learns a transferable initialization that enables effective adaptation to a target language with minimal data. We provide theoretical guarantees for both the meta-reward modeling and meta-policy optimization settings, and empirically demonstrate the effectiveness of our approach on multilingual benchmarks. In an extremely low-resource setting with only 100 target-language preference samples, our approach achieves up to $28\\%$ win-rate improvements over baseline methods, and consistently outperforms baselines across multiple target languages and model scales. Our approaches retain these advantages across different combinations of meta-training languages and varying linguistic distances from the target languages.",
+      "authors": [
+        "Jiaying Lin",
+        "Seongho Son",
+        "Nam Phuong Tran",
+        "Long Tran-thanh",
+        "Ilija Bogunovic",
+        "Debmalya Mandal"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-14T22:38:39+00:00",
+      "link": "https://arxiv.org/pdf/2607.13315v2",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "meta-learning RLHF for multilingual LLM alignment",
+      "llm_evidence_cn": "用于多语言大模型对齐的元学习强化学习框架",
+      "llm_evidence": "用于多语言大模型对齐的元学习强化学习框架",
+      "canonical_evidence": "用于多语言大模型对齐的元学习强化学习框架",
+      "llm_tldr_en": "Proposes a meta-learning framework for RLHF and DPO to align LLMs across languages, achieving effective adaptation with minimal data.",
+      "llm_tldr_cn": "本文针对多语言大模型对齐中低资源语言偏好数据不足的问题，提出了一种元学习框架，用于强化学习从人类反馈（RLHF）和直接偏好优化（DPO）。通过跨语言偏好数据学习可迁移的初始化，使得在目标语言上仅需少量数据即可实现有效对齐。提供了元奖励建模和元策略优化的理论保证，并在多语言基准上进行了实证验证。该方法显著提升了低资源语言的对齐效果。",
+      "llm_tldr": "本文针对多语言大模型对齐中低资源语言偏好数据不足的问题，提出了一种元学习框架，用于强化学习从人类反馈（RLHF）和直接偏好优化（DPO）。通过跨语言偏好数据学习可迁移的初始化，使得在目标语言上仅需少量数据即可实现有效对齐。提供了元奖励建模和元策略优化的理论保证，并在多语言基准上进行了实证验证。该方法显著提升了低资源语言的对齐效果。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "reinforcement learning for large language models",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.20083v1",
+      "source": "arxiv",
+      "title": "Co-Evolving LLM Evaluators and Policies via DynamicRubric",
+      "abstract": "Post-training with evaluator feedback on policy-induced samples serves as a major mechanism for improving large language models. As policies improve, these sampled responses become close in quality. These close candidates create a bottleneck for policy optimization: collapsed relative evaluator score gaps yield weak or misleading policy supervision. We theoretically characterize why these gaps matter through a probability allocation view, showing that the directional gain of shifting probability mass from one response to another is exactly the evaluator score gap between them. This identifies relative score gaps as the policy optimization signals that guide updates. Motivated by this view, we propose DynamicRubric, a response-set-conditioned evaluator--policy co-evolution framework that generates weighted binary rubric items for each candidate set and aggregates the resulting judgments into response-level scores. In our experiments with 8B backbones, DynamicRubric improves evaluator performance and provides stronger policy supervision than baselines using a 70B reward model or a 235B static rubric generator. DynamicRubric-optimized policies also show gains on verifiable reasoning and coding tasks. A DynamicRubric-optimized model is fully deployed in WeChat Search's AI answering scenario, where it serves all online traffic across tens of millions of requests per day and improves key online metrics. These results suggest a principle for evaluator-guided post-training: evaluators should evolve with the policies they supervise.",
+      "authors": [
+        "Beining Wang",
+        "Weihang Su",
+        "Hongtao Tian",
+        "Hao Kong",
+        "Tao Yang",
+        "Ting Yao",
+        "Qingyi Pan",
+        "Yueyue Wu",
+        "Qingyao Ai",
+        "Min Zhang",
+        "Yiqun Liu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-22T12:35:40+00:00",
+      "link": "https://arxiv.org/pdf/2607.20083v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "co-evolving evaluators and policies for LLM post-training",
+      "llm_evidence_cn": "协同演化评估器和策略以优化大模型后训练",
+      "llm_evidence": "协同演化评估器和策略以优化大模型后训练",
+      "canonical_evidence": "协同演化评估器和策略以优化大模型后训练",
+      "llm_tldr_en": "Proposes DynamicRubric, a co-evolution framework for LLM evaluators and policies that addresses collapsed score gaps in policy optimization.",
+      "llm_tldr_cn": "针对大模型后训练中评估器反馈分数差距随策略提升而缩小的问题，本文提出DynamicRubric，一种评估器与策略协同演化框架。通过概率分配视角理论揭示分数差距作为策略优化信号的重要性，并设计响应集条件化的评估器来保持区分度。实验证明该方法能有效维持优化信号的强度，提升模型性能。",
+      "llm_tldr": "针对大模型后训练中评估器反馈分数差距随策略提升而缩小的问题，本文提出DynamicRubric，一种评估器与策略协同演化框架。通过概率分配视角理论揭示分数差距作为策略优化信号的重要性，并设计响应集条件化的评估器来保持区分度。实验证明该方法能有效维持优化信号的强度，提升模型性能。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.17560v1",
+      "source": "arxiv",
+      "title": "Reinforcement Learning: From Algorithms To Foundation Models",
+      "abstract": "Reinforcement learning (RL) provides a framework for sequential decision making under explicit objectives. In its classical form, RL studies how an agent should act to maximise long-term reward in a dynamic environment. In richer settings, the problem extends beyond a single agent and fixed environment: intelligent behavior may require strategic interaction, adaptation to uncertainty, and reasoning over high-dimensional worlds. This thesis studies RL from two perspectives: algorithms in games and RL in the era of foundation models.   The first part focuses on multi-agent RL in games. It examines how incentives, policies, and equilibrium concepts interact in competitive and general-sum environments, spanning two-player zero-sum games, large-scale video games, and multi-player settings with general structure. These works investigate learning in multi-agent systems and the behavior of RL methods in interactive environments. The second part studies RL with generative and foundation models, motivated by the idea that prior knowledge can enrich sequential decision making. Pretrained generative models and learned world models serve as representation tools and structured priors for planning, control, and policy optimization. The thesis develops diffusion-based world models, investigates RL for efficient video generation, explores generative models as policy classes, and studies interactive video world models in which actions shape future observations. It also addresses long-horizon modeling through architectures with memory. Together, these contributions present a unified view of RL as objective-driven adaptation in complex sequential domains. From strategic games to generative world models, the thesis highlights how RL connects decision making, environment modeling, and emerging foundation-model capabilities, offering a broader perspective on the principles underlying intelligent behavior.",
+      "authors": [
+        "Zihan Ding"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-20T05:09:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.17560v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "thesis covers RL algorithms to foundation models, central to agentic RL theme",
+      "llm_evidence_cn": "论文涵盖从RL算法到基础模型，是代理强化学习主题的核心",
+      "llm_evidence": "论文涵盖从RL算法到基础模型，是代理强化学习主题的核心",
+      "canonical_evidence": "论文涵盖从RL算法到基础模型，是代理强化学习主题的核心",
+      "llm_tldr_en": "A comprehensive thesis covering multi-agent RL in games and RL applications in foundation model era.",
+      "llm_tldr_cn": "该博士论文从两个视角研究强化学习：博弈中的多智能体RL和基础模型时代的RL。第一部分分析竞争和一般和博弈中的策略与均衡；第二部分探讨RL在基础模型训练中的应用，包括大语言模型的强化学习微调。论文系统梳理了RL从经典算法到前沿模型训练的关键进展，对理解RL在LLM中的应用具有重要参考价值。",
+      "llm_tldr": "该博士论文从两个视角研究强化学习：博弈中的多智能体RL和基础模型时代的RL。第一部分分析竞争和一般和博弈中的策略与均衡；第二部分探讨RL在基础模型训练中的应用，包括大语言模型的强化学习微调。论文系统梳理了RL从经典算法到前沿模型训练的关键进展，对理解RL在LLM中的应用具有重要参考价值。",
+      "llm_tags": [
+        "query:agentic-rl:composite"
+      ],
+      "matched_query_tag": "query:agentic-rl:composite",
+      "matched_query_text": "Papers central to 帮我查找大模型强化学习相关的文章，例如opd、agentic rl, especially work that connects or combines: reinforcement learning for large language models; reinforcement learning applied to large language models; agentic reinforcement learning for LLMs; online policy distillation for language models; Find papers on reinforcement learning methods for fine tuning large language models; Search for agentic reinforcement learning techniques applied to language model training; Look for online policy distillation approaches in the context of large models; Find studies on policy optimization algorithms for improving LLM reasoning.",
+      "matched_requirement_id": "req-composite-agentic-rl",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.16621v1",
+      "source": "arxiv",
+      "title": "From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents",
+      "abstract": "Existing memory systems for long-horizon LLM agents often retrieve prior traces as passive context rather than converting them into executable capabilities. In this paper, we propose MSCE, a training-free Memory--Skill Co-Evolution framework that organizes agent experience into grounded step traces, reusable procedural policies, and declarative environmental cognition. MSCE crystallizes evidence-backed L2 policies with positive estimated gain into callable skills that retain evidence links, applicability boundaries, decision guidance, verification rules, and reliability estimates. It further introduces reflection-weighted value backfilling, which propagates sparse terminal feedback through dense local self-reflections to produce evidence-calibrated trace values for governing memory and skill evolution. Experiments on EvoAgentBench and LoCoMo demonstrate that MSCE significantly outperforms state-of-the-art skill-augmented and memory-driven agent baselines, exhibiting strong cross-domain transferability and lifelong-evolution capabilities.",
+      "authors": [
+        "Bo Tang",
+        "Yang Zhang",
+        "Guomian Zhuang",
+        "Wenqiang Wei",
+        "Gaoyang Zheng",
+        "Lindong Xie",
+        "Yanchao Tan",
+        "Feiyu Xiong",
+        "Qingyu Yang",
+        "Edward Chung",
+        "Zhiyu li"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-18T03:46:22+00:00",
+      "link": "https://arxiv.org/pdf/2607.16621v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "memory-skill co-evolution for LLM agents with RL",
+      "llm_evidence_cn": "记忆与技能协同演化用于大模型智能体的强化学习",
+      "llm_evidence": "记忆与技能协同演化用于大模型智能体的强化学习",
+      "canonical_evidence": "记忆与技能协同演化用于大模型智能体的强化学习",
+      "llm_tldr_en": "Proposes MSCE, a training-free memory-skill co-evolution framework for long-horizon LLM agents that crystallizes experiences into callable skills.",
+      "llm_tldr_cn": "现有大模型智能体的记忆系统仅被动检索历史而不转化为可执行能力。本文提出MSCE（无训练的记忆-技能协同演化框架），将智能体经验组织为步骤轨迹、可重用策略和声明性环境知识。通过反射加权值回填传播稀疏终端奖励，将经验固化为可调用的技能。该方法无需训练即可提升智能体在长程任务中的表现。",
+      "llm_tldr": "现有大模型智能体的记忆系统仅被动检索历史而不转化为可执行能力。本文提出MSCE（无训练的记忆-技能协同演化框架），将智能体经验组织为步骤轨迹、可重用策略和声明性环境知识。通过反射加权值回填传播稀疏终端奖励，将经验固化为可调用的技能。该方法无需训练即可提升智能体在长程任务中的表现。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "agentic reinforcement learning for LLMs",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.20372v1",
+      "source": "arxiv",
+      "title": "Notes to Self: Can LLMs Benefit from Experiential Abstractions?",
+      "abstract": "Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such experiential abstractions. From LLMs' solution traces on the MATH training set, a stronger teacher or the LLMs themselves extract natural-language abstractions into a retrievable library. We explore two usage modes: (1) inference-time retrieval and (2) reinforcement learning (RL) with abstraction-augmented training prompts. Experiential abstractions improve LLM performance on mathematical and logical reasoning benchmarks. Self-extracted abstractions match teacher-extracted ones, and our abstraction usage framework can transfer to other datasets and models. These findings suggest LLMs can extract and apply experiential abstractions much as humans leverage distilled experience.",
+      "authors": [
+        "Chang Liu",
+        "Xinyu Li",
+        "Artur Dubrawski"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-22T17:02:34+00:00",
+      "link": "https://arxiv.org/pdf/2607.20372v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "RL with abstraction-augmented training prompts for LLM fine-tuning",
+      "llm_evidence_cn": "使用抽象增强训练提示的强化学习进行LLM微调",
+      "llm_evidence": "使用抽象增强训练提示的强化学习进行LLM微调",
+      "canonical_evidence": "使用抽象增强训练提示的强化学习进行LLM微调",
+      "llm_tldr_en": "Investigates whether LLMs benefit from experiential abstractions extracted from solution traces, including RL with abstraction-augmented prompts.",
+      "llm_tldr_cn": "研究LLM能否从可复用的经验抽象（如策略和提醒）中受益。从MATH训练集提取抽象到可检索库，探索推理时检索和强化学习（用抽象增强训练提示）两种模式。实验表明经验抽象提升了数学和逻辑推理性能，且自提取抽象与教师提取相当。该方法可与现有RL框架结合。",
+      "llm_tldr": "研究LLM能否从可复用的经验抽象（如策略和提醒）中受益。从MATH训练集提取抽象到可检索库，探索推理时检索和强化学习（用抽象增强训练提示）两种模式。实验表明经验抽象提升了数学和逻辑推理性能，且自提取抽象与教师提取相当。该方法可与现有RL框架结合。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find papers on reinforcement learning methods for fine tuning large language models",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2607.18532v1",
+      "source": "arxiv",
+      "title": "Reasoning Fine-Tuning Induces Persistent Latent Policy States",
+      "abstract": "Reasoning-specialized language models show large performance gains over base models, yet the internal changes responsible for improved multi-step reasoning remain poorly understood. It is unclear whether reasoning fine-tuning improves local token-level competence or globally reorganizes how models structure inference over time. We address this question by modeling Chain-of-Thought reasoning as a switching dynamical system (SDS), in which internal representations evolve under discrete latent policy states. Our framework combines time-aware contrastive representation learning with discrete regime discovery to recover latent policies from activation trajectories. Across four benchmarks and model scales from 1.5B to 32B parameters, reasoning-fine-tuned models exhibit richer latent-policy organization than their base counterparts, characterized by more differentiated transition structure and model-dependent changes in state utilization, persistence, and mixing. The recovered regimes exhibit functional specialization aligned with distinct reasoning stages, and extensive controls confirm that their structure is not explained by correctness, representation learning, or modeling priors, but depends on the coherent temporal organization of reasoning trajectories. Causal interventions further show that the regimes are functionally meaningful: state-swap ablations reduce one-step predictive fit, while transplanting reasoning dynamics into base models improves performance on challenging reasoning problems. Finally, SDS-guided pruning of failure-prone reasoning prefixes outperforms self-consistency in 11 of 12 model-dataset settings, with gains of up to 12.5 percentage points. Together, our results suggest that reasoning fine-tuning globally reorganizes latent dynamics, offering a new lens for mechanistic analysis and process-level control of reasoning models.",
+      "authors": [
+        "Abir Harrasse",
+        "Michael Lan",
+        "Hunar Batra",
+        "Fateme Hashemi Chaleshtori",
+        "Chaithanya Bandi"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-20T21:56:22+00:00",
+      "link": "https://arxiv.org/pdf/2607.18532v1",
+      "tags": [
+        "keyword:agentic-rl",
+        "query:agentic-rl"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "analyzes reasoning fine-tuning induced latent policy states, relevant to policy optimization for LLM reasoning",
+      "llm_evidence_cn": "分析推理微调诱导的潜在策略状态，与改进LLM推理的策略优化相关",
+      "llm_evidence": "分析推理微调诱导的潜在策略状态，与改进LLM推理的策略优化相关",
+      "canonical_evidence": "分析推理微调诱导的潜在策略状态，与改进LLM推理的策略优化相关",
+      "llm_tldr_en": "Models Chain-of-Thought as switching dynamical system to discover latent policy states; shows reasoning fine-tuning reorganizes internal inference structure across scales.",
+      "llm_tldr_cn": "该论文将思维链推理建模为切换动态系统，通过时间感知对比表示学习和离散阶段发现方法恢复潜在策略状态。在多个基准和模型规模上，推理微调模型表现出与基础模型不同的潜在策略结构，揭示了推理微调不仅改善局部token级能力，还全局重组了模型推理的组织方式。这项工作为理解LLM推理能力增强提供了新视角，对策略优化算法设计有启发意义。",
+      "llm_tldr": "该论文将思维链推理建模为切换动态系统，通过时间感知对比表示学习和离散阶段发现方法恢复潜在策略状态。在多个基准和模型规模上，推理微调模型表现出与基础模型不同的潜在策略结构，揭示了推理微调不仅改善局部token级能力，还全局重组了模型推理的组织方式。这项工作为理解LLM推理能力增强提供了新视角，对策略优化算法设计有启发意义。",
+      "llm_tags": [
+        "query:agentic-rl"
+      ],
+      "matched_query_tag": "query:agentic-rl",
+      "matched_query_text": "Find studies on policy optimization algorithms for improving LLM reasoning",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

@@ -6,47 +6,53 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-22
-- 运行时间：2026-07-22 21:40:23 UTC
+- 最新运行日期：2026-07-23
+- 运行时间：2026-07-23 21:42:20 UTC
 - 运行状态：成功
-- 本次总论文数：9
+- 本次总论文数：10
 - 精读区：6
-- 速读区：3
+- 速读区：4
 
 ### 今日简报（AI）
-今日推荐9篇论文，精读6篇，重点聚焦强化学习在推理优化、知识图谱搜索及NMT成本质量权衡中的应用。最值得关注的两篇是RLVR原生优化堆栈《ISO》（10分）和基于强化学习训练大模型搜索知识图谱的《Search-on-Graph-R1》（9分）。建议优先精读这两篇高分论文，并速读探讨并行推理中Shapley奖励分配的《Fishing Out Free Riders》。
-- 详情：[/202607/22/README](/202607/22/README)
+- 今日共生成 10 篇推荐（精读 6 篇，速读 4 篇）
+- 精读：《H$^2$SD: Hybrid Hindsight Self-Distillation》（9.0/10）, 《REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning》（9.0/10）
+- 速读：《Reinforcement Learning: From Algorithms To Foundation Models》（8.0/10）, 《Notes to Self: Can LLMs Benefit from Experiential Abstractions?》（8.0/10）, 《From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents》（7.0/10）
+- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
+- 详情：[/202607/23/README](/202607/23/README)
 
 ### 精读区论文标签
-1. [ISO: An RLVR-Native Optimization Stack](/202607/22/2607.19331v1-iso-an-rlvr-native-optimization-stack)  
-   标签：评分：10.0/10、query:agentic-rl
-   evidence：提出ISO一个专为LLM设计的RLVR优化栈直接推进大语言模型的强化学习
-2. [Search-on-Graph-R1: Training Large Language Models to Search Knowledge Graphs with Reinforcement Learning](/202607/22/2607.18481v1-search-on-graph-r1-training-large-language-models-to-search-knowledge-graphs-with-reinforcement-learning)  
+1. [H$^2$SD: Hybrid Hindsight Self-Distillation](/202607/23/2607.18955v2-h2sd-hybrid-hindsight-self-distillation)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：使用强化学习训练LLM搜索知识图谱
-3. [Reasoning Error from Known Fact: Step-Level Self-Consistency Group Relative Policy Optimization for LLM](/202607/22/2607.18915v1-reasoning-error-from-known-fact-step-level-self-consistency-group-relative-policy-optimization-for-llm)  
+   evidence：针对语言模型推理的RLVR混合事后自蒸馏方法
+2. [REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning](/202607/23/2607.19450v1-regen-replay-recycling-for-expert-to-generalist-distillation-with-offline-reinforcement-learning)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：针对大语言模型推理中幻觉的步骤级自一致性群体相对策略优化
-4. [H$^2$SD: Hybrid Hindsight Self-Distillation](/202607/22/2607.18955v1-h2sd-hybrid-hindsight-self-distillation)  
+   evidence：利用重放回收和离线强化学习进行专家到通用模型的蒸馏，与在线策略蒸馏相关
+3. [Rewarding Better Thinking for LLM Preference Alignment](/202607/23/2607.19824v1-rewarding-better-thinking-for-llm-preference-alignment)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：混合事后自蒸馏，针对RLVR中的在线策略蒸馏
-5. [Contrastive On-Policy Distillation](/202607/22/2607.19046v1-contrastive-on-policy-distillation)  
+   evidence：提出思考清单奖励用于基于强化学习的LLM偏好对齐
+4. [Reinforcement Learning for Large Language Model Selective Evidence Adoption from Contaminated Retrieval Results](/202607/23/2607.20090v1-reinforcement-learning-for-large-language-model-selective-evidence-adoption-from-contaminated-retrieval-results)  
    标签：评分：9.0/10、query:agentic-rl
-   evidence：对比式在线策略蒸馏框架，用于提升大语言模型推理能力
-6. [Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information](/202607/22/2607.19313v1-off-context-grpo-learning-to-reason-on-hard-problems-using-privileged-information)  
-   标签：评分：9.0/10、query:agentic-rl
-   evidence：利用特权信息的离上下文GRPO，改进推理能力
+   evidence：强化学习（DAPO）用于大模型选择性采纳证据
+5. [Meta-Learning Preferences for Multilingual LLM Alignment](/202607/23/2607.13315v2-meta-learning-preferences-for-multilingual-llm-alignment)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：用于多语言大模型对齐的元学习强化学习框架
+6. [Co-Evolving LLM Evaluators and Policies via DynamicRubric](/202607/23/2607.20083v1-co-evolving-llm-evaluators-and-policies-via-dynamicrubric)  
+   标签：评分：8.0/10、query:agentic-rl
+   evidence：协同演化评估器和策略以优化大模型后训练
 
 ### 速读区论文标签
-1. [Fishing Out Free Riders: Shapley-Based Reward Attribution for Parallel Reasoning via Reinforcement Learning](/202607/22/2607.18979v1-fishing-out-free-riders-shapley-based-reward-attribution-for-parallel-reasoning-via-reinforcement-learning)  
+1. [Reinforcement Learning: From Algorithms To Foundation Models](/202607/23/2607.17560v1-reinforcement-learning-from-algorithms-to-foundation-models)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：基于夏普利值的并行推理强化学习奖励分配
-2. [The Price of Reasoning: Cost-Quality Tradeoffs in Reinforcement Learning for Neural Machine Translation](/202607/22/2607.19226v1-the-price-of-reasoning-cost-quality-tradeoffs-in-reinforcement-learning-for-neural-machine-translation)  
+   evidence：论文涵盖从RL算法到基础模型，是代理强化学习主题的核心
+2. [Notes to Self: Can LLMs Benefit from Experiential Abstractions?](/202607/23/2607.20372v1-notes-to-self-can-llms-benefit-from-experiential-abstractions)  
    标签：评分：8.0/10、query:agentic-rl
-   evidence：使用可验证奖励的强化学习对大语言模型进行后训练
-3. [Reasoning Before Translation: Enhancing Legal Machine Translation with Structured Reasoning](/202607/22/2607.19181v1-reasoning-before-translation-enhancing-legal-machine-translation-with-structured-reasoning)  
+   evidence：使用抽象增强训练提示的强化学习进行LLM微调
+3. [From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents](/202607/23/2607.16621v1-from-memory-to-skills-evidence-grounded-co-evolution-governance-for-long-horizon-llm-agents)  
    标签：评分：7.0/10、query:agentic-rl
-   evidence：比较了强化学习微调在法律翻译中的应用
+   evidence：记忆与技能协同演化用于大模型智能体的强化学习
+4. [Reasoning Fine-Tuning Induces Persistent Latent Policy States](/202607/23/2607.18532v1-reasoning-fine-tuning-induces-persistent-latent-policy-states)  
+   标签：评分：7.0/10、query:agentic-rl
+   evidence：分析推理微调诱导的潜在策略状态，与改进LLM推理的策略优化相关
 
 
 <div class="dpr-home-promo-card">
